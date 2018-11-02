@@ -14,9 +14,9 @@
 		21BE4A12218CD849005F8938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BE4A11218CD849005F8938 /* LaunchScreen.storyboard */; };
 		21BE4A14218CDCAC005F8938 /* Conversation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BE4A13218CDCAC005F8938 /* Conversation.storyboard */; };
 		21BE4A16218CDCEA005F8938 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BE4A15218CDCEA005F8938 /* ConversationViewController.swift */; };
-		21BE4A18218CDD1D005F8938 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BE4A17218CDD1D005F8938 /* AboutUsViewController.swift */; };
+		21BE4A18218CDD1D005F8938 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BE4A17218CDD1D005F8938 /* StoryViewController.swift */; };
 		21BE4A1A218CDD44005F8938 /* SpecialThanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BE4A19218CDD44005F8938 /* SpecialThanksViewController.swift */; };
-		21BE4A1E218CDD69005F8938 /* AboutUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BE4A1D218CDD69005F8938 /* AboutUs.storyboard */; };
+		21BE4A1E218CDD69005F8938 /* Story.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BE4A1D218CDD69005F8938 /* Story.storyboard */; };
 		21BE4A20218CDD7B005F8938 /* SpecialThanks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BE4A1F218CDD7B005F8938 /* SpecialThanks.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -30,9 +30,9 @@
 		21BE4A11218CD849005F8938 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21BE4A13218CDCAC005F8938 /* Conversation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Conversation.storyboard; sourceTree = "<group>"; };
 		21BE4A15218CDCEA005F8938 /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
-		21BE4A17218CDD1D005F8938 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		21BE4A17218CDD1D005F8938 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		21BE4A19218CDD44005F8938 /* SpecialThanksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialThanksViewController.swift; sourceTree = "<group>"; };
-		21BE4A1D218CDD69005F8938 /* AboutUs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutUs.storyboard; sourceTree = "<group>"; };
+		21BE4A1D218CDD69005F8938 /* Story.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Story.storyboard; sourceTree = "<group>"; };
 		21BE4A1F218CDD7B005F8938 /* SpecialThanks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SpecialThanks.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,8 +123,8 @@
 		21BE4A22218CDDB5005F8938 /* AboutUs */ = {
 			isa = PBXGroup;
 			children = (
-				21BE4A17218CDD1D005F8938 /* AboutUsViewController.swift */,
-				21BE4A1D218CDD69005F8938 /* AboutUs.storyboard */,
+				21BE4A17218CDD1D005F8938 /* StoryViewController.swift */,
+				21BE4A1D218CDD69005F8938 /* Story.storyboard */,
 			);
 			path = AboutUs;
 			sourceTree = "<group>";
@@ -194,7 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21BE4A1E218CDD69005F8938 /* AboutUs.storyboard in Resources */,
+				21BE4A1E218CDD69005F8938 /* Story.storyboard in Resources */,
 				21BE4A12218CD849005F8938 /* LaunchScreen.storyboard in Resources */,
 				21BE4A10218CD83B005F8938 /* Main.storyboard in Resources */,
 				21BE4A14218CDCAC005F8938 /* Conversation.storyboard in Resources */,
@@ -210,7 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21BE4A18218CDD1D005F8938 /* AboutUsViewController.swift in Sources */,
+				21BE4A18218CDD1D005F8938 /* StoryViewController.swift in Sources */,
 				2151C8E6218CB66700C7F416 /* MainViewController.swift in Sources */,
 				2151C8E4218CB66700C7F416 /* AppDelegate.swift in Sources */,
 				21BE4A16218CDCEA005F8938 /* ConversationViewController.swift in Sources */,

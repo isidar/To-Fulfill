@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--About Us View Controller-->
+        <!--Story View Controller-->
         <scene sceneID="51E-2u-mRp">
             <objects>
-                <viewController id="TpF-ft-db6" customClass="AboutUsViewController" customModule="To_Fulfill" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TpF-ft-db6" customClass="StoryViewController" customModule="To_Fulfill" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kR8-bQ-baG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

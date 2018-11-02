@@ -1,5 +1,5 @@
 //
-//  AboutUsViewController.swift
+//  StoryViewController.swift
 //  To Fulfill
 //
 //  Created by Nazarii Melnyk on 11/2/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AboutUsViewController: UIViewController {
+class StoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

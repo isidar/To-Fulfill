@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,35 +15,106 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="To_Fulfill" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="57O-d0-YAD" userLabel="Buttons Stack View">
-                                <rect key="frame" x="73.5" y="139.5" width="228" height="388"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="57O-d0-YAD" userLabel="Buttons Stack View">
+                                <rect key="frame" x="88.333333333333314" y="336.33333333333326" width="237.33333333333337" height="358"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bs-IK-XCc" userLabel="Conversation Button">
-                                        <rect key="frame" x="0.0" y="0.0" width="228" height="129.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                        <state key="normal" title="Conversation"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quv-Fg-JKb" userLabel="About Us Button">
-                                        <rect key="frame" x="0.0" y="129.5" width="228" height="129"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                        <state key="normal" title="About Us"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRD-6E-9z6" userLabel="Special Thanks Button">
-                                        <rect key="frame" x="0.0" y="258.5" width="228" height="129.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                        <state key="normal" title="Special Thanks"/>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hS5-UO-QBh" userLabel="Conversation Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="237.33333333333334" height="119.33333333333333"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="●" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avg-jh-Fde" userLabel="Left Dot Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="6.666666666666667" height="119.33333333333333"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bs-IK-XCc" userLabel="Conversation Button">
+                                                <rect key="frame" x="26.666666666666671" y="0.0" width="184" height="119.33333333333333"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="The Conversation">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="conversationButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PFK-jf-e9u"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="●" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JcA-S1-lzT" userLabel="Right Dot Label">
+                                                <rect key="frame" x="230.66666666666669" y="0.0" width="6.6666666666666572" height="119.33333333333333"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YU4-4p-rLa" userLabel="Story Stack View">
+                                        <rect key="frame" x="41.666666666666671" y="119.33333333333337" width="154.33333333333331" height="119.33333333333331"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="●" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6v-S4-QAz" userLabel="Left Dot Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="6.666666666666667" height="119.33333333333333"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quv-Fg-JKb" userLabel="Story Button">
+                                                <rect key="frame" x="26.666666666666657" y="0.0" width="101" height="119.33333333333333"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="The Story">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="storyButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fwl-D5-MaY"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="●" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBh-R0-K4r" userLabel="Right Dot Label">
+                                                <rect key="frame" x="147.66666666666669" y="0.0" width="6.6666666666666572" height="119.33333333333333"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HIA-5v-Rn5" userLabel="Special Thanks Stack View">
+                                        <rect key="frame" x="13" y="238.66666666666671" width="211.33333333333334" height="119.33333333333334"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="●" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXD-jS-heu" userLabel="Left Dot Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="6.666666666666667" height="119.33333333333333"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRD-6E-9z6" userLabel="Special Thanks Button">
+                                                <rect key="frame" x="26.666666666666671" y="0.0" width="158" height="119.33333333333333"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="Special Thanks">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="specialThanksButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PGv-6R-has"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="●" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Hp-EE-M2X" userLabel="Right Dot Label">
+                                                <rect key="frame" x="204.66666666666669" y="0.0" width="6.6666666666666572" height="119.33333333333333"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="57O-d0-YAD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Ld-je-fTm"/>
-                            <constraint firstItem="57O-d0-YAD" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.6" id="bFi-uu-yZk"/>
-                            <constraint firstItem="57O-d0-YAD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="p1A-IW-ty7"/>
+                            <constraint firstItem="57O-d0-YAD" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.5" id="bFi-uu-yZk"/>
+                            <constraint firstItem="57O-d0-YAD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.4" id="fXh-mX-1X6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
