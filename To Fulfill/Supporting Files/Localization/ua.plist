@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Launch</key>
+	<dict/>
+	<key>Main</key>
+	<dict>
+		<key>logo</key>
+		<string></string>
+		<key>conversationButton</key>
+		<string></string>
+		<key>storyButton</key>
+		<string></string>
+		<key>specialThanksButton</key>
+		<string></string>
+	</dict>
+	<key>Conversation</key>
+	<dict>
+		<key>Questions</key>
+		<array>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+		</array>
+	</dict>
+	<key>Story</key>
+	<dict/>
+	<key>SpecialThanks</key>
+	<dict/>
+</dict>
+</plist>
