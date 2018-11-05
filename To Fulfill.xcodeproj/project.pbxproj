@@ -108,7 +108,7 @@
 				21BE4A21218CDDAC005F8938 /* Conversation */,
 				21BE4A22218CDDB5005F8938 /* Story */,
 				21BE4A23218CDDBD005F8938 /* Special Thanks */,
-				21FA49D5218F1ED700C63496 /* View */,
+				21FA49D5218F1ED700C63496 /* Views */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -199,12 +199,12 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		21FA49D5218F1ED700C63496 /* View */ = {
+		21FA49D5218F1ED700C63496 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				21FA49D3218F1E7D00C63496 /* DiagonalView.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

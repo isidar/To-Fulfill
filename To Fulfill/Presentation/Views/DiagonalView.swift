@@ -17,6 +17,9 @@ class DiagonalView: UIView {
     @IBInspectable
     var bottomPointRatio: CGFloat = 1
     
+    @IBInspectable
+    var secondBackgroundColor: UIColor = .white
+    
     override func draw(_ rect: CGRect) {
         let triangle = UIBezierPath()
         triangle.move(to: .zero)
@@ -28,11 +31,9 @@ class DiagonalView: UIView {
                                      y: bounds.size.height))
         triangle.close()
         
-        let color = UIColor.white
-        
-        color.setFill()
+        secondBackgroundColor.setFill()
         triangle.fill()
-        color.setStroke()
+        secondBackgroundColor.setStroke()
         triangle.stroke()
     }
 

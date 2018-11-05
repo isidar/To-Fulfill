@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "iphone",
-      "filename" : "Parental-Controls_icon.png"
+      "filename" : "launchScreenLogo.png"
     },
     {
       "idiom" : "ipad",
-      "filename" : "Parental-Controls_icon-1.png"
+      "filename" : "launchScreenLogo-1.png"
     }
   ],
   "info" : {
