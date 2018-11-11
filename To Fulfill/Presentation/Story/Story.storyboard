@@ -14,19 +14,31 @@
         <scene sceneID="51E-2u-mRp">
             <objects>
                 <viewController storyboardIdentifier="story" id="TpF-ft-db6" customClass="StoryViewController" customModule="To_Fulfill" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kR8-bQ-baG">
+                    <view key="view" contentMode="scaleToFill" id="kR8-bQ-baG" customClass="DiagonalView" customModule="To_Fulfill" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="story VC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNB-ru-0CQ">
-                                <rect key="frame" x="166" y="323" width="66" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="VNB-ru-0CQ" userLabel="Story Label">
+                                <rect key="frame" x="28" y="74.5" width="319" height="518"/>
+                                <mutableString key="text">The two of us were the closest people to each other for almost 2 years. Without dating, we built relationship full of support, joy and hope. 
+On October 18 we`ve realized that something between us was broken: for some period of time we were experiencing offence, the lack of personal space and awkward moments in communication. In order to finish our relationships with dignity, we collected a list of questions for each other, met and listened carefully. 
+With these questions, magic has happened: together we could pass the period full of misunderstandings and anger.
+We are not psychologists. We are just people who don`t want to leave both of you with unanswered questions.
+Yours,
+Diana and Alla.
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VNB-ru-0CQ" firstAttribute="height" secondItem="dla-dx-hAU" secondAttribute="height" multiplier="0.8" id="5ya-gC-bY5"/>
+                            <constraint firstItem="VNB-ru-0CQ" firstAttribute="centerX" secondItem="kR8-bQ-baG" secondAttribute="centerX" id="JTR-Hg-Sal"/>
+                            <constraint firstItem="VNB-ru-0CQ" firstAttribute="centerY" secondItem="kR8-bQ-baG" secondAttribute="centerY" id="erA-oA-opv"/>
+                            <constraint firstItem="VNB-ru-0CQ" firstAttribute="width" secondItem="dla-dx-hAU" secondAttribute="width" multiplier="0.85" id="rte-KT-XtS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dla-dx-hAU"/>
                     </view>
                 </viewController>

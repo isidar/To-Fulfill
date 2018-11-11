@@ -9,7 +9,19 @@
 import Foundation
 
 struct LocalizedStrings {
-    struct Splash {
-        struct CTVForceUpdateViewController {}
+    struct Launch {
+        struct Questions {}
+        struct UI {}
+    }
+    struct Main {}
+    struct Conversation {
+        struct Questions {}
+        struct UI {}
+    }
+    struct Story {
+        struct UI {}
+    }
+    struct SpecialThanks {
+        struct UI {}
     }
 }

@@ -14,19 +14,49 @@
         <scene sceneID="htX-Gb-iGJ">
             <objects>
                 <viewController storyboardIdentifier="conversation" id="lUI-7h-9MS" customClass="ConversationViewController" customModule="To_Fulfill" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bEi-FW-ZA2">
+                    <view key="view" contentMode="scaleToFill" id="bEi-FW-ZA2" customClass="DiagonalView" customModule="To_Fulfill" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="conversation VC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9FF-bd-Tdj">
-                                <rect key="frame" x="123" y="323" width="125" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="d9X-lO-Are" userLabel="Question Stack View">
+                                <rect key="frame" x="28" y="263" width="319" height="141"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="––––––" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDI-rj-KaH">
+                                        <rect key="frame" x="135" y="0.0" width="49" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What sitution do we want to solve now?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9FF-bd-Tdj">
+                                        <rect key="frame" x="9.5" y="40.5" width="300" height="60"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="––––––" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smo-rP-A1a">
+                                        <rect key="frame" x="135" y="120.5" width="49" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQF-nC-iw3">
+                                <rect key="frame" x="162" y="605" width="51" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="d9X-lO-Are" firstAttribute="width" secondItem="K4h-Kt-vjk" secondAttribute="width" multiplier="0.85" id="3Y4-Xa-c9H"/>
+                            <constraint firstItem="K4h-Kt-vjk" firstAttribute="bottom" secondItem="YQF-nC-iw3" secondAttribute="bottom" constant="20" id="95e-jv-XpZ"/>
+                            <constraint firstItem="YQF-nC-iw3" firstAttribute="centerX" secondItem="bEi-FW-ZA2" secondAttribute="centerX" id="Ne2-Ul-eLZ"/>
+                            <constraint firstItem="d9X-lO-Are" firstAttribute="centerX" secondItem="bEi-FW-ZA2" secondAttribute="centerX" id="UdS-DD-w2m"/>
+                            <constraint firstItem="d9X-lO-Are" firstAttribute="centerY" secondItem="bEi-FW-ZA2" secondAttribute="centerY" id="gqy-yZ-zMK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="K4h-Kt-vjk"/>
                     </view>
                 </viewController>

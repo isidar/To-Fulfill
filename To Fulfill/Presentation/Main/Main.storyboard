@@ -138,7 +138,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.2343035249" green="1" blue="0.68519714300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.44237831230000002" green="0.96670752760000001" blue="0.6863271594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="lhj-oy-ANH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UcC-nA-gRW"/>
                             <constraint firstItem="lhj-oy-ANH" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.9" id="Zcy-6q-ige"/>
@@ -146,14 +146,6 @@
                             <constraint firstItem="lhj-oy-ANH" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.9" id="w6z-uw-yRR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="topPointRatio">
-                                <real key="value" value="0.90000000000000002"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="number" keyPath="bottomPointRatio">
-                                <real key="value" value="-0.01"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" id="Wc5-0k-oih"/>
                 </viewController>
@@ -171,6 +163,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="O0n-a9-Bue">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ie5-Eg-py7"/>
                     </connections>

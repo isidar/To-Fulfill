@@ -12,7 +12,11 @@ protocol Localizable {}
 extension Localizable {
     
     static func localize(_ string: String) -> String {
-        return (pathOfTypes + "." + string).localized
+        return (pathOfTypes + "." + string).localizedString
+    }
+    
+    static func localize(_ string: String) -> [String] {
+        return (pathOfTypes + "." + string).localizedArray
     }
     
     static private var pathOfTypes: String {

@@ -12,7 +12,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        
+        view.backgroundColor = UIColor(hexString: "#bfffc0")
+//        view.backgroundColor = UIColor(hexString: "#ace3cf")
     }
     
     func show(_ vc: ViewControllerToShow) {
@@ -20,3 +25,6 @@ class ViewController: UIViewController {
     }
     
 }
+
+// Цвета: #bfffc0 #ace3cf
+// Шрифт: Rage Italic, Open San

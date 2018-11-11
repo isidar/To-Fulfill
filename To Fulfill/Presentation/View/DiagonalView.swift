@@ -12,10 +12,10 @@ import UIKit
 class DiagonalView: UIView {
     
     @IBInspectable
-    var topPointRatio: CGFloat = 1
+    var topPointRatio: CGFloat = 0.9
     
     @IBInspectable
-    var bottomPointRatio: CGFloat = 1
+    var bottomPointRatio: CGFloat = -0.01
     
     override func draw(_ rect: CGRect) {
         let triangle = UIBezierPath()

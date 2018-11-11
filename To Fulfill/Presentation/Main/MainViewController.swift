@@ -12,7 +12,6 @@ class MainViewController: ViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 
     @IBAction private func conversationButtonClick(_ sender: UIButton) {
