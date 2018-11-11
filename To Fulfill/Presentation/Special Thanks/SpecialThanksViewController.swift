@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SpecialThanksViewController: UIViewController {
+class SpecialThanksViewController: ViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
