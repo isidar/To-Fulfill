@@ -10,7 +10,7 @@ import Foundation
 
 class Localizator {
     
-    private(set) var currentLocalization: Localization = .russian
+    private(set) var currentLocalization: Localization = .english
     private var localizableDictionary: NSDictionary?
     
     static let shared = Localizator()

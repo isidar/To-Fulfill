@@ -8,13 +8,14 @@
 
 import UIKit
 
-class ConversationViewController: ViewController {
+class QuestionsViewController: ViewController {
+    
+    var question: Question = .alienation
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationItem.title = "The Conversation"
-        
+        navigationItem.title = question.rawValue
     }
 
 }
+

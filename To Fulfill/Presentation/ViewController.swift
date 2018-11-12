@@ -20,8 +20,8 @@ class ViewController: UIViewController {
 //        view.backgroundColor = UIColor(hexString: "#ace3cf")
     }
     
-    func show(_ vc: ViewControllerToShow) {
-        TransitionManager.shared.show(vc, presentingVC: self)
+    func show(_ vc: ViewControllerToShow, configure: ((UIViewController) -> Void)? = nil) {
+        TransitionManager.shared.show(vc, presentingVC: self, configure: configure)
     }
     
 }

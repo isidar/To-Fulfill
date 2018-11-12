@@ -13,7 +13,7 @@ class SpecialThanksViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.title = "Special Thanks"
+        navigationItem.title = "Special Thanks" /*loc*/
     }
     
 

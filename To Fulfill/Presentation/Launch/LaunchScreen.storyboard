@@ -22,7 +22,7 @@
                                 <rect key="frame" x="37.666666666666657" y="117.33333333333331" width="300" height="587.33333333333348"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.72134357690811157" green="0.93652170896530151" blue="0.90769392251968384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.74731868505477905" green="0.99426990747451782" blue="0.75604146718978882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="0lk-qu-UPv" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.8" id="EQP-Bw-ngg"/>
                             <constraint firstItem="0lk-qu-UPv" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.8" id="Li3-cX-zGc"/>
@@ -38,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="launchScreenLogo" width="273" height="604"/>
+        <image name="launchScreenLogo" width="272.75" height="603.75"/>
     </resources>
 </document>
