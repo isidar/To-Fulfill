@@ -13,11 +13,38 @@
         <!--Special Thanks View Controller-->
         <scene sceneID="gVg-g5-ead">
             <objects>
-                <viewController id="sxm-Hg-0pZ" customClass="SpecialThanksViewController" customModule="To_Fulfill" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="enq-m9-gP9">
+                <viewController storyboardIdentifier="specialThanks" id="sxm-Hg-0pZ" customClass="SpecialThanksViewController" customModule="To_Fulfill" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="enq-m9-gP9" customClass="DiagonalView" customModule="To_Fulfill" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="ITj-7v-Evh" userLabel="Thanks Label">
+                                <rect key="frame" x="28" y="74.5" width="319" height="518"/>
+                                <string key="text">We do want to say huge thank you to everyone who helped us to make our Fulfill dream come true. Special thanks go to: Mary Zaremba and Mykhailo Komarov for our logo, Vladyslava Tashkinova for our design, Annika Udovenko for helping with wording, Helen Shakhova for copywriting and support 24/7, Olga Semenova for professional psychotherapy advices, Nazarii Melnyk for developing, Denis Rumiyantsev for testing and Denys Boiechko for huge help.
+We wouldn`t be able to fulfill without you.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed by Nazarii Melnyk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="GcM-Ln-ptL" userLabel="Developed By Label">
+                                <rect key="frame" x="37.5" y="617" width="300" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ITj-7v-Evh" firstAttribute="height" relation="lessThanOrEqual" secondItem="Q7z-ST-5IA" secondAttribute="height" multiplier="0.8" id="9dq-p8-aAR"/>
+                            <constraint firstItem="ITj-7v-Evh" firstAttribute="centerX" secondItem="enq-m9-gP9" secondAttribute="centerX" id="No0-1J-BMc"/>
+                            <constraint firstItem="GcM-Ln-ptL" firstAttribute="centerX" secondItem="enq-m9-gP9" secondAttribute="centerX" id="VgV-TZ-fdA"/>
+                            <constraint firstItem="ITj-7v-Evh" firstAttribute="centerY" secondItem="enq-m9-gP9" secondAttribute="centerY" id="bsD-45-GW2"/>
+                            <constraint firstItem="Q7z-ST-5IA" firstAttribute="bottom" secondItem="GcM-Ln-ptL" secondAttribute="bottom" constant="20" id="om3-Qs-t3g"/>
+                            <constraint firstItem="GcM-Ln-ptL" firstAttribute="width" secondItem="Q7z-ST-5IA" secondAttribute="width" multiplier="0.8" id="qaE-aK-ODF"/>
+                            <constraint firstItem="ITj-7v-Evh" firstAttribute="width" secondItem="Q7z-ST-5IA" secondAttribute="width" multiplier="0.85" id="vcY-VP-ndU"/>
+                            <constraint firstItem="GcM-Ln-ptL" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ITj-7v-Evh" secondAttribute="bottom" constant="20" id="zMo-vC-WRb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Q7z-ST-5IA"/>
                     </view>
                 </viewController>

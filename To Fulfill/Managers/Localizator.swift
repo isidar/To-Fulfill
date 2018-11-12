@@ -10,7 +10,7 @@ import Foundation
 
 class Localizator {
     
-    private(set) var currentLocalization: Localization = .ukrainian
+    private(set) var currentLocalization: Localization = .russian
     private var localizableDictionary: NSDictionary?
     
     static let shared = Localizator()
@@ -21,7 +21,7 @@ class Localizator {
         if let availableLanguage = Localization(rawValue: currentAppleLanguage) {
             currentLocalization = availableLanguage
         } else {
-            currentLocalization = currentAppleLanguage == "ru" ? .ukrainian : .english
+            currentLocalization = currentAppleLanguage == "ua" ? .russian : .english
         }
         
         guard let path = Bundle.main.path(forResource: currentLocalization.rawValue, ofType: "plist") else {
@@ -43,21 +43,30 @@ class Localizator {
         return current
     }
     
-    func localize(_ string: String) -> String {
+    func localize(_ path: String) -> String {
+        guard let string = parseFromPlist(path: path) as? String else {
+            return "missed translation"
+        }
+        return string
+    }
+    
+    func localize(_ path: String) -> [String] {
+        guard let array = parseFromPlist(path: path) as? [String] else {
+            return ["missed translation"]
+        }
+        return array
+    }
+    
+    private func parseFromPlist(path: String) -> Any? {
         var container = localizableDictionary as? [String: Any]
-        let properties = string.split(separator: ".")
+        let properties = path.split(separator: ".")
         
-        for property in properties {
-            guard let value = container?[String(property)] else { break }
-            if let localizedString = value as? String {
-                return localizedString
-            }
+        var value: Any?
+        properties.forEach {
+            value = container?[String($0)]
             container = value as? [String: Any]
         }
-        
-        // TODO: - Handle this case after localization will be done (nmelnyk)
-        print("[localization] Missing translation for: \(properties.last ?? "errorPropertyName")")
-        return "missed translation"
+        return value
     }
     
 }
@@ -66,7 +75,7 @@ extension Localizator {
     
     enum Localization: String {
         case english = "en"
-        case ukrainian = "ua"
+        case russian = "ru"
     }
     
 }

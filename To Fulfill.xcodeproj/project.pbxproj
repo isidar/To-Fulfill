@@ -20,10 +20,14 @@
 		21BE4A20218CDD7B005F8938 /* SpecialThanks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BE4A1F218CDD7B005F8938 /* SpecialThanks.storyboard */; };
 		21BE4A28218CEF09005F8938 /* Localizator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BE4A27218CEF09005F8938 /* Localizator.swift */; };
 		21BE4A2C218CEF3C005F8938 /* en.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21BE4A2A218CEF3C005F8938 /* en.plist */; };
-		21BE4A2D218CEF3C005F8938 /* ua.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21BE4A2B218CEF3C005F8938 /* ua.plist */; };
+		21BE4A2D218CEF3C005F8938 /* ru.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21BE4A2B218CEF3C005F8938 /* ru.plist */; };
 		21BE4A32218CF6D9005F8938 /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BE4A30218CF6D9005F8938 /* LocalizedStrings.swift */; };
 		21BE4A33218CF6D9005F8938 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BE4A31218CF6D9005F8938 /* Localizable.swift */; };
 		21BE4A36218CF72A005F8938 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BE4A35218CF72A005F8938 /* String.swift */; };
+		21E10D042198531800FB6BF2 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E10D032198531800FB6BF2 /* TransitionManager.swift */; };
+		21E10D06219857A000FB6BF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E10D05219857A000FB6BF2 /* ViewController.swift */; };
+		21F32DCC2198885D00E5C426 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F32DCB2198885D00E5C426 /* UIColor.swift */; };
+		21F32DCE219896A700E5C426 /* QuestionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F32DCD219896A700E5C426 /* QuestionsManager.swift */; };
 		21FA49D4218F1E7D00C63496 /* DiagonalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FA49D3218F1E7D00C63496 /* DiagonalView.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,10 +47,14 @@
 		21BE4A1F218CDD7B005F8938 /* SpecialThanks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SpecialThanks.storyboard; sourceTree = "<group>"; };
 		21BE4A27218CEF09005F8938 /* Localizator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizator.swift; sourceTree = "<group>"; };
 		21BE4A2A218CEF3C005F8938 /* en.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = en.plist; sourceTree = "<group>"; };
-		21BE4A2B218CEF3C005F8938 /* ua.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ua.plist; sourceTree = "<group>"; };
+		21BE4A2B218CEF3C005F8938 /* ru.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ru.plist; sourceTree = "<group>"; };
 		21BE4A30218CF6D9005F8938 /* LocalizedStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
 		21BE4A31218CF6D9005F8938 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		21BE4A35218CF72A005F8938 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		21E10D032198531800FB6BF2 /* TransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		21E10D05219857A000FB6BF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21F32DCB2198885D00E5C426 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		21F32DCD219896A700E5C426 /* QuestionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsManager.swift; sourceTree = "<group>"; };
 		21FA49D3218F1E7D00C63496 /* DiagonalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagonalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +111,7 @@
 		21BE4A0A218CD6B0005F8938 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				21E10D05219857A000FB6BF2 /* ViewController.swift */,
 				21BE4A0C218CD6D9005F8938 /* Launch */,
 				21BE4A0B218CD6D0005F8938 /* Main */,
 				21BE4A21218CDDAC005F8938 /* Conversation */,
@@ -161,6 +170,8 @@
 			isa = PBXGroup;
 			children = (
 				21BE4A27218CEF09005F8938 /* Localizator.swift */,
+				21F32DCD219896A700E5C426 /* QuestionsManager.swift */,
+				21E10D032198531800FB6BF2 /* TransitionManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -169,7 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				21BE4A2A218CEF3C005F8938 /* en.plist */,
-				21BE4A2B218CEF3C005F8938 /* ua.plist */,
+				21BE4A2B218CEF3C005F8938 /* ru.plist */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -185,8 +196,8 @@
 		21BE4A2F218CF6D9005F8938 /* Localized Strings */ = {
 			isa = PBXGroup;
 			children = (
-				21BE4A30218CF6D9005F8938 /* LocalizedStrings.swift */,
 				21BE4A31218CF6D9005F8938 /* Localizable.swift */,
+				21BE4A30218CF6D9005F8938 /* LocalizedStrings.swift */,
 			);
 			path = "Localized Strings";
 			sourceTree = "<group>";
@@ -195,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				21BE4A35218CF72A005F8938 /* String.swift */,
+				21F32DCB2198885D00E5C426 /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -264,7 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21BE4A2D218CEF3C005F8938 /* ua.plist in Resources */,
+				21BE4A2D218CEF3C005F8938 /* ru.plist in Resources */,
 				21BE4A1E218CDD69005F8938 /* Story.storyboard in Resources */,
 				21BE4A12218CD849005F8938 /* LaunchScreen.storyboard in Resources */,
 				21BE4A10218CD83B005F8938 /* Main.storyboard in Resources */,
@@ -288,10 +300,14 @@
 				21BE4A28218CEF09005F8938 /* Localizator.swift in Sources */,
 				2151C8E4218CB66700C7F416 /* AppDelegate.swift in Sources */,
 				21BE4A32218CF6D9005F8938 /* LocalizedStrings.swift in Sources */,
+				21E10D06219857A000FB6BF2 /* ViewController.swift in Sources */,
 				21FA49D4218F1E7D00C63496 /* DiagonalView.swift in Sources */,
 				21BE4A16218CDCEA005F8938 /* ConversationViewController.swift in Sources */,
+				21F32DCE219896A700E5C426 /* QuestionsManager.swift in Sources */,
+				21F32DCC2198885D00E5C426 /* UIColor.swift in Sources */,
 				21BE4A33218CF6D9005F8938 /* Localizable.swift in Sources */,
 				21BE4A1A218CDD44005F8938 /* SpecialThanksViewController.swift in Sources */,
+				21E10D042198531800FB6BF2 /* TransitionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
