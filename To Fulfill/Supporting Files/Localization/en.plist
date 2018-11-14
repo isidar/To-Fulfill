@@ -1,5 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict/>
+<dict>
+	<key>Launch</key>
+	<dict/>
+	<key>Main</key>
+	<dict>
+		<key>logo</key>
+		<string></string>
+		<key>conversationButton</key>
+		<string></string>
+		<key>storyButton</key>
+		<string></string>
+		<key>specialThanksButton</key>
+		<string></string>
+	</dict>
+	<key>Conversation</key>
+	<dict>
+		<key>Questions</key>
+		<dict>
+			<key>SolvingConflict</key>
+			<dict>
+				<key>description</key>
+				<string>This block is dedicated to solving conflicts in your relationship. By answering these questions, you can deal with specific conflict situations in your relationship.</string>
+				<key>advise</key>
+				<string>To maintain and support trust in your relationship after a conflict, follow the rules that both of you agreed on during the discussion.</string>
+				<key>questions</key>
+				<array>
+					<string>What situation do we want to solve now?</string>
+					<string>Which my actions caused the wish to communicate less / not to communicate at all?</string>
+					<string>How did this situation affect trust in our relationship?
+How did this situation affect trust in our relationship?
+How did this situation affect trust in our relationship?</string>
+					<string>Did I cross your personal boundaries in this conflict? How do you feel about it?</string>
+					<string>How should I act in similar situations in future so I won`t hurt your feelings and cross your boundaries?</string>
+					<string>What rules can we set so to make us more comfortable in communication? (if possible - write them on a sheet of paper)</string>
+					<string>Did we manage to solve this conflict and are we satisfied with its solution?</string>
+				</array>
+			</dict>
+			<key>ThroughToughTimes</key>
+			<dict>
+				<key>description</key>
+				<string>This block is dedicated to help you to go through the tough period of your relationship, when difficult circumstances such as illness / death of a loved one, loss / change of work, etc. occurred in your or your partner/friend/relative life.</string>
+				<key>advise</key>
+				<string>Express support for each other as you have discussed during this block. Remember: tough period will will end, but relationships could last if you`re commited to them.</string>
+				<key>questions</key>
+				<array>
+					<string>What situation has affected our relationship?</string>
+					<string>When do you feel the closest to me?</string>
+					<string>What resources can help us to overcome this period of our lives?</string>
+					<string>What can we do to go through hard times together?</string>
+					<string>How can we express support for each other right now?</string>
+					<string>What plan can we set so our relationship will overcome this time? (if possible- write it on a sheet of paper)</string>
+				</array>
+			</dict>
+			<key>Alienation</key>
+			<dict>
+				<key>description</key>
+				<string>This block is devoted to the period of alienation when the distance between partners/friends/relatives in a relationship gradually increases.</string>
+				<key>advise</key>
+				<string>In order to reduce the distance between you - follow the plan. Remember that your conversation is the first step for returning the relationship you used to have.</string>
+				<key>questions</key>
+				<array>
+					<string>Do we know what specifically influenced our relationship?</string>
+					<string>Which of my actions caused the wish to communicate less / not to communicate at all?</string>
+					<string>Is it hard for you sometimes to take love or care from me? Why?</string>
+					<string>What exactly do we want to return in our relationship?</string>
+					<string>Have you thought how can we try to return what we`ve mentioned?</string>
+					<string>Can we make an action plan of how can we return what we miss in our relationship back? (if possible - so scss write it down on a sheet of paper)</string>
+				</array>
+			</dict>
+			<key>RelationshipTransformation</key>
+			<dict>
+				<key>description</key>
+				<string>This block is devoted to the stage when both of you understand that the format of your relationship has changed recently and you should find a new form for it.</string>
+				<key>advise</key>
+				<string>In order for new status of your relationship not to destroy your communication, think about your overall comfort using what was said during your conversation.</string>
+				<key>questions</key>
+				<array>
+					<string>On a scale from 1 to 10, rate how happy are you in this relationship (where 10 - a feeling of complete happiness, and 1 - complete dissatisfaction)</string>
+					<string>What new factors and circumstances appeared in our relationship?</string>
+					<string>How did these circumstances affect us and our relationship?</string>
+					<string>What is the status of our relationship now? How can we call it?</string>
+					<string>How do we understand this status and how do we feel about it?</string>
+					<string>What can we do for our mutual comfort with this status?</string>
+				</array>
+			</dict>
+			<key>EndingUpRelationship</key>
+			<dict>
+				<key>description</key>
+				<string>This block will help not to leave misunderstanding between two of you when you both understand that to finish the relationship is the right decision for now.</string>
+				<key>advise</key>
+				<string>Remember that each finish is a new start. If you want to transform your relationship - go to other blocks of questions.</string>
+				<key>questions</key>
+				<array>
+					<string>Are we ready to talk now about the end of our relationship? Do we have strength, time and emotional resources?</string>
+					<string>What was your role in my life? Have you fulfilled it?</string>
+					<string>What didn`t we talk about? When can we get back to a conversation?</string>
+					<string>How did you feel when you thought about the complete (or partial) stop in our communication?</string>
+					<string>How can a pause in communication affect our relationship?</string>
+					<string>What are you the most grateful for in our relationship?</string>
+					<string>What advice can you give me to become better in next relationship/friendship?</string>
+				</array>
+			</dict>
+		</dict>
+		<key>UI</key>
+		<dict>
+			<key>title</key>
+			<string></string>
+			<key>nextButton</key>
+			<string></string>
+		</dict>
+	</dict>
+	<key>Story</key>
+	<dict>
+		<key>UI</key>
+		<dict>
+			<key>title</key>
+			<string></string>
+		</dict>
+	</dict>
+	<key>SpecialThanks</key>
+	<dict>
+		<key>UI</key>
+		<dict>
+			<key>title</key>
+			<string></string>
+		</dict>
+	</dict>
+	<key>Common</key>
+	<dict>
+		<key>UI</key>
+		<dict>
+			<key>backButton</key>
+			<string></string>
+		</dict>
+	</dict>
+</dict>
 </plist>
