@@ -15,6 +15,15 @@ class QuestionsViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = question.rawValue
+        
+    }
+    
+    @IBAction func nextButtonClick(_ sender: UIButton) {
+        backToMenu()
+    }
+    
+    private func backToMenu() {
+        navigationController?.popToRootViewController(animated: true)
     }
 
 }
