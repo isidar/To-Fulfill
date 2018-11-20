@@ -8,29 +8,35 @@
 
 import Foundation
 
+protocol QuestionModel {
+    static var description: String { get }
+    static var advise: String { get }
+    static var questions: [String] { get }
+}
+
 extension LocalizedStrings.Conversation {
     struct Questions {
-        struct SolvingConflict: Localizable {
+        struct SolvingConflict: Localizable, QuestionModel {
             static var description: String { return localize(#function) }
             static var advise: String { return localize(#function) }
             static var questions: [String] { return localize(#function) }
         }
-        struct ThroughToughTimes: Localizable {
+        struct ThroughToughTimes: Localizable, QuestionModel {
             static var description: String { return localize(#function) }
             static var advise: String { return localize(#function) }
             static var questions: [String] { return localize(#function) }
         }
-        struct Alienation: Localizable {
+        struct Alienation: Localizable, QuestionModel {
             static var description: String { return localize(#function) }
             static var advise: String { return localize(#function) }
             static var questions: [String] { return localize(#function) }
         }
-        struct RelationshipTransformation: Localizable {
+        struct RelationshipTransformation: Localizable, QuestionModel {
             static var description: String { return localize(#function) }
             static var advise: String { return localize(#function) }
             static var questions: [String] { return localize(#function) }
         }
-        struct EndingUpRelationship: Localizable {
+        struct EndingUpRelationship: Localizable, QuestionModel {
             static var description: String { return localize(#function) }
             static var advise: String { return localize(#function) }
             static var questions: [String] { return localize(#function) }

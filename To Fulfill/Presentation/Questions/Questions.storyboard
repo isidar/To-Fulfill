@@ -27,7 +27,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What sitution do we want to solve now?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9FF-bd-Tdj">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What sitution do we want to solve now?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9FF-bd-Tdj" userLabel="Question Label">
                                         <rect key="frame" x="9.5" y="40.5" width="300" height="60"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                         <nil key="textColor"/>
@@ -41,27 +41,64 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQF-nC-iw3">
-                                <rect key="frame" x="162" y="605" width="51" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="nextButtonClick:" destination="lUI-7h-9MS" eventType="touchUpInside" id="oKh-Ax-SLE"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="agH-B8-7Lc" userLabel="Buttons Stack View">
+                                <rect key="frame" x="110" y="605" width="155" height="42"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQF-nC-iw3" customClass="NavigationButton" customModule="To_Fulfill" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="155" height="42"/>
+                                        <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                        <state key="normal" title="WE'RE READY">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.45937877890000001" green="0.063305608930000007" blue="0.27048969270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonClick:" destination="lUI-7h-9MS" eventType="touchUpInside" id="oKh-Ax-SLE"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMY-zM-6nx" userLabel="Not Now Button" customClass="NavigationButton" customModule="To_Fulfill" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="42"/>
+                                        <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                        <state key="normal" title="Not now">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.45937877890000001" green="0.063305608930000007" blue="0.27048969270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonClick:" destination="lUI-7h-9MS" eventType="touchUpInside" id="hHQ-6V-LBv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="d9X-lO-Are" firstAttribute="width" secondItem="K4h-Kt-vjk" secondAttribute="width" multiplier="0.85" id="3Y4-Xa-c9H"/>
-                            <constraint firstItem="K4h-Kt-vjk" firstAttribute="bottom" secondItem="YQF-nC-iw3" secondAttribute="bottom" constant="20" id="95e-jv-XpZ"/>
-                            <constraint firstItem="YQF-nC-iw3" firstAttribute="centerX" secondItem="bEi-FW-ZA2" secondAttribute="centerX" id="Ne2-Ul-eLZ"/>
+                            <constraint firstItem="agH-B8-7Lc" firstAttribute="width" relation="lessThanOrEqual" secondItem="K4h-Kt-vjk" secondAttribute="width" multiplier="0.8" id="NVM-zR-DqS"/>
                             <constraint firstItem="d9X-lO-Are" firstAttribute="centerX" secondItem="bEi-FW-ZA2" secondAttribute="centerX" id="UdS-DD-w2m"/>
+                            <constraint firstItem="agH-B8-7Lc" firstAttribute="centerX" secondItem="bEi-FW-ZA2" secondAttribute="centerX" id="brY-Mb-ML9"/>
                             <constraint firstItem="d9X-lO-Are" firstAttribute="centerY" secondItem="bEi-FW-ZA2" secondAttribute="centerY" id="gqy-yZ-zMK"/>
+                            <constraint firstItem="K4h-Kt-vjk" firstAttribute="bottom" secondItem="agH-B8-7Lc" secondAttribute="bottom" constant="20" id="tyL-Km-LXD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K4h-Kt-vjk"/>
                     </view>
+                    <connections>
+                        <outlet property="nextButton" destination="YQF-nC-iw3" id="cAe-Nl-SZQ"/>
+                        <outlet property="notNowButton" destination="QMY-zM-6nx" id="tbR-GX-nnb"/>
+                        <outlet property="questionLabel" destination="9FF-bd-Tdj" id="EEa-XJ-jBy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9NJ-7D-vBA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

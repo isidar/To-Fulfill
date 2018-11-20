@@ -30,37 +30,29 @@ class ConversationViewController: ViewController {
     
 
     @IBAction private func solvingConflictClick(_ sender: UIButton) {
-        show(.questions) { vc in
-            guard let vc = vc as? QuestionsViewController else { return }
-            vc.question = .solvingConflict
-        }
+        showQuestion(.solvingConflict)
     }
     
     @IBAction private func throughToughTimesClick(_ sender: UIButton) {
-        show(.questions) { vc in
-            guard let vc = vc as? QuestionsViewController else { return }
-            vc.question = .throughToughTimes
-        }
+        showQuestion(.throughToughTimes)
     }
     
     @IBAction private func alienationClick(_ sender: UIButton) {
-        show(.questions) { vc in
-            guard let vc = vc as? QuestionsViewController else { return }
-            vc.question = .alienation
-        }
+        showQuestion(.alienation)
     }
     
     @IBAction private func relationshipTransformationClick(_ sender: UIButton) {
-        show(.questions) { vc in
-            guard let vc = vc as? QuestionsViewController else { return }
-            vc.question = .relationshipTransformation
-        }
+        showQuestion(.relationshipTransformation)
     }
     
     @IBAction private func endingUpRelationshipClick(_ sender: UIButton) {
+        showQuestion(.endingUpRelationship)
+    }
+    
+    private func showQuestion(_ questionsTopic: Question) {
         show(.questions) { vc in
             guard let vc = vc as? QuestionsViewController else { return }
-            vc.question = .endingUpRelationship
+            vc.questionsTopic = questionsTopic
         }
     }
     
