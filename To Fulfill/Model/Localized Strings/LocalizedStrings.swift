@@ -9,19 +9,9 @@
 import Foundation
 
 struct LocalizedStrings {
-    struct Launch {
-        struct Questions {}
-        struct UI {}
-    }
     struct Main {}
-    struct Conversation {
-        struct Questions {}
-        struct UI {}
-    }
-    struct Story {
-        struct UI {}
-    }
-    struct SpecialThanks {
-        struct UI {}
-    }
+    struct Conversation {}
+    struct Story {}
+    struct SpecialThanks {}
+    struct Common {}
 }
