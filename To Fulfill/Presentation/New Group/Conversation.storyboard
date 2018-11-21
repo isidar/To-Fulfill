@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina3_5" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,14 +15,14 @@
             <objects>
                 <viewController storyboardIdentifier="conversation" id="0Gp-cW-pAn" customClass="ConversationViewController" customModule="To_Fulfill" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AdX-sf-vCp" customClass="DiagonalView" customModule="To_Fulfill" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="EDZ-fI-8gv" userLabel="Content Stack View">
-                                <rect key="frame" x="24" y="72" width="272" height="336"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="EDZ-fI-8gv" userLabel="Content Stack View">
+                                <rect key="frame" x="31" y="40" width="352" height="537"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="9La-s4-hbj" userLabel="Description Label">
-                                        <rect key="frame" x="0.0" y="0.0" width="272" height="336"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="9La-s4-hbj" userLabel="Description Label">
+                                        <rect key="frame" x="0.0" y="0.0" width="352" height="537"/>
                                         <string key="text">To Fulfill is created to refresh your relationship at different stages. The app was created not only for couples, close friends and relatives.
 Try to choose a convenient place to talk and give this conversation enough time.
 Answer questions one by one, be sincere and courageous.</string>
@@ -31,10 +31,10 @@ Answer questions one by one, be sincere and courageous.</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Jej-kx-5XW" userLabel="Topics Buttons Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="272" height="80"/>
+                                        <rect key="frame" x="0.0" y="298" width="352" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4Q-cq-2s9" userLabel="Solving Conflict Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="272" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="352" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="Solving Conflict">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -44,7 +44,7 @@ Answer questions one by one, be sincere and courageous.</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEY-5j-xDb" userLabel="Through Tough Times Button">
-                                                <rect key="frame" x="0.0" y="20" width="272" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="20" width="352" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="Through Tough Times">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -54,7 +54,7 @@ Answer questions one by one, be sincere and courageous.</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STJ-lV-rDV" userLabel="Alienation Button">
-                                                <rect key="frame" x="0.0" y="40" width="272" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="40" width="352" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="Alienation">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -64,7 +64,7 @@ Answer questions one by one, be sincere and courageous.</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQ5-yo-mvr" userLabel="Relationship transformation Button">
-                                                <rect key="frame" x="0.0" y="60" width="272" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="60" width="352" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="Relationship transformation">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -74,7 +74,7 @@ Answer questions one by one, be sincere and courageous.</string>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emm-zy-inK" userLabel="Ending up relationship Button">
-                                                <rect key="frame" x="0.0" y="80" width="272" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="80" width="352" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="Ending up relationship">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -88,7 +88,7 @@ Answer questions one by one, be sincere and courageous.</string>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbJ-kv-EgI" userLabel="Ready Button" customClass="NavigationButton" customModule="To_Fulfill" customModuleProvider="target">
-                                <rect key="frame" x="64" y="428" width="192" height="32"/>
+                                <rect key="frame" x="82.666666666666671" y="666" width="248.66666666666663" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
                                 <state key="normal" title="WE'RE READY">
@@ -112,11 +112,13 @@ Answer questions one by one, be sincere and courageous.</string>
                             <constraint firstItem="EDZ-fI-8gv" firstAttribute="centerX" secondItem="AdX-sf-vCp" secondAttribute="centerX" id="631-6A-w5g"/>
                             <constraint firstItem="GbJ-kv-EgI" firstAttribute="top" relation="greaterThanOrEqual" secondItem="EDZ-fI-8gv" secondAttribute="bottom" constant="20" id="6qj-Lk-Z6r"/>
                             <constraint firstItem="EDZ-fI-8gv" firstAttribute="height" relation="lessThanOrEqual" secondItem="vwU-uE-TAM" secondAttribute="height" multiplier="0.75" id="AcX-n8-c91"/>
-                            <constraint firstItem="EDZ-fI-8gv" firstAttribute="centerY" secondItem="AdX-sf-vCp" secondAttribute="centerY" id="Bnt-lb-cyY"/>
                             <constraint firstItem="vwU-uE-TAM" firstAttribute="bottom" secondItem="GbJ-kv-EgI" secondAttribute="bottom" constant="20" id="KH7-hT-JFl"/>
+                            <constraint firstItem="EDZ-fI-8gv" firstAttribute="centerY" secondItem="AdX-sf-vCp" secondAttribute="centerY" priority="999" id="OwF-V8-RMd"/>
+                            <constraint firstItem="Jej-kx-5XW" firstAttribute="centerY" secondItem="vwU-uE-TAM" secondAttribute="centerY" id="SQy-0n-oi2"/>
                             <constraint firstItem="GbJ-kv-EgI" firstAttribute="width" secondItem="vwU-uE-TAM" secondAttribute="width" multiplier="0.6" id="Vzm-JB-Meb"/>
                             <constraint firstItem="GbJ-kv-EgI" firstAttribute="height" secondItem="vwU-uE-TAM" secondAttribute="height" multiplier="0.07" id="ZhY-At-JCf"/>
                             <constraint firstItem="EDZ-fI-8gv" firstAttribute="width" secondItem="vwU-uE-TAM" secondAttribute="width" multiplier="0.85" id="f1a-dM-3fi"/>
+                            <constraint firstItem="EDZ-fI-8gv" firstAttribute="top" secondItem="vwU-uE-TAM" secondAttribute="top" constant="20" id="lNI-v0-Imm"/>
                             <constraint firstItem="GbJ-kv-EgI" firstAttribute="centerX" secondItem="AdX-sf-vCp" secondAttribute="centerX" id="xtX-tH-O4f"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vwU-uE-TAM"/>
