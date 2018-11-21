@@ -26,13 +26,13 @@
 				<key>questions</key>
 				<array>
 					<string>What situation do we want to solve now?</string>
-					<string>[3]Which my actions caused the wish to communicate less / not to communicate at all?</string>
+					<string>Which my actions caused the wish to communicate less / not to communicate at all?</string>
 					<string>How did this situation affect trust in our relationship?
 How did this situation affect trust in our relationship?
 How did this situation affect trust in our relationship?</string>
-					<string>[menu]Did I cross your personal boundaries in this conflict? How do you feel about it?</string>
+					<string>Did I cross your personal boundaries in this conflict? How do you feel about it?</string>
 					<string>How should I act in similar situations in future so I won`t hurt your feelings and cross your boundaries?</string>
-					<string>[again]What rules can we set so to make us more comfortable in communication? (if possible - write them on a sheet of paper)</string>
+					<string>What rules can we set so to make us more comfortable in communication? (if possible - write them on a sheet of paper)</string>
 					<string>Did we manage to solve this conflict and are we satisfied with its solution?</string>
 				</array>
 			</dict>
@@ -92,9 +92,9 @@ How did this situation affect trust in our relationship?</string>
 				<string>[menu]Remember that each finish is a new start. If you want to transform your relationship - go to other blocks of questions.</string>
 				<key>questions</key>
 				<array>
-					<string>Are we ready to talk now about the end of our relationship? Do we have strength, time and emotional resources?</string>
+					<string>[2]Are we ready to talk now about the end of our relationship? Do we have strength, time and emotional resources?</string>
 					<string>What was your role in my life? Have you fulfilled it?</string>
-					<string>What didn`t we talk about? When can we get back to a conversation?</string>
+					<string>[menu]What didn`t we talk about? When can we get back to a conversation?</string>
 					<string>How did you feel when you thought about the complete (or partial) stop in our communication?</string>
 					<string>How can a pause in communication affect our relationship?</string>
 					<string>What are you the most grateful for in our relationship?</string>

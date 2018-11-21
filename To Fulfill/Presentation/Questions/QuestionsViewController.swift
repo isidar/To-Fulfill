@@ -39,7 +39,7 @@ class QuestionsViewController: ViewController {
     }
     
     @IBAction private func buttonClick(_ sender: NavigationButton) {
-        UIView.animate(withDuration: 0.5) {
+        UIView.animate(withDuration: 0.4) {
             self.questionLabel.alpha = 0
             self.questionLabel.alpha = 1
         }
@@ -49,7 +49,7 @@ class QuestionsViewController: ViewController {
     private func setupNextQuestion(accordingTo navigationState: NavigationButtonState) {
         switch navigationState {
         case .next,
-             .weAreReady where questionIndex != 0:
+             .weAreReady where questionLabel.text != topicDescription:
             questionIndex += 1
         case .solveOtherConflicts:
             questionIndex = 0
