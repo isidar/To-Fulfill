@@ -21,11 +21,11 @@ class ConversationViewController: ViewController {
     
     
     @IBAction private func readyClick(_ sender: UIButton) {
-        UIView.animate(withDuration: 0.3, animations: {
-            self.topicsButtonsStackView.alpha = 1
-            self.descriptionLabel.alpha = 0
-            self.readyButton.alpha = 0
-        })
+        UIView.animate(withDuration: 0.3) {
+            self.descriptionLabel.text = "Choose the section that is most relevant to your relationship at this moment." /*loc*/
+            self.topicsButtonsStackView.isHidden = false
+            self.readyButton.isHidden = true
+        }
     }
     
 
