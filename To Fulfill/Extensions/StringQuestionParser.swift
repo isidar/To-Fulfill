@@ -8,6 +8,13 @@
 
 import Foundation
 
+enum QuestionFlag {
+    case next
+    case menu
+    case again
+    case redirect(Int)
+}
+
 extension String {
     
     var questionAndFlag: (String, QuestionFlag) {
@@ -33,11 +40,4 @@ extension String {
         return (question, flag)
     }
     
-}
-
-enum QuestionFlag {
-    case next
-    case menu
-    case again
-    case redirect(Int)
 }

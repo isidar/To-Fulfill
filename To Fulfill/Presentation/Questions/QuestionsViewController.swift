@@ -10,6 +10,7 @@ import UIKit
 
 class QuestionsViewController: ViewController {
     
+    @IBOutlet private weak var questionStackView: UIStackView!
     @IBOutlet private weak var questionLabel: UILabel!
     @IBOutlet private weak var nextButton: NavigationButton!
     @IBOutlet private weak var notNowButton: NavigationButton!
@@ -39,30 +40,27 @@ class QuestionsViewController: ViewController {
     }
     
     @IBAction private func buttonClick(_ sender: NavigationButton) {
-        UIView.animate(withDuration: 0.4) {
-            self.questionLabel.alpha = 0
-            self.questionLabel.alpha = 1
-        }
         setupNextQuestion(accordingTo: sender.navigationState)
     }
     
     private func setupNextQuestion(accordingTo navigationState: NavigationButtonState) {
         switch navigationState {
-        case .next,
-             .weAreReady where questionLabel.text != topicDescription:
+        case .next, .weAreReady where questionLabel.text != topicDescription:
             questionIndex += 1
+            
         case .solveOtherConflicts:
             questionIndex = 0
+            
         case .backToMenu:
             navigationController?.popToRootViewController(animated: true)
             return
+            
         case .notNow:
-            let currentQuestionData = questions[safe: questionIndex]
-            switch currentQuestionData?.flag {
-            case .redirect(let nextQuestionIndex)?:
+            let currentQuestionFlag = questions[safe: questionIndex]?.flag
+            if case let QuestionFlag.redirect(nextQuestionIndex)? = currentQuestionFlag {
                 questionIndex = nextQuestionIndex
-            default: break
             }
+            
         default: break
         }
         
@@ -71,36 +69,42 @@ class QuestionsViewController: ViewController {
     }
     
     private func setupButtonsAppearanceForNextQuestion() {
-        let nextQuestionData = questions[safe: questionIndex]
+        guard let nextQuestionFlag = questions[safe: questionIndex]?.flag else { return }
         
-        switch nextQuestionData?.flag {
-        case .next?:
+        switch nextQuestionFlag {
+        case .next:
             nextButton.navigationState = .next
             notNowButton.isHidden = true
-        case .menu? where !notNowButton.isHidden:
+            
+        case .menu where !notNowButton.isHidden:
             nextButton.navigationState = .backToMenu
             notNowButton.isHidden = true
-        case .again? where !notNowButton.isHidden:
+            
+        case .again where !notNowButton.isHidden:
             nextButton.navigationState = .solveOtherConflicts
             notNowButton.isHidden = true
-        case .menu? where notNowButton.isHidden,
-             .again? where notNowButton.isHidden:
+            
+        case .menu where notNowButton.isHidden,
+             .again where notNowButton.isHidden:
             questionIndex += 1
             setupButtonsAppearanceForNextQuestion()
-        case .redirect?:
+            
+        case .redirect:
             nextButton.navigationState = .weAreReady
             notNowButton.isHidden = false
+            
         default: break
         }
     }
     
+    
     private func setupTextForNextQuestion() {
-        let nextQuestionData = questions[safe: questionIndex]
+        let animationDuration = 0.4
         
-        if let nextQuestion = nextQuestionData?.question {
-            questionLabel.text = nextQuestion
+        if let nextQuestion = questions[safe: questionIndex]?.question {
+            changeText(to: nextQuestion, withAnimationDuration: animationDuration)
         } else {
-            questionLabel.text = adviseData.advice
+            changeText(to: adviseData.advice, withAnimationDuration: animationDuration)
             
             switch adviseData.flag {
             case .menu:
@@ -111,6 +115,15 @@ class QuestionsViewController: ViewController {
                 nextButton.isHidden = true
             }
             notNowButton.isHidden = true
+        }
+    }
+    
+    func changeText(to text: String, withAnimationDuration: TimeInterval) {
+        questionLabel.text = text
+        UIView.animate(withDuration: withAnimationDuration) {
+            self.questionLabel.alpha = 0
+            self.questionLabel.alpha = 1
+            self.questionStackView.layoutIfNeeded()
         }
     }
 

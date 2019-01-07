@@ -34,4 +34,8 @@ extension UIColor {
         self.init(red: red, green: green, blue: blue, alpha: alpha)
     }
     
+    static var background: UIColor {
+        return UIColor(hexString: "#bfffc0")
+    }
+    
 }
