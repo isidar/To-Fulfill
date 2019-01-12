@@ -27,7 +27,7 @@ class QuestionsViewController: ViewController {
         
         navigationItem.title = questionsTopic.rawValue
         nextButton.navigationState = .weAreReady
-        notNowButton.navigationState = .notNow
+        notNowButton?.navigationState = .notNow
         
         fetchData()
         questionLabel.text = topicDescription
@@ -45,7 +45,8 @@ class QuestionsViewController: ViewController {
     
     private func setupNextQuestion(accordingTo navigationState: NavigationButtonState) {
         switch navigationState {
-        case .next, .weAreReady where questionLabel.text != topicDescription:
+        case .next,
+             .weAreReady where questionLabel.text != topicDescription:
             questionIndex += 1
             
         case .solveOtherConflicts:
@@ -99,7 +100,7 @@ class QuestionsViewController: ViewController {
     
     
     private func setupTextForNextQuestion() {
-        let animationDuration = 0.4
+        let animationDuration = 0.2
         
         if let nextQuestion = questions[safe: questionIndex]?.question {
             changeText(to: nextQuestion, withAnimationDuration: animationDuration)

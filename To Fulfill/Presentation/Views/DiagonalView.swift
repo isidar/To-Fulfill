@@ -12,10 +12,10 @@ import UIKit
 class DiagonalView: UIView {
     
     @IBInspectable
-    var topPointRatio: CGFloat = 0.9
+    var topPointRatio: CGFloat = 1
     
     @IBInspectable
-    var bottomPointRatio: CGFloat = -0.01
+    var bottomPointRatio: CGFloat = 0
     
     @IBInspectable
     var secondBackgroundColor: UIColor = .white

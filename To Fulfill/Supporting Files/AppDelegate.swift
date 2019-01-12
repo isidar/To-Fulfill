@@ -15,7 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let newFont: UIFont = .clickerScriptRegular(30)
+        let attributes = [NSAttributedString.Key.font: newFont]
+        UINavigationBar.appearance().titleTextAttributes = attributes
+        
         return true
     }
 

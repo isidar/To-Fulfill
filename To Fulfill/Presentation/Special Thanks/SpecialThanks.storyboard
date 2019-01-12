@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="montserrat-light.ttf">
+            <string>Montserrat-Light</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Special Thanks View Controller-->
         <scene sceneID="gVg-g5-ead">
@@ -18,18 +23,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="ITj-7v-Evh" userLabel="Thanks Label">
-                                <rect key="frame" x="28" y="74.5" width="319" height="518"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="ITj-7v-Evh" userLabel="Thanks Label">
+                                <rect key="frame" x="28" y="90.5" width="319" height="506"/>
                                 <string key="text">We do want to say huge thank you to everyone who helped us to make our Fulfill dream come true. Special thanks go to: Mary Zaremba and Mykhailo Komarov for our logo, Vladyslava Tashkinova for our design, Annika Udovenko for helping with wording, Helen Shakhova for copywriting and support 24/7, Olga Semenova for professional psychotherapy advices, Nazarii Melnyk for developing, Denis Rumiyantsev for testing and Denys Boiechko for huge help.
 We wouldn`t be able to fulfill without you.
 </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Developed by Nazarii Melnyk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="GcM-Ln-ptL" userLabel="Developed By Label">
-                                <rect key="frame" x="37.5" y="624" width="300" height="23"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <rect key="frame" x="37.5" y="616.5" width="300" height="30.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -37,9 +42,9 @@ We wouldn`t be able to fulfill without you.
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ITj-7v-Evh" firstAttribute="height" relation="lessThanOrEqual" secondItem="Q7z-ST-5IA" secondAttribute="height" multiplier="0.8" id="9dq-p8-aAR"/>
-                            <constraint firstItem="ITj-7v-Evh" firstAttribute="centerX" secondItem="enq-m9-gP9" secondAttribute="centerX" id="No0-1J-BMc"/>
+                            <constraint firstItem="ITj-7v-Evh" firstAttribute="centerX" secondItem="Q7z-ST-5IA" secondAttribute="centerX" id="No0-1J-BMc"/>
                             <constraint firstItem="GcM-Ln-ptL" firstAttribute="centerX" secondItem="enq-m9-gP9" secondAttribute="centerX" id="VgV-TZ-fdA"/>
-                            <constraint firstItem="ITj-7v-Evh" firstAttribute="centerY" secondItem="enq-m9-gP9" secondAttribute="centerY" id="bsD-45-GW2"/>
+                            <constraint firstItem="ITj-7v-Evh" firstAttribute="centerY" secondItem="Q7z-ST-5IA" secondAttribute="centerY" id="bsD-45-GW2"/>
                             <constraint firstItem="Q7z-ST-5IA" firstAttribute="bottom" secondItem="GcM-Ln-ptL" secondAttribute="bottom" constant="20" id="om3-Qs-t3g"/>
                             <constraint firstItem="GcM-Ln-ptL" firstAttribute="width" secondItem="Q7z-ST-5IA" secondAttribute="width" multiplier="0.8" id="qaE-aK-ODF"/>
                             <constraint firstItem="ITj-7v-Evh" firstAttribute="width" secondItem="Q7z-ST-5IA" secondAttribute="width" multiplier="0.85" id="vcY-VP-ndU"/>

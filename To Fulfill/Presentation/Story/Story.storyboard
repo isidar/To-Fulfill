@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="montserrat-light.ttf">
+            <string>Montserrat-Light</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Story View Controller-->
         <scene sceneID="51E-2u-mRp">
@@ -18,16 +23,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="VNB-ru-0CQ" userLabel="Story Label">
-                                <rect key="frame" x="28" y="74.5" width="319" height="518"/>
-                                <mutableString key="text">The two of us were the closest people to each other for almost 2 years. Without dating, we built relationship full of support, joy and hope. 
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="VNB-ru-0CQ" userLabel="Story Label">
+                                <rect key="frame" x="28" y="84.5" width="319" height="518"/>
+                                <string key="text">The two of us were the closest people to each other for almost 2 years. Without dating, we built relationship full of support, joy and hope. 
 On October 18 we`ve realized that something between us was broken: for some period of time we were experiencing offence, the lack of personal space and awkward moments in communication. In order to finish our relationships with dignity, we collected a list of questions for each other, met and listened carefully. 
 With these questions, magic has happened: together we could pass the period full of misunderstandings and anger.
 We are not psychologists. We are just people who don`t want to leave both of you with unanswered questions.
 Yours,
 Diana and Alla.
-</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+</string>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -35,8 +40,8 @@ Diana and Alla.
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="VNB-ru-0CQ" firstAttribute="height" secondItem="dla-dx-hAU" secondAttribute="height" multiplier="0.8" id="5ya-gC-bY5"/>
-                            <constraint firstItem="VNB-ru-0CQ" firstAttribute="centerX" secondItem="kR8-bQ-baG" secondAttribute="centerX" id="JTR-Hg-Sal"/>
-                            <constraint firstItem="VNB-ru-0CQ" firstAttribute="centerY" secondItem="kR8-bQ-baG" secondAttribute="centerY" id="erA-oA-opv"/>
+                            <constraint firstItem="VNB-ru-0CQ" firstAttribute="centerX" secondItem="dla-dx-hAU" secondAttribute="centerX" id="JTR-Hg-Sal"/>
+                            <constraint firstItem="VNB-ru-0CQ" firstAttribute="centerY" secondItem="dla-dx-hAU" secondAttribute="centerY" id="erA-oA-opv"/>
                             <constraint firstItem="VNB-ru-0CQ" firstAttribute="width" secondItem="dla-dx-hAU" secondAttribute="width" multiplier="0.85" id="rte-KT-XtS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dla-dx-hAU"/>

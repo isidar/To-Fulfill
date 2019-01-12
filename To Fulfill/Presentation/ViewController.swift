@@ -26,4 +26,3 @@ class ViewController: UIViewController {
 }
 
 // Colors: #bfffc0 #ace3cf
-// Fonts: Rage Italic, Open San

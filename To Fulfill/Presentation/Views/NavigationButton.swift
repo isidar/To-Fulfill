@@ -9,25 +9,11 @@
 import UIKit
 
 @IBDesignable
-class NavigationButton: UIButton {
+class NavigationButton: ExtendedButton {
     
     var navigationState: NavigationButtonState = .weAreReady {
         didSet {
             setTitle(navigationState.rawValue, for: .normal)
-        }
-    }
-    
-    @IBInspectable
-    var borderColor: UIColor = .clear {
-        didSet {
-            layer.borderColor = borderColor.cgColor
-        }
-    }
-    
-    @IBInspectable
-    var borderWidth: CGFloat = 0 {
-        didSet {
-            layer.borderWidth = borderWidth
         }
     }
 

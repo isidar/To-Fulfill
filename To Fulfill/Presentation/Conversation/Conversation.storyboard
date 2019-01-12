@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="montserrat-light.ttf">
+            <string>Montserrat-Light</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Conversation View Controller-->
         <scene sceneID="2s8-vh-c9l">
@@ -26,59 +31,99 @@
                                         <string key="text">To Fulfill is created to refresh your relationship at different stages. The app was created not only for couples, close friends and relatives.
 Try to choose a convenient place to talk and give this conversation enough time.
 Answer questions one by one, be sincere and courageous.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Jej-kx-5XW" userLabel="Topics Buttons Stack View">
                                         <rect key="frame" x="0.0" y="214" width="272" height="80"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4Q-cq-2s9" userLabel="Solving Conflict Button">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4Q-cq-2s9" userLabel="Solving Conflict Button" customClass="ExtendedButton" customModule="To_Fulfill" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="272" height="0.0"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="20"/>
                                                 <state key="normal" title="Solving Conflict">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="solvingConflictClick:" destination="0Gp-cW-pAn" eventType="touchUpInside" id="rFQ-eU-W0C"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEY-5j-xDb" userLabel="Through Tough Times Button">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEY-5j-xDb" userLabel="Through Tough Times Button" customClass="ExtendedButton" customModule="To_Fulfill" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="20" width="272" height="0.0"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="20"/>
                                                 <state key="normal" title="Through Tough Times">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="throughToughTimesClick:" destination="0Gp-cW-pAn" eventType="touchUpInside" id="D4V-XL-UVY"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STJ-lV-rDV" userLabel="Alienation Button">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STJ-lV-rDV" userLabel="Alienation Button" customClass="ExtendedButton" customModule="To_Fulfill" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="40" width="272" height="0.0"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="20"/>
                                                 <state key="normal" title="Alienation">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="alienationClick:" destination="0Gp-cW-pAn" eventType="touchUpInside" id="yQj-8r-K0Y"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQ5-yo-mvr" userLabel="Relationship transformation Button">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQ5-yo-mvr" userLabel="Relationship transformation Button" customClass="ExtendedButton" customModule="To_Fulfill" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="60" width="272" height="0.0"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="20"/>
                                                 <state key="normal" title="Relationship transformation">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="relationshipTransformationClick:" destination="0Gp-cW-pAn" eventType="touchUpInside" id="oUc-4b-Bp9"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emm-zy-inK" userLabel="Ending up relationship Button">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emm-zy-inK" userLabel="Ending up relationship Button" customClass="ExtendedButton" customModule="To_Fulfill" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="80" width="272" height="0.0"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="20"/>
                                                 <state key="normal" title="Ending up relationship">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="endingUpRelationshipClick:" destination="0Gp-cW-pAn" eventType="touchUpInside" id="uuw-XT-2EM"/>
                                                 </connections>
@@ -88,8 +133,8 @@ Answer questions one by one, be sincere and courageous.</string>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbJ-kv-EgI" userLabel="Ready Button" customClass="NavigationButton" customModule="To_Fulfill" customModuleProvider="target">
-                                <rect key="frame" x="64" y="493" width="192" height="55"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="32" y="493" width="256" height="55"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
                                 <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
                                 <state key="normal" title="WE'RE READY">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -115,7 +160,7 @@ Answer questions one by one, be sincere and courageous.</string>
                             <constraint firstItem="vwU-uE-TAM" firstAttribute="bottom" secondItem="GbJ-kv-EgI" secondAttribute="bottom" constant="20" id="KH7-hT-JFl"/>
                             <constraint firstItem="EDZ-fI-8gv" firstAttribute="centerY" secondItem="AdX-sf-vCp" secondAttribute="centerY" priority="999" id="OwF-V8-RMd"/>
                             <constraint firstItem="Jej-kx-5XW" firstAttribute="centerY" secondItem="vwU-uE-TAM" secondAttribute="centerY" id="SQy-0n-oi2"/>
-                            <constraint firstItem="GbJ-kv-EgI" firstAttribute="width" secondItem="vwU-uE-TAM" secondAttribute="width" multiplier="0.6" id="Vzm-JB-Meb"/>
+                            <constraint firstItem="GbJ-kv-EgI" firstAttribute="width" secondItem="vwU-uE-TAM" secondAttribute="width" multiplier="0.8" id="Vzm-JB-Meb"/>
                             <constraint firstItem="GbJ-kv-EgI" firstAttribute="height" secondItem="vwU-uE-TAM" secondAttribute="height" multiplier="0.1" id="ZhY-At-JCf"/>
                             <constraint firstItem="EDZ-fI-8gv" firstAttribute="width" secondItem="vwU-uE-TAM" secondAttribute="width" multiplier="0.85" id="f1a-dM-3fi"/>
                             <constraint firstItem="EDZ-fI-8gv" firstAttribute="top" secondItem="vwU-uE-TAM" secondAttribute="top" constant="20" id="lNI-v0-Imm"/>
