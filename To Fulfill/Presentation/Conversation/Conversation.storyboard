@@ -172,6 +172,7 @@ Answer questions one by one, be sincere and courageous.</string>
                         <viewLayoutGuide key="safeArea" id="vwU-uE-TAM"/>
                     </view>
                     <connections>
+                        <outlet property="contentStackView" destination="EDZ-fI-8gv" id="Uz1-Zi-uXJ"/>
                         <outlet property="descriptionLabel" destination="9La-s4-hbj" id="wTP-tN-I5R"/>
                         <outlet property="readyButton" destination="GbJ-kv-EgI" id="1Er-11-lOH"/>
                         <outlet property="topicsButtonsStackView" destination="Jej-kx-5XW" id="gVS-is-RDJ"/>
