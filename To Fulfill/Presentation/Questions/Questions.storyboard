@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,27 +20,27 @@
             <objects>
                 <viewController storyboardIdentifier="questions" id="lUI-7h-9MS" customClass="QuestionsViewController" customModule="To_Fulfill" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bEi-FW-ZA2" customClass="DiagonalView" customModule="To_Fulfill" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="d9X-lO-Are" userLabel="Question Stack View">
-                                <rect key="frame" x="24" y="95" width="272" height="378"/>
+                                <rect key="frame" x="31" y="272.5" width="352" height="351.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="––––––" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDI-rj-KaH">
-                                        <rect key="frame" x="0.0" y="0.0" width="272" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="352" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="749" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9FF-bd-Tdj" userLabel="Question Label">
-                                        <rect key="frame" x="0.0" y="40.5" width="272" height="297"/>
+                                        <rect key="frame" x="0.0" y="40.5" width="352" height="270.5"/>
                                         <string key="text">This block is dedicated to help you to go through the tough period of your relationship, when difficult circumstances such as illness / death of a loved one, loss / change of work, etc. occurred in your or your partner/friend/relative life.</string>
                                         <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="––––––" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smo-rP-A1a">
-                                        <rect key="frame" x="0.0" y="357.5" width="272" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="331" width="352" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -48,10 +48,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="agH-B8-7Lc" userLabel="Buttons Stack View">
-                                <rect key="frame" x="32" y="493" width="256" height="55"/>
+                                <rect key="frame" x="41.5" y="784.5" width="331" height="57.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQF-nC-iw3" customClass="NavigationButton" customModule="To_Fulfill" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="256" height="55"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="57.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="18"/>
                                         <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
                                         <state key="normal" title="WE'RE READY">
@@ -70,7 +70,7 @@
                                         </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMY-zM-6nx" userLabel="Not Now Button" customClass="NavigationButton" customModule="To_Fulfill" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="55"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="57.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="18"/>
                                         <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
                                         <state key="normal" title="Not now">
@@ -98,7 +98,7 @@
                             <constraint firstItem="d9X-lO-Are" firstAttribute="centerX" secondItem="bEi-FW-ZA2" secondAttribute="centerX" id="UdS-DD-w2m"/>
                             <constraint firstItem="agH-B8-7Lc" firstAttribute="centerX" secondItem="bEi-FW-ZA2" secondAttribute="centerX" id="brY-Mb-ML9"/>
                             <constraint firstItem="agH-B8-7Lc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="d9X-lO-Are" secondAttribute="bottom" constant="20" id="dmy-mt-97G"/>
-                            <constraint firstItem="agH-B8-7Lc" firstAttribute="height" secondItem="K4h-Kt-vjk" secondAttribute="height" multiplier="0.1" id="gfQ-3G-d5K"/>
+                            <constraint firstItem="agH-B8-7Lc" firstAttribute="height" secondItem="K4h-Kt-vjk" secondAttribute="height" multiplier="0.07" id="gfQ-3G-d5K"/>
                             <constraint firstItem="d9X-lO-Are" firstAttribute="centerY" secondItem="bEi-FW-ZA2" secondAttribute="centerY" id="gqy-yZ-zMK"/>
                             <constraint firstItem="K4h-Kt-vjk" firstAttribute="bottom" secondItem="agH-B8-7Lc" secondAttribute="bottom" constant="20" id="tyL-Km-LXD"/>
                         </constraints>
