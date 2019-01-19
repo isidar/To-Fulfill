@@ -8,6 +8,16 @@
 
 import Foundation
 
+enum Question: String { /*loc*/
+    case solvingConflict = "Solving Conflict"
+    case throughToughTimes = "Through Tough Times"
+    case alienation = "Alienation"
+    case relationshipTransformation = "Relationship Transformation"
+    case endingUpRelationship = "Ending Up Relationship"
+    
+    var string: String { return "\(self)" }
+}
+
 class QuestionsManager {
     
     static let shared = QuestionsManager()
@@ -42,14 +52,4 @@ class QuestionsManager {
         }
     }
     
-}
-
-enum Question: String { /*loc*/
-    case solvingConflict = "Solving Conflict"
-    case throughToughTimes = "Through Tough Times"
-    case alienation = "Alienation"
-    case relationshipTransformation = "Relationship Transformation"
-    case endingUpRelationship = "Ending Up Relationship"
-    
-    var string: String { return "\(self)" }
 }

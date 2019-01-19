@@ -10,6 +10,7 @@ import UIKit
 
 class QuestionsViewController: ViewController {
     
+    @IBOutlet private weak var imageView: UIImageView!
     @IBOutlet private weak var questionStackView: UIStackView!
     @IBOutlet private weak var questionLabel: UILabel!
     @IBOutlet private weak var nextButton: NavigationButton!
@@ -25,6 +26,7 @@ class QuestionsViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        imageView.image = .getImageFor(question: questionsTopic)
         navigationItem.title = questionsTopic.rawValue
         nextButton.navigationState = .weAreReady
         notNowButton?.navigationState = .notNow

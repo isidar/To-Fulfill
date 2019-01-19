@@ -15,6 +15,7 @@
 		2120E17321A431A300787AA2 /* Story+Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120E17221A431A300787AA2 /* Story+Strings.swift */; };
 		2120E17521A431B600787AA2 /* SpecialThanks+Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120E17421A431B600787AA2 /* SpecialThanks+Strings.swift */; };
 		2120E17821A4347900787AA2 /* Common+Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120E17721A4347900787AA2 /* Common+Strings.swift */; };
+		212B5B0821F36D9100BCCDDA /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212B5B0721F36D9100BCCDDA /* UIImage.swift */; };
 		2151C8E4218CB66700C7F416 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2151C8E3218CB66700C7F416 /* AppDelegate.swift */; };
 		2151C8E6218CB66700C7F416 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2151C8E5218CB66700C7F416 /* MainViewController.swift */; };
 		2151C8EB218CB66800C7F416 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2151C8EA218CB66800C7F416 /* Assets.xcassets */; };
@@ -54,6 +55,7 @@
 		2120E17221A431A300787AA2 /* Story+Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Story+Strings.swift"; sourceTree = "<group>"; };
 		2120E17421A431B600787AA2 /* SpecialThanks+Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpecialThanks+Strings.swift"; sourceTree = "<group>"; };
 		2120E17721A4347900787AA2 /* Common+Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Common+Strings.swift"; sourceTree = "<group>"; };
+		212B5B0721F36D9100BCCDDA /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		2151C8E0218CB66700C7F416 /* To Fulfill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To Fulfill.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2151C8E3218CB66700C7F416 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2151C8E5218CB66700C7F416 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 				219113CB21E4C4E8004D34BD /* UIFont.swift */,
 				2120E16A21A2FFD000787AA2 /* StringQuestionParser.swift */,
 				21F32DCB2198885D00E5C426 /* UIColor.swift */,
+				212B5B0721F36D9100BCCDDA /* UIImage.swift */,
 				2120E16C21A418A500787AA2 /* Array.swift */,
 			);
 			path = Extensions;
@@ -374,6 +377,7 @@
 				2151C8E4218CB66700C7F416 /* AppDelegate.swift in Sources */,
 				21BE4A32218CF6D9005F8938 /* LocalizedStrings.swift in Sources */,
 				2120E16F21A4317800787AA2 /* Main+Strings.swift in Sources */,
+				212B5B0821F36D9100BCCDDA /* UIImage.swift in Sources */,
 				21E10D06219857A000FB6BF2 /* ViewController.swift in Sources */,
 				2120E16D21A418A500787AA2 /* Array.swift in Sources */,
 				21FA49D4218F1E7D00C63496 /* DiagonalView.swift in Sources */,
