@@ -31,20 +31,22 @@ class ConversationViewController: ViewController {
         separatorImageView.isHidden = false
         readyButton.isHidden = true
         
+        let separatorAnimation: (Bool) -> Void = { [weak self] _ in
+            UIView.animate(withDuration: 0.3) {
+                self?.separatorImageView.alpha = 1
+            }
+        }
+        let descriptionAnimation: (Bool) -> Void = { [weak self] _ in
+            UIView.animate(withDuration: 0.6, animations: {
+                self?.descriptionLabel.alpha = 1
+            }, completion: separatorAnimation)
+        }
+        
         UIView.animate(withDuration: 0.5, animations: {
             self.topicsButtonsStackView.isHidden = false
             self.topicsButtonsStackView.alpha = 1
-            
             self.contentStackView.layoutIfNeeded()
-        }) { [weak self] _ in
-            UIView.animate(withDuration: 0.6, animations: {
-                self?.descriptionLabel.alpha = 1
-            }) { _ in
-                UIView.animate(withDuration: 0.3) {
-                    self?.separatorImageView.alpha = 1
-                }
-            }
-        }
+        }, completion: descriptionAnimation)
     }
 
     @IBAction private func solvingConflictClick(_ sender: UIButton) {
