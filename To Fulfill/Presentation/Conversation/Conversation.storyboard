@@ -41,6 +41,9 @@ Answer questions one by one, be sincere and courageous.</string>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wavedLine" translatesAutoresizingMaskIntoConstraints="NO" id="MNo-8n-XD8" userLabel="Separator Image View">
+                                        <rect key="frame" x="48" y="342" width="256" height="32.5"/>
+                                    </imageView>
                                     <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Jej-kx-5XW" userLabel="Topics Buttons Stack View">
                                         <rect key="frame" x="38.5" y="342" width="275" height="368"/>
                                         <subviews>
@@ -161,6 +164,7 @@ Answer questions one by one, be sincere and courageous.</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="EDZ-fI-8gv" firstAttribute="centerX" secondItem="vwU-uE-TAM" secondAttribute="centerX" id="631-6A-w5g"/>
+                            <constraint firstItem="MNo-8n-XD8" firstAttribute="height" secondItem="vwU-uE-TAM" secondAttribute="height" multiplier="0.04" id="6Vs-7K-FxS"/>
                             <constraint firstItem="GbJ-kv-EgI" firstAttribute="height" secondItem="vwU-uE-TAM" secondAttribute="height" multiplier="0.07" id="7N6-dx-Grq"/>
                             <constraint firstItem="Jej-kx-5XW" firstAttribute="height" secondItem="vwU-uE-TAM" secondAttribute="height" multiplier="0.45" id="8hb-nh-HRC"/>
                             <constraint firstItem="EDZ-fI-8gv" firstAttribute="centerY" secondItem="AdX-sf-vCp" secondAttribute="centerY" id="Bcn-7a-Mga"/>
@@ -175,6 +179,7 @@ Answer questions one by one, be sincere and courageous.</string>
                         <outlet property="contentStackView" destination="EDZ-fI-8gv" id="Uz1-Zi-uXJ"/>
                         <outlet property="descriptionLabel" destination="9La-s4-hbj" id="wTP-tN-I5R"/>
                         <outlet property="readyButton" destination="GbJ-kv-EgI" id="1Er-11-lOH"/>
+                        <outlet property="separatorImageView" destination="MNo-8n-XD8" id="bQa-av-OCa"/>
                         <outlet property="topicsButtonsStackView" destination="Jej-kx-5XW" id="gVS-is-RDJ"/>
                     </connections>
                 </viewController>
@@ -185,5 +190,6 @@ Answer questions one by one, be sincere and courageous.</string>
     </scenes>
     <resources>
         <image name="conversation" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="wavedLine" width="256" height="73"/>
     </resources>
 </document>

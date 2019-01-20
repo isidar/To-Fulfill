@@ -13,6 +13,7 @@ class ConversationViewController: ViewController {
     @IBOutlet private weak var contentStackView: UIStackView!
     @IBOutlet private weak var topicsButtonsStackView: UIStackView!
     @IBOutlet private weak var descriptionLabel: UILabel!
+    @IBOutlet private weak var separatorImageView: UIImageView!
     @IBOutlet private weak var readyButton: UIButton!
     
     override func viewDidLoad() {
@@ -26,6 +27,8 @@ class ConversationViewController: ViewController {
     @IBAction private func readyClick(_ sender: UIButton) {
         descriptionLabel.alpha = 0
         descriptionLabel.text = "Choose the section that is most relevant to your relationship at this moment." /*loc*/
+        separatorImageView.alpha = 0
+        separatorImageView.isHidden = false
         readyButton.isHidden = true
         
         UIView.animate(withDuration: 0.5, animations: {
@@ -33,9 +36,13 @@ class ConversationViewController: ViewController {
             self.topicsButtonsStackView.alpha = 1
             
             self.contentStackView.layoutIfNeeded()
-        }) { _ in
-            UIView.animate(withDuration: 0.8) {
-                self.descriptionLabel.alpha = 1
+        }) { [weak self] _ in
+            UIView.animate(withDuration: 0.6, animations: {
+                self?.descriptionLabel.alpha = 1
+            }) { _ in
+                UIView.animate(withDuration: 0.3) {
+                    self?.separatorImageView.alpha = 1
+                }
             }
         }
     }
