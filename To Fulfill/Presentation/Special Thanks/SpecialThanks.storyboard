@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,32 +20,31 @@
             <objects>
                 <viewController storyboardIdentifier="specialThanks" id="sxm-Hg-0pZ" customClass="SpecialThanksViewController" customModule="To_Fulfill" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="enq-m9-gP9" customClass="DiagonalView" customModule="To_Fulfill" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="ITj-7v-Evh" userLabel="Thanks Label">
-                                <rect key="frame" x="28" y="90.5" width="319" height="506"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="ITj-7v-Evh" userLabel="Thanks Label">
+                                <rect key="frame" x="24" y="54.5" width="272" height="449.5"/>
                                 <string key="text">We do want to say huge thank you to everyone who helped us to make our Fulfill dream come true. Special thanks go to: Mary Zaremba and Mykhailo Komarov for our logo, Vladyslava Tashkinova for our design, Annika Udovenko for helping with wording, Helen Shakhova for copywriting and support 24/7, Olga Semenova for professional psychotherapy advices, Nazarii Melnyk for developing, Denis Rumiyantsev for testing and Denys Boiechko for huge help.
-We wouldn`t be able to fulfill without you.
-</string>
-                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="25"/>
+We wouldn`t be able to fulfill without you.</string>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Developed by Nazarii Melnyk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="GcM-Ln-ptL" userLabel="Developed By Label">
-                                <rect key="frame" x="37.5" y="616.5" width="300" height="30.5"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="25"/>
+                                <rect key="frame" x="32" y="524" width="256" height="24"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ITj-7v-Evh" firstAttribute="height" relation="lessThanOrEqual" secondItem="Q7z-ST-5IA" secondAttribute="height" multiplier="0.8" id="9dq-p8-aAR"/>
                             <constraint firstItem="ITj-7v-Evh" firstAttribute="centerX" secondItem="Q7z-ST-5IA" secondAttribute="centerX" id="No0-1J-BMc"/>
                             <constraint firstItem="GcM-Ln-ptL" firstAttribute="centerX" secondItem="enq-m9-gP9" secondAttribute="centerX" id="VgV-TZ-fdA"/>
-                            <constraint firstItem="ITj-7v-Evh" firstAttribute="centerY" secondItem="Q7z-ST-5IA" secondAttribute="centerY" id="bsD-45-GW2"/>
+                            <constraint firstItem="ITj-7v-Evh" firstAttribute="centerY" secondItem="Q7z-ST-5IA" secondAttribute="centerY" multiplier="0.95" id="bsD-45-GW2"/>
                             <constraint firstItem="Q7z-ST-5IA" firstAttribute="bottom" secondItem="GcM-Ln-ptL" secondAttribute="bottom" constant="20" id="om3-Qs-t3g"/>
+                            <constraint firstItem="ITj-7v-Evh" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Q7z-ST-5IA" secondAttribute="top" constant="20" id="qDd-c2-Kc6"/>
                             <constraint firstItem="GcM-Ln-ptL" firstAttribute="width" secondItem="Q7z-ST-5IA" secondAttribute="width" multiplier="0.8" id="qaE-aK-ODF"/>
                             <constraint firstItem="ITj-7v-Evh" firstAttribute="width" secondItem="Q7z-ST-5IA" secondAttribute="width" multiplier="0.85" id="vcY-VP-ndU"/>
                             <constraint firstItem="GcM-Ln-ptL" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ITj-7v-Evh" secondAttribute="bottom" constant="20" id="zMo-vC-WRb"/>

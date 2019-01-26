@@ -42,7 +42,7 @@ Answer questions one by one, be sincere and courageous.</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wavedLine" translatesAutoresizingMaskIntoConstraints="NO" id="MNo-8n-XD8" userLabel="Separator Image View">
-                                        <rect key="frame" x="48" y="342" width="256" height="32.5"/>
+                                        <rect key="frame" x="-336" y="342" width="1024" height="32.5"/>
                                     </imageView>
                                     <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Jej-kx-5XW" userLabel="Topics Buttons Stack View">
                                         <rect key="frame" x="38.5" y="342" width="275" height="368"/>
@@ -190,6 +190,6 @@ Answer questions one by one, be sincere and courageous.</string>
     </scenes>
     <resources>
         <image name="conversation" width="409.60000610351562" height="409.60000610351562"/>
-        <image name="wavedLine" width="256" height="73"/>
+        <image name="wavedLine" width="1024" height="140"/>
     </resources>
 </document>
