@@ -8,8 +8,6 @@
 
 import Foundation
 
-extension LocalizedStrings.Common {
-    struct UI: Localizable {
-        static var backButton: String { return localize(#function) }
-    }
+extension LocalizedStrings.Common: Localizable {
+    static var backButton: String { return localize(#function) }
 }

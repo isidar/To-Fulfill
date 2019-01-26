@@ -9,8 +9,7 @@
 import Foundation
 
 extension LocalizedStrings.Main: Localizable {
-    static var logo: String { return localize(#function) }
-    static var conversationButton: String { return localize(#function) }
-    static var storyButton: String { return localize(#function) }
-    static var specialThanksButton: String { return localize(#function) }
+    static var conversationButtonsLabel: String { return localize(#function) }
+    static var storyButtonsLabel: String { return localize(#function) }
+    static var specialThanksButtonsLabel: String { return localize(#function) }
 }

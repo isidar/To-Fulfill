@@ -8,8 +8,6 @@
 
 import Foundation
 
-extension LocalizedStrings.SpecialThanks {
-    struct UI: Localizable {
-        static var title: String { return localize(#function) }
-    }
+extension LocalizedStrings.SpecialThanks: Localizable {
+    static var title: String { return localize(#function) }
 }

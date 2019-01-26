@@ -8,8 +8,6 @@
 
 import Foundation
 
-extension LocalizedStrings.Story {
-    struct UI: Localizable {
-        static var title: String { return localize(#function) }
-    }
+extension LocalizedStrings.Story: Localizable {
+    static var title: String { return localize(#function) }
 }
