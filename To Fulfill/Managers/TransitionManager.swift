@@ -8,10 +8,16 @@
 
 import UIKit
 
+enum ViewControllerToShow: String {
+    case questions
+    case conversation
+    case story
+    case specialThanks
+}
+
 class TransitionManager {
     
     static let shared = TransitionManager()
-    
     private init() {}
     
     func show(_ vc: ViewControllerToShow, presentingVC: UIViewController, configure: ((UIViewController) -> Void)?) {
@@ -21,11 +27,4 @@ class TransitionManager {
         presentingVC.show(vc, sender: nil)
     }
     
-}
-
-enum ViewControllerToShow: String {
-    case questions
-    case conversation
-    case story
-    case specialThanks
 }

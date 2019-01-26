@@ -8,6 +8,15 @@
 
 import UIKit
 
+/*loc*/
+enum NavigationButtonState: String {
+    case weAreReady = "WE’RE READY"
+    case notNow = "Not now" // currently disabled according to new requirements
+    case next = "Next"
+    case solveOtherConflicts = "Solve other conflict"
+    case backToMenu = "Back to menu"
+}
+
 @IBDesignable
 class NavigationButton: ExtendedButton {
     
@@ -17,13 +26,4 @@ class NavigationButton: ExtendedButton {
         }
     }
 
-}
-
-/*loc*/
-enum NavigationButtonState: String {
-    case weAreReady = "WE’RE READY"
-    case notNow = "Not now" // currently disabled according to new requirements
-    case next = "Next"
-    case solveOtherConflicts = "Solve other conflict"
-    case backToMenu = "Back to menu"
 }

@@ -4,14 +4,12 @@
 <dict>
 	<key>Main</key>
 	<dict>
-		<key>logo</key>
-		<string></string>
-		<key>conversationButton</key>
-		<string></string>
-		<key>storyButton</key>
-		<string></string>
-		<key>specialThanksButton</key>
-		<string></string>
+		<key>conversationButtonsLabel</key>
+		<string>The Conversation</string>
+		<key>storyButtonsLabel</key>
+		<string>The Story</string>
+		<key>specialThanksButtonsLabel</key>
+		<string>Special Thanks</string>
 	</dict>
 	<key>Conversation</key>
 	<dict>
@@ -19,6 +17,8 @@
 		<dict>
 			<key>SolvingConflict</key>
 			<dict>
+				<key>topicHeader</key>
+				<string>Solving Conflict</string>
 				<key>description</key>
 				<string>This block is dedicated to solving conflicts in your relationship. By answering these questions, you can deal with specific conflict situations in your relationship.</string>
 				<key>advise</key>
@@ -36,6 +36,8 @@
 			</dict>
 			<key>ThroughToughTimes</key>
 			<dict>
+				<key>topicHeader</key>
+				<string>Through Tough Times</string>
 				<key>description</key>
 				<string>This block is dedicated to help you to go through the tough period of your relationship, when difficult circumstances such as illness / death of a loved one, loss / change of work, etc. occurred in your or your partner/friend/relative life.</string>
 				<key>advise</key>
@@ -52,6 +54,8 @@
 			</dict>
 			<key>Alienation</key>
 			<dict>
+				<key>topicHeader</key>
+				<string>Alienation</string>
 				<key>description</key>
 				<string>This block is devoted to the period of alienation when the distance between partners/friends/relatives in a relationship gradually increases.</string>
 				<key>advise</key>
@@ -68,6 +72,8 @@
 			</dict>
 			<key>RelationshipTransformation</key>
 			<dict>
+				<key>topicHeader</key>
+				<string>Relationship Transformation</string>
 				<key>description</key>
 				<string>This block is devoted to the stage when both of you understand that the format of your relationship has changed recently and you should find a new form for it.</string>
 				<key>advise</key>
@@ -84,6 +90,8 @@
 			</dict>
 			<key>EndingUpRelationship</key>
 			<dict>
+				<key>topicHeader</key>
+				<string>Ending Up Relationship</string>
 				<key>description</key>
 				<string>This block will help not to leave misunderstanding between two of you when you both understand that to finish the relationship is the right decision for now.</string>
 				<key>advise</key>
@@ -100,35 +108,53 @@
 		</dict>
 		<key>UI</key>
 		<dict>
-			<key>title</key>
-			<string></string>
-			<key>nextButton</key>
-			<string></string>
+			<key>DescriptionLabel</key>
+			<dict>
+				<key>intro</key>
+				<string>To Fulfill is created to refresh your relationship at different stages. The app was created not only for couples, close friends and relatives.
+Try to choose a convenient place to talk and give this conversation enough time.
+Answer questions one by one, be sincere and courageous.</string>
+				<key>topicsTip</key>
+				<string>Choose the section that is most relevant to your relationship at this moment.</string>
+			</dict>
+			<key>NavigationButtonsLabels</key>
+			<dict>
+				<key>weAreReady</key>
+				<string>WE’RE READY</string>
+				<key>notNow</key>
+				<string>Not now</string>
+				<key>next</key>
+				<string>Next</string>
+				<key>solveOtherConflicts</key>
+				<string>Solve other conflict</string>
+				<key>backToMenu</key>
+				<string>Back to menu</string>
+			</dict>
 		</dict>
 	</dict>
 	<key>Story</key>
 	<dict>
-		<key>UI</key>
-		<dict>
-			<key>title</key>
-			<string></string>
-		</dict>
+		<key>title</key>
+		<string>The two of us were the closest people to each other for almost 2 years. Without dating, we built relationship full of support, joy and hope.
+
+On October 18 we`ve realized that something between us was broken: for some period of time we were experiencing offence, the lack of personal space and awkward moments in communication. In order to finish our relationships with dignity, we collected a list of questions for each other, met and listened carefully. 
+
+With these questions, magic has happened: together we could pass the period full of misunderstandings and anger.
+
+We are not psychologists. We are just people who don`t want to leave both of you with unanswered questions.
+
+Yours, Diana and Alla.</string>
 	</dict>
 	<key>SpecialThanks</key>
 	<dict>
-		<key>UI</key>
-		<dict>
-			<key>title</key>
-			<string></string>
-		</dict>
+		<key>title</key>
+		<string>We do want to say huge thank you to everyone who helped us to make our Fulfill dream come true. Special thanks go to: Mary Zaremba and Mykhailo Komarov for our logo, Vladyslava Tashkinova for our design, Annika Udovenko for helping with wording, Helen Shakhova for copywriting and support 24/7, Olga Semenova for professional psychotherapy advices, Nazarii Melnyk for developing, Denis Rumiyantsev for testing and Denys Boiechko for huge help.
+We wouldn`t be able to fulfill without you.</string>
 	</dict>
 	<key>Common</key>
 	<dict>
-		<key>UI</key>
-		<dict>
-			<key>backButton</key>
-			<string></string>
-		</dict>
+		<key>backButton</key>
+		<string>Back</string>
 	</dict>
 </dict>
 </plist>
