@@ -8,48 +8,29 @@
 
 import Foundation
 
-enum Question: String { /*loc*/
-    case solvingConflict = "Solving Conflict"
-    case throughToughTimes = "Through Tough Times"
-    case alienation = "Alienation"
-    case relationshipTransformation = "Relationship Transformation"
-    case endingUpRelationship = "Ending Up Relationship"
-    
-    var string: String { return "\(self)" }
-}
-
 class QuestionsManager {
-    
+
     static let shared = QuestionsManager()
     private init() {}
-    
-    private let localizedQuestions = LocalizedStrings.Conversation.Questions.self
-    
-    func getQuestions(for questionsTopic: Question) -> [(String, QuestionFlag)] {
-        return mapQuestionTopicToLocalizedStringsStruct(questionsTopic: questionsTopic).questions.map { $0.questionAndFlag }
+
+    private let questions = Localizator.shared.localizedStrings?.conversation.questions ?? []
+
+    func getQuestions(for questionsTopic: String) -> [(String, QuestionFlag)] {
+        let questionObject = questions.first { $0.topicHeader == questionsTopic }
+        let questionsTuples = questionObject?.array.map { $0.questionAndFlag }
+        return questionsTuples ?? []
     }
-    
-    func getTopicDescription(for questionsTopic: Question) -> String {
-        return mapQuestionTopicToLocalizedStringsStruct(questionsTopic: questionsTopic).description
+
+    func getTopicDescription(for questionsTopic: String) -> String {
+        let questionObject = questions.first { $0.topicHeader == questionsTopic }
+        let description = questionObject?.description ?? ""
+        return description
     }
-    
-    func getAdvise(for questionsTopic: Question) -> (String, QuestionFlag) {
-        return mapQuestionTopicToLocalizedStringsStruct(questionsTopic: questionsTopic).advise.questionAndFlag
+
+    func getAdvise(for questionsTopic: String) -> (String, QuestionFlag) {
+        let questionObject = questions.first { $0.topicHeader == questionsTopic }
+        let advise = questionObject?.advise ?? ""
+        return advise.questionAndFlag
     }
-    
-    private func mapQuestionTopicToLocalizedStringsStruct(questionsTopic: Question) -> QuestionModel.Type {
-        switch questionsTopic {
-        case .solvingConflict:
-            return localizedQuestions.SolvingConflict.self
-        case .throughToughTimes:
-            return localizedQuestions.ThroughToughTimes.self
-        case .alienation:
-            return localizedQuestions.Alienation.self
-        case .relationshipTransformation:
-            return localizedQuestions.RelationshipTransformation.self
-        case .endingUpRelationship:
-            return localizedQuestions.EndingUpRelationship.self
-        }
-    }
-    
+
 }

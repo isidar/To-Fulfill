@@ -10,8 +10,8 @@ import UIKit
 
 extension UIImage {
     
-    class func getImageFor(question: Question) -> UIImage {
-        return UIImage(named: question.string) ?? UIImage()
+    class func getImageFor(question: String) -> UIImage {
+        return UIImage(named: question.camelcased) ?? UIImage()
     }
     
 }

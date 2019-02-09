@@ -10,29 +10,30 @@ import Foundation
 
 class Localizator {
     
-    private(set) var currentLocalization: Localization = .english
-    private var localizableDictionary: NSDictionary?
-    
     static let shared = Localizator()
     private init() { setup() }
     
+    var localizedStrings: LocalizedStrings?
+    private(set) var currentLocalization: Localization = .english
+    
     private func setup() {
-        
         if let availableLanguage = Localization(rawValue: currentAppleLanguage) {
             currentLocalization = availableLanguage
         } else {
-            currentLocalization = currentAppleLanguage == "ua" ? .russian : .english
+            currentLocalization = currentAppleLanguage == "ru" ? .ukrainian : .english
         }
         
-        guard let path = Bundle.main.path(forResource: currentLocalization.rawValue, ofType: "plist") else {
-            print("[localization] Localizable file (.plist) NOT found")
-            return
+        guard
+            let path = Bundle.main.path(forResource: currentLocalization.rawValue, ofType: "plist"),
+            let data = try? Data(contentsOf: URL(fileURLWithPath: path)) else {
+                return print("[localization] Localizable file \(currentLocalization.rawValue).plist NOT found")
         }
-        localizableDictionary = NSDictionary(contentsOfFile: path)
+        
+        localizedStrings = try? PropertyListDecoder().decode(LocalizedStrings.self, from: data)
     }
     
     /// Returns current Apple device language
-    var currentAppleLanguage: String {
+    var currentAppleLanguage: String { // TODO: – Return tuple with language and region
         let langArray = UserDefaults.standard.object(forKey: "AppleLanguages") as? NSArray
         var current = (langArray?.firstObject as? String) ?? ""
         
@@ -43,39 +44,13 @@ class Localizator {
         return current
     }
     
-    func localize(_ path: String) -> String {
-        guard let string = parseFromPlist(path: path) as? String else {
-            return "missed translation"
-        }
-        return string
-    }
-    
-    func localize(_ path: String) -> [String] {
-        guard let array = parseFromPlist(path: path) as? [String] else {
-            return ["missed translation"]
-        }
-        return array
-    }
-    
-    private func parseFromPlist(path: String) -> Any? {
-        var container = localizableDictionary as? [String: Any]
-        let properties = path.split(separator: ".")
-        
-        var value: Any?
-        properties.forEach {
-            value = container?[String($0)]
-            container = value as? [String: Any]
-        }
-        return value
-    }
-    
 }
 
 extension Localizator {
     
     enum Localization: String {
         case english = "en"
-        case russian = "ru"
+        case ukrainian = "uk"
     }
     
 }

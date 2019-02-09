@@ -10,11 +10,7 @@
 		2120E16921A2EEF000787AA2 /* NavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120E16821A2EEF000787AA2 /* NavigationButton.swift */; };
 		2120E16B21A2FFD000787AA2 /* StringQuestionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120E16A21A2FFD000787AA2 /* StringQuestionParser.swift */; };
 		2120E16D21A418A500787AA2 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120E16C21A418A500787AA2 /* Array.swift */; };
-		2120E16F21A4317800787AA2 /* Main+Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120E16E21A4317800787AA2 /* Main+Strings.swift */; };
 		2120E17121A4318A00787AA2 /* Conversation+Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120E17021A4318A00787AA2 /* Conversation+Strings.swift */; };
-		2120E17321A431A300787AA2 /* Story+Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120E17221A431A300787AA2 /* Story+Strings.swift */; };
-		2120E17521A431B600787AA2 /* SpecialThanks+Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120E17421A431B600787AA2 /* SpecialThanks+Strings.swift */; };
-		2120E17821A4347900787AA2 /* Common+Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120E17721A4347900787AA2 /* Common+Strings.swift */; };
 		212B5B0821F36D9100BCCDDA /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212B5B0721F36D9100BCCDDA /* UIImage.swift */; };
 		2151C8E4218CB66700C7F416 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2151C8E3218CB66700C7F416 /* AppDelegate.swift */; };
 		2151C8E6218CB66700C7F416 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2151C8E5218CB66700C7F416 /* MainViewController.swift */; };
@@ -25,6 +21,8 @@
 		2161B42F21E3949500678AE0 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2161B42D21E3949400678AE0 /* ConversationViewController.swift */; };
 		2161B43121E3990000678AE0 /* ExtendedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2161B43021E3990000678AE0 /* ExtendedButton.swift */; };
 		219113CC21E4C4E8004D34BD /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219113CB21E4C4E8004D34BD /* UIFont.swift */; };
+		21AB1FEA220A4FD900243082 /* Root+LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AB1FE9220A4FD900243082 /* Root+LocalizedStrings.swift */; };
+		21AB1FEC220A50B400243082 /* Conversation+UI+LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AB1FEB220A50B400243082 /* Conversation+UI+LocalizedStrings.swift */; };
 		21BE4A10218CD83B005F8938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BE4A0F218CD83B005F8938 /* Main.storyboard */; };
 		21BE4A12218CD849005F8938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BE4A11218CD849005F8938 /* LaunchScreen.storyboard */; };
 		21BE4A14218CDCAC005F8938 /* Questions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BE4A13218CDCAC005F8938 /* Questions.storyboard */; };
@@ -35,9 +33,8 @@
 		21BE4A20218CDD7B005F8938 /* SpecialThanks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BE4A1F218CDD7B005F8938 /* SpecialThanks.storyboard */; };
 		21BE4A28218CEF09005F8938 /* Localizator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BE4A27218CEF09005F8938 /* Localizator.swift */; };
 		21BE4A2C218CEF3C005F8938 /* en.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21BE4A2A218CEF3C005F8938 /* en.plist */; };
-		21BE4A2D218CEF3C005F8938 /* ua.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21BE4A2B218CEF3C005F8938 /* ua.plist */; };
+		21BE4A2D218CEF3C005F8938 /* uk.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21BE4A2B218CEF3C005F8938 /* uk.plist */; };
 		21BE4A32218CF6D9005F8938 /* LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BE4A30218CF6D9005F8938 /* LocalizedStrings.swift */; };
-		21BE4A33218CF6D9005F8938 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BE4A31218CF6D9005F8938 /* Localizable.swift */; };
 		21BE4A36218CF72A005F8938 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BE4A35218CF72A005F8938 /* String.swift */; };
 		21E10D042198531800FB6BF2 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E10D032198531800FB6BF2 /* TransitionManager.swift */; };
 		21E10D06219857A000FB6BF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E10D05219857A000FB6BF2 /* ViewController.swift */; };
@@ -50,11 +47,7 @@
 		2120E16821A2EEF000787AA2 /* NavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButton.swift; sourceTree = "<group>"; };
 		2120E16A21A2FFD000787AA2 /* StringQuestionParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringQuestionParser.swift; sourceTree = "<group>"; };
 		2120E16C21A418A500787AA2 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
-		2120E16E21A4317800787AA2 /* Main+Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Main+Strings.swift"; sourceTree = "<group>"; };
 		2120E17021A4318A00787AA2 /* Conversation+Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Conversation+Strings.swift"; sourceTree = "<group>"; };
-		2120E17221A431A300787AA2 /* Story+Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Story+Strings.swift"; sourceTree = "<group>"; };
-		2120E17421A431B600787AA2 /* SpecialThanks+Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpecialThanks+Strings.swift"; sourceTree = "<group>"; };
-		2120E17721A4347900787AA2 /* Common+Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Common+Strings.swift"; sourceTree = "<group>"; };
 		212B5B0721F36D9100BCCDDA /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		2151C8E0218CB66700C7F416 /* To Fulfill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To Fulfill.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2151C8E3218CB66700C7F416 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +60,8 @@
 		2161B42D21E3949400678AE0 /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		2161B43021E3990000678AE0 /* ExtendedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedButton.swift; sourceTree = "<group>"; };
 		219113CB21E4C4E8004D34BD /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		21AB1FE9220A4FD900243082 /* Root+LocalizedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Root+LocalizedStrings.swift"; sourceTree = "<group>"; };
+		21AB1FEB220A50B400243082 /* Conversation+UI+LocalizedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Conversation+UI+LocalizedStrings.swift"; sourceTree = "<group>"; };
 		21BE4A0F218CD83B005F8938 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		21BE4A11218CD849005F8938 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21BE4A13218CDCAC005F8938 /* Questions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Questions.storyboard; sourceTree = "<group>"; };
@@ -77,9 +72,8 @@
 		21BE4A1F218CDD7B005F8938 /* SpecialThanks.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SpecialThanks.storyboard; sourceTree = "<group>"; };
 		21BE4A27218CEF09005F8938 /* Localizator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizator.swift; sourceTree = "<group>"; };
 		21BE4A2A218CEF3C005F8938 /* en.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = en.plist; sourceTree = "<group>"; };
-		21BE4A2B218CEF3C005F8938 /* ua.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ua.plist; sourceTree = "<group>"; };
+		21BE4A2B218CEF3C005F8938 /* uk.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = uk.plist; sourceTree = "<group>"; };
 		21BE4A30218CF6D9005F8938 /* LocalizedStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedStrings.swift; sourceTree = "<group>"; };
-		21BE4A31218CF6D9005F8938 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		21BE4A35218CF72A005F8938 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		21E10D032198531800FB6BF2 /* TransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		21E10D05219857A000FB6BF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,11 +96,9 @@
 		2120E17621A431BA00787AA2 /* Localized Strings */ = {
 			isa = PBXGroup;
 			children = (
-				2120E16E21A4317800787AA2 /* Main+Strings.swift */,
+				21AB1FE9220A4FD900243082 /* Root+LocalizedStrings.swift */,
 				2120E17021A4318A00787AA2 /* Conversation+Strings.swift */,
-				2120E17221A431A300787AA2 /* Story+Strings.swift */,
-				2120E17421A431B600787AA2 /* SpecialThanks+Strings.swift */,
-				2120E17721A4347900787AA2 /* Common+Strings.swift */,
+				21AB1FEB220A50B400243082 /* Conversation+UI+LocalizedStrings.swift */,
 			);
 			path = "Localized Strings";
 			sourceTree = "<group>";
@@ -242,7 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				21BE4A2A218CEF3C005F8938 /* en.plist */,
-				21BE4A2B218CEF3C005F8938 /* ua.plist */,
+				21BE4A2B218CEF3C005F8938 /* uk.plist */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -258,7 +250,6 @@
 		21BE4A2F218CF6D9005F8938 /* Localized Strings */ = {
 			isa = PBXGroup;
 			children = (
-				21BE4A31218CF6D9005F8938 /* Localizable.swift */,
 				21BE4A30218CF6D9005F8938 /* LocalizedStrings.swift */,
 				2120E17621A431BA00787AA2 /* Localized Strings */,
 			);
@@ -346,7 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2161B42621E393EA00678AE0 /* montserrat-light.ttf in Resources */,
-				21BE4A2D218CEF3C005F8938 /* ua.plist in Resources */,
+				21BE4A2D218CEF3C005F8938 /* uk.plist in Resources */,
 				21BE4A1E218CDD69005F8938 /* Story.storyboard in Resources */,
 				21BE4A12218CD849005F8938 /* LaunchScreen.storyboard in Resources */,
 				2161B42E21E3949500678AE0 /* Conversation.storyboard in Resources */,
@@ -371,23 +362,20 @@
 				2151C8E6218CB66700C7F416 /* MainViewController.swift in Sources */,
 				21BE4A28218CEF09005F8938 /* Localizator.swift in Sources */,
 				2161B43121E3990000678AE0 /* ExtendedButton.swift in Sources */,
-				2120E17821A4347900787AA2 /* Common+Strings.swift in Sources */,
-				2120E17521A431B600787AA2 /* SpecialThanks+Strings.swift in Sources */,
 				2120E16B21A2FFD000787AA2 /* StringQuestionParser.swift in Sources */,
 				2151C8E4218CB66700C7F416 /* AppDelegate.swift in Sources */,
 				21BE4A32218CF6D9005F8938 /* LocalizedStrings.swift in Sources */,
-				2120E16F21A4317800787AA2 /* Main+Strings.swift in Sources */,
 				212B5B0821F36D9100BCCDDA /* UIImage.swift in Sources */,
 				21E10D06219857A000FB6BF2 /* ViewController.swift in Sources */,
 				2120E16D21A418A500787AA2 /* Array.swift in Sources */,
 				21FA49D4218F1E7D00C63496 /* DiagonalView.swift in Sources */,
-				2120E17321A431A300787AA2 /* Story+Strings.swift in Sources */,
+				21AB1FEA220A4FD900243082 /* Root+LocalizedStrings.swift in Sources */,
+				2120E17121A4318A00787AA2 /* Conversation+Strings.swift in Sources */,
+				21AB1FEC220A50B400243082 /* Conversation+UI+LocalizedStrings.swift in Sources */,
 				21BE4A16218CDCEA005F8938 /* QuestionsViewController.swift in Sources */,
 				21F32DCE219896A700E5C426 /* QuestionsManager.swift in Sources */,
 				21F32DCC2198885D00E5C426 /* UIColor.swift in Sources */,
 				219113CC21E4C4E8004D34BD /* UIFont.swift in Sources */,
-				21BE4A33218CF6D9005F8938 /* Localizable.swift in Sources */,
-				2120E17121A4318A00787AA2 /* Conversation+Strings.swift in Sources */,
 				2120E16921A2EEF000787AA2 /* NavigationButton.swift in Sources */,
 				21BE4A1A218CDD44005F8938 /* SpecialThanksViewController.swift in Sources */,
 				21E10D042198531800FB6BF2 /* TransitionManager.swift in Sources */,

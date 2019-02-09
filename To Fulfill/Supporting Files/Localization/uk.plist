@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Main</key>
+	<key>main</key>
 	<dict>
 		<key>conversationButtonsLabel</key>
 		<string>Розмова</string>
@@ -11,11 +11,10 @@
 		<key>specialThanksButtonsLabel</key>
 		<string>Особлива Подяка</string>
 	</dict>
-	<key>Conversation</key>
+	<key>conversation</key>
 	<dict>
-		<key>Questions</key>
-		<dict>
-			<key>SolvingConflict</key>
+		<key>questions</key>
+		<array>
 			<dict>
 				<key>topicHeader</key>
 				<string>Вирішення конфлікту</string>
@@ -23,7 +22,7 @@
 				<string>Цей блок присвячений вирішенню конфліктів у ваших стосунках. Відповівши на ці запитання, ви зможете розібратися з конкретними конфліктними ситуаціями у стосунках.</string>
 				<key>advise</key>
 				<string>[again]Для збереження кредиту довіри в ваших стосунках після конфлікту, дотримуйтесь правил, які були озвучені під час обговорення.</string>
-				<key>questions</key>
+				<key>array</key>
 				<array>
 					<string>Який конфлікт ми хочемо вирішити зараз?</string>
 					<string>Які мої дії та вчинки призвели до бажання спілкуватися менше або не спілкуватися взагалі?</string>
@@ -34,7 +33,6 @@
 					<string>Чи вдалося нам вирішити цей конфлікт та чи задоволені ми?</string>
 				</array>
 			</dict>
-			<key>ThroughToughTimes</key>
 			<dict>
 				<key>topicHeader</key>
 				<string>Складний період</string>
@@ -42,7 +40,7 @@
 				<string>Цей блок присвячений подоланню складного періоду ваших стосунків, зокрема, якщо у Вашому житті або житті Вашого партнера/партнерки відбулися непередбачені чи важкі обставини (хвороба/смерть близької людини, поява/втрата дітей, втрата/зміна роботи і т.д).</string>
 				<key>advise</key>
 				<string>Висловлюйте підтримку один одному так, як ви обговорили, на мові Вашої близької людини. Пам&apos;ятайте, що складні періоди закінчуються, а стосунки можуть тривати далі, якщо над ними працювати.</string>
-				<key>questions</key>
+				<key>array</key>
 				<array>
 					<string>Яка ситуація вплинула на наші стосунки?</string>
 					<string>В які моменти ти відчуваєш найбільшу близькість зі мною або підтримку від мене?</string>
@@ -52,7 +50,6 @@
 					<string>Який план ми можемо скласти зараз, щоб подолати цей період? </string>
 				</array>
 			</dict>
-			<key>Alienation</key>
 			<dict>
 				<key>topicHeader</key>
 				<string>Відчуження</string>
@@ -60,7 +57,7 @@
 				<string>Цей блок присвячений періоду віддалення, коли дистанція між партнерами/друзями/ родичами в стосунках поступово збільшується.</string>
 				<key>advise</key>
 				<string>Дотримуйтесь складеного плану для того, щоб скоротити дистанцію між вами. Пам&apos;ятайте, що ваша розмова - це перший крок до повернення стосунків.</string>
-				<key>questions</key>
+				<key>array</key>
 				<array>
 					<string>Чи знаємо ми ситуацію, що конкретно вплинула на наші стосунки?</string>
 					<string>Які мої дії та вчинки призвели до бажання спілкуватися менше або не спілкуватися взагалі?</string>
@@ -70,7 +67,6 @@
 					<string>Чи можемо ми скласти план дій, щоб реанімувати стосунки? </string>
 				</array>
 			</dict>
-			<key>RelationshipTransformation</key>
 			<dict>
 				<key>topicHeader</key>
 				<string>Трансформація стосунків</string>
@@ -78,7 +74,7 @@
 				<string>Цей блок присвячений періоду у стосунках, коли ви двоє розумієте, що формат вашого спілкування змінився за останній час і для нього варто знайти нову форму.</string>
 				<key>advise</key>
 				<string>Для того, щоб новий статус ваших відносин не зруйнував спілкування, думайте про спільний комфорт, згадуючи вашу розмову.</string>
-				<key>questions</key>
+				<key>array</key>
 				<array>
 					<string>За шкалою від 1 до 10 оціни своє почуття щастя у стосунках (де 10 - задоволення, а 1 - незадоволеність стосунками)</string>
 					<string>Які нові фактори та обставини з&apos;явилися в наших стосунках?</string>
@@ -88,7 +84,6 @@
 					<string>Що ми можемо зробити для нашого спільного комфорту у новому статусі?</string>
 				</array>
 			</dict>
-			<key>EndingUpRelationship</key>
 			<dict>
 				<key>topicHeader</key>
 				<string>Завершення</string>
@@ -96,7 +91,7 @@
 				<string>Цей блок допоможе не залишити недомовок, коли ви двоє розумієте, що завершення ваших стосунків — правильне рішення на даному етапі.</string>
 				<key>advise</key>
 				<string>[menu]Пам&apos;ятайте, що кожне завершення - це початок чогось нового. Якщо ви хочете спробувати трансформувати ваші відносини - перейдіть до інших блоків питань.</string>
-				<key>questions</key>
+				<key>array</key>
 				<array>
 					<string>Яка була моя роль в твоєму житті? Як вважаєш чи виконана вона повністю?</string>
 					<string>Чи може нам допомогти повне або часткове припинення спілкування? Якщо так, то в якому форматі?</string>
@@ -106,17 +101,17 @@
 					<string>Чи будемо ми продовжувати спілкування? Якщо так, то в якому форматі?</string>
 				</array>
 			</dict>
-		</dict>
-		<key>UI</key>
+		</array>
+		<key>ui</key>
 		<dict>
-			<key>DescriptionLabel</key>
+			<key>descriptionLabel</key>
 			<dict>
 				<key>intro</key>
 				<string>Оберіть комфортне місце, будьте щирими та приділіть розмові стільки часу, скільки знадобиться. </string>
 				<key>topicsTip</key>
 				<string>Оберіть розділ, який наразі є найбільш актуальним для ваших стосунків.</string>
 			</dict>
-			<key>NavigationButtonsLabels</key>
+			<key>navigationButtonsLabels</key>
 			<dict>
 				<key>weAreReady</key>
 				<string>МИ ГОТОВІ</string>
@@ -131,7 +126,7 @@
 			</dict>
 		</dict>
 	</dict>
-	<key>Story</key>
+	<key>story</key>
 	<dict>
 		<key>title</key>
 		<string>Ми були найближчими людьми одна для одної протягом 2 років, за які змогли побудувати дружні стосунки, повні підтримки та радості.
@@ -143,7 +138,7 @@
 Ваші, 
 Діана і Алла</string>
 	</dict>
-	<key>SpecialThanks</key>
+	<key>specialThanks</key>
 	<dict>
 		<key>title</key>
 		<string>Ми хочемо подякувати всім, хто допоміг нам втілити в реальність цей задум. Ми не уявляємо додатку без вашої допомоги.
@@ -158,7 +153,7 @@
 Денис Румянцев, за тестування,
 Денис Боєчко, за величезну допомогу.</string>
 	</dict>
-	<key>Common</key>
+	<key>common</key>
 	<dict>
 		<key>backButton</key>
 		<string>Назад</string>

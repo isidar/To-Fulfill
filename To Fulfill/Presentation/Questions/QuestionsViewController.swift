@@ -16,7 +16,7 @@ class QuestionsViewController: ViewController {
     @IBOutlet private weak var nextButton: NavigationButton!
     @IBOutlet private weak var notNowButton: NavigationButton!
     
-    var questionsTopic: Question = .alienation
+    var questionsTopic = ""
     
     private var questions: [(question: String, flag: QuestionFlag)] = []
     private var questionIndex = 0
@@ -27,15 +27,15 @@ class QuestionsViewController: ViewController {
         super.viewDidLoad()
         
         imageView.image = .getImageFor(question: questionsTopic)
-        navigationItem.title = questionsTopic.rawValue
+        navigationItem.title = questionsTopic
         nextButton.navigationState = .weAreReady
-        notNowButton?.navigationState = .notNow
+//        notNowButton?.navigationState = .notNow
         
-        fetchData()
+        setupQuestionsData()
         questionLabel.text = topicDescription
     }
     
-    private func fetchData() {
+    private func setupQuestionsData() {
         questions = QuestionsManager.shared.getQuestions(for: questionsTopic)
         topicDescription = QuestionsManager.shared.getTopicDescription(for: questionsTopic)
         adviseData = QuestionsManager.shared.getAdvise(for: questionsTopic)
@@ -117,6 +117,7 @@ class QuestionsViewController: ViewController {
             default:
                 nextButton.isHidden = true
             }
+            
             notNowButton.isHidden = true
         }
     }

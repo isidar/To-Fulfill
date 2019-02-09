@@ -10,16 +10,12 @@ import Foundation
 
 extension String {
     
-    var localizedString: String {
-        return Localizator.shared.localize(self)
-    }
-    
-    var localizedArray: [String] {
-        return Localizator.shared.localize(self)
-    }
-    
     var capitalizedFirstLetter: String {
         return String(prefix(1).capitalized + dropFirst())
+    }
+
+    var camelcased: String {
+        return prefix(1).lowercased() + capitalized.replacingOccurrences(of: " ", with: "").dropFirst()
     }
     
 }

@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Main</key>
+	<key>main</key>
 	<dict>
 		<key>conversationButtonsLabel</key>
 		<string>The Conversation</string>
@@ -11,11 +11,10 @@
 		<key>specialThanksButtonsLabel</key>
 		<string>Special Thanks</string>
 	</dict>
-	<key>Conversation</key>
+	<key>conversation</key>
 	<dict>
-		<key>Questions</key>
-		<dict>
-			<key>SolvingConflict</key>
+		<key>questions</key>
+		<array>
 			<dict>
 				<key>topicHeader</key>
 				<string>Solving Conflict</string>
@@ -23,7 +22,7 @@
 				<string>This block is dedicated to solving conflicts in your relationship. By answering these questions, you can deal with specific conflict situations in your relationship.</string>
 				<key>advise</key>
 				<string>[again]To maintain and support trust in your relationship after a conflict, follow the rules that both of you agreed on during the discussion.</string>
-				<key>questions</key>
+				<key>array</key>
 				<array>
 					<string>What situation do we want to solve now?</string>
 					<string>Which my actions caused the wish to communicate less / not to communicate at all?</string>
@@ -34,7 +33,6 @@
 					<string>Did we manage to solve this conflict and are we satisfied with its solution?</string>
 				</array>
 			</dict>
-			<key>ThroughToughTimes</key>
 			<dict>
 				<key>topicHeader</key>
 				<string>Through Tough Times</string>
@@ -42,7 +40,7 @@
 				<string>This block is dedicated to help you to go through the tough period of your relationship, when difficult circumstances such as illness / death of a loved one, loss / change of work, etc. occurred in your or your partner/friend/relative life.</string>
 				<key>advise</key>
 				<string>Express support for each other as you have discussed during this block. Remember: tough period will will end, but relationships could last if you`re commited to them.</string>
-				<key>questions</key>
+				<key>array</key>
 				<array>
 					<string>What situation has affected our relationship?</string>
 					<string>When do you feel the closest to me?</string>
@@ -52,7 +50,6 @@
 					<string>What plan can we set so our relationship will overcome this time? (if possible- write it on a sheet of paper)</string>
 				</array>
 			</dict>
-			<key>Alienation</key>
 			<dict>
 				<key>topicHeader</key>
 				<string>Alienation</string>
@@ -60,7 +57,7 @@
 				<string>This block is devoted to the period of alienation when the distance between partners/friends/relatives in a relationship gradually increases.</string>
 				<key>advise</key>
 				<string>In order to reduce the distance between you - follow the plan. Remember that your conversation is the first step for returning the relationship you used to have.</string>
-				<key>questions</key>
+				<key>array</key>
 				<array>
 					<string>Do we know what specifically influenced our relationship?</string>
 					<string>Which of my actions caused the wish to communicate less / not to communicate at all?</string>
@@ -70,7 +67,6 @@
 					<string>Can we make an action plan of how can we return what we miss in our relationship back? (if possible - so scss write it down on a sheet of paper)</string>
 				</array>
 			</dict>
-			<key>RelationshipTransformation</key>
 			<dict>
 				<key>topicHeader</key>
 				<string>Relationship Transformation</string>
@@ -78,7 +74,7 @@
 				<string>This block is devoted to the stage when both of you understand that the format of your relationship has changed recently and you should find a new form for it.</string>
 				<key>advise</key>
 				<string>In order for new status of your relationship not to destroy your communication, think about your overall comfort using what was said during your conversation.</string>
-				<key>questions</key>
+				<key>array</key>
 				<array>
 					<string>On a scale from 1 to 10, rate how happy are you in this relationship (where 10 - a feeling of complete happiness, and 1 - complete dissatisfaction)</string>
 					<string>What new factors and circumstances appeared in our relationship?</string>
@@ -88,7 +84,6 @@
 					<string>What can we do for our mutual comfort with this status?</string>
 				</array>
 			</dict>
-			<key>EndingUpRelationship</key>
 			<dict>
 				<key>topicHeader</key>
 				<string>Ending Up Relationship</string>
@@ -96,7 +91,7 @@
 				<string>This block will help not to leave misunderstanding between two of you when you both understand that to finish the relationship is the right decision for now.</string>
 				<key>advise</key>
 				<string>[menu]Remember that each finish is a new start. If you want to transform your relationship - go to other blocks of questions.</string>
-				<key>questions</key>
+				<key>array</key>
 				<array>
 					<string>What was your role in my life? Have you fulfilled it?</string>
 					<string>How did you feel when you thought about the complete (or partial) stop in our communication?</string>
@@ -105,10 +100,10 @@
 					<string>What advice can you give me to become better in next relationship/friendship?</string>
 				</array>
 			</dict>
-		</dict>
-		<key>UI</key>
+		</array>
+		<key>ui</key>
 		<dict>
-			<key>DescriptionLabel</key>
+			<key>descriptionLabel</key>
 			<dict>
 				<key>intro</key>
 				<string>To Fulfill is created to refresh your relationship at different stages. The app was created not only for couples, close friends and relatives.
@@ -117,7 +112,7 @@ Answer questions one by one, be sincere and courageous.</string>
 				<key>topicsTip</key>
 				<string>Choose the section that is most relevant to your relationship at this moment.</string>
 			</dict>
-			<key>NavigationButtonsLabels</key>
+			<key>navigationButtonsLabels</key>
 			<dict>
 				<key>weAreReady</key>
 				<string>WE’RE READY</string>
@@ -132,7 +127,7 @@ Answer questions one by one, be sincere and courageous.</string>
 			</dict>
 		</dict>
 	</dict>
-	<key>Story</key>
+	<key>story</key>
 	<dict>
 		<key>title</key>
 		<string>The two of us were the closest people to each other for almost 2 years. Without dating, we built relationship full of support, joy and hope.
@@ -145,13 +140,13 @@ We are not psychologists. We are just people who don`t want to leave both of you
 
 Yours, Diana and Alla.</string>
 	</dict>
-	<key>SpecialThanks</key>
+	<key>specialThanks</key>
 	<dict>
 		<key>title</key>
 		<string>We do want to say huge thank you to everyone who helped us to make our Fulfill dream come true. Special thanks go to: Mary Zaremba and Mykhailo Komarov for our logo, Vladyslava Tashkinova for our design, Annika Udovenko for helping with wording, Helen Shakhova for copywriting and support 24/7, Olga Semenova for professional psychotherapy advices, Nazarii Melnyk for developing, Denis Rumiyantsev for testing and Denys Boiechko for huge help.
 We wouldn`t be able to fulfill without you.</string>
 	</dict>
-	<key>Common</key>
+	<key>common</key>
 	<dict>
 		<key>backButton</key>
 		<string>Back</string>

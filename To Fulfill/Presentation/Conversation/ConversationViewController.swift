@@ -31,6 +31,8 @@ class ConversationViewController: ViewController {
         separatorImageView.isHidden = false
         readyButton.isHidden = true
         
+        // TODO: – Try batch update instead of consistent calls
+        
         let separatorAnimation: (Bool) -> Void = { [weak self] _ in
             UIView.animate(withDuration: 0.3) {
                 self?.separatorImageView.alpha = 1
@@ -49,30 +51,11 @@ class ConversationViewController: ViewController {
         }, completion: descriptionAnimation)
     }
 
-    @IBAction private func solvingConflictClick(_ sender: UIButton) {
-        showQuestion(.solvingConflict)
-    }
-    
-    @IBAction private func throughToughTimesClick(_ sender: UIButton) {
-        showQuestion(.throughToughTimes)
-    }
-    
-    @IBAction private func alienationClick(_ sender: UIButton) {
-        showQuestion(.alienation)
-    }
-    
-    @IBAction private func relationshipTransformationClick(_ sender: UIButton) {
-        showQuestion(.relationshipTransformation)
-    }
-    
-    @IBAction private func endingUpRelationshipClick(_ sender: UIButton) {
-        showQuestion(.endingUpRelationship)
-    }
-    
-    private func showQuestion(_ questionsTopic: Question) {
-        show(.questions) { vc in
-            guard let vc = vc as? QuestionsViewController else { return }
-            vc.questionsTopic = questionsTopic
+    @IBAction private func questionClick(_ sender: UIButton) {
+        let questionsTopic = sender.currentTitle ?? ""
+        show(.questions) {
+            let vc = $0 as? QuestionsViewController
+            vc?.questionsTopic = questionsTopic
         }
     }
     
