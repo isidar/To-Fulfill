@@ -51,6 +51,9 @@ We wouldn`t be able to fulfill without you.</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Q7z-ST-5IA"/>
                     </view>
+                    <connections>
+                        <outlet property="thanksLabel" destination="ITj-7v-Evh" id="xdp-a1-d82"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfm-OC-WhI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

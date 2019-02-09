@@ -25,7 +25,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.90000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="VNB-ru-0CQ" userLabel="Story Label">
                                 <rect key="frame" x="24" y="66" width="272" height="368"/>
-                                <mutableString key="text">The two of us were the closest people to each other for almost 2 years. Without dating, we built relationship full of support, joy and hope.
+                                <string key="text">The two of us were the closest people to each other for almost 2 years. Without dating, we built relationship full of support, joy and hope.
 
 On October 18 we`ve realized that something between us was broken: for some period of time we were experiencing offence, the lack of personal space and awkward moments in communication. In order to finish our relationships with dignity, we collected a list of questions for each other, met and listened carefully. 
 
@@ -33,7 +33,7 @@ With these questions, magic has happened: together we could pass the period full
 
 We are not psychologists. We are just people who don`t want to leave both of you with unanswered questions.
 
-Yours, Diana and Alla.</mutableString>
+Yours, Diana and Alla.</string>
                                 <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -48,6 +48,9 @@ Yours, Diana and Alla.</mutableString>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dla-dx-hAU"/>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="VNB-ru-0CQ" id="lOk-yA-QjA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Blf-2m-jW8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

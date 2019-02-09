@@ -8,13 +8,32 @@
 
 import UIKit
 
-/*loc*/
-enum NavigationButtonState: String {
-    case weAreReady = "WE’RE READY"
-    case notNow = "Not now" // currently disabled according to new requirements
-    case next = "Next"
-    case solveOtherConflicts = "Solve other conflict"
-    case backToMenu = "Back to menu"
+enum NavigationButtonState {
+    case weAreReady
+    case notNow // currently disabled according to new requirements
+    case next
+    case solveOtherConflicts
+    case backToMenu
+    
+    var localizedRawValue: String {
+        let localizedStrings = Localizator.shared.localizedStrings?.conversation.ui.navigationButtonsLabels
+        var result: String?
+        
+        switch self {
+        case .weAreReady:
+            result = localizedStrings?.weAreReady
+        case .notNow:
+            result = localizedStrings?.notNow
+        case .next:
+            result = localizedStrings?.next
+        case .solveOtherConflicts:
+            result = localizedStrings?.solveOtherConflicts
+        case .backToMenu:
+            result = localizedStrings?.backToMenu
+        }
+        
+        return result ?? ""
+    }
 }
 
 @IBDesignable
@@ -22,7 +41,7 @@ class NavigationButton: ExtendedButton {
     
     var navigationState: NavigationButtonState = .weAreReady {
         didSet {
-            setTitle(navigationState.rawValue, for: .normal)
+            setTitle(navigationState.localizedRawValue, for: .normal)
         }
     }
 

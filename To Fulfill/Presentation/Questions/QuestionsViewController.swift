@@ -26,26 +26,42 @@ class QuestionsViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        imageView.image = .getImageFor(question: questionsTopic)
+        setupQuestionsData()
+        
         navigationItem.title = questionsTopic
         nextButton.navigationState = .weAreReady
 //        notNowButton?.navigationState = .notNow
         
-        setupQuestionsData()
         questionLabel.text = topicDescription
     }
     
-    private func setupQuestionsData() {
+    func changeText(to text: String, withAnimationDuration: TimeInterval) {
+        questionLabel.text = text
+        UIView.animate(withDuration: withAnimationDuration) {
+            self.questionLabel.alpha = 0
+            self.questionLabel.alpha = 1
+            self.questionStackView.layoutIfNeeded()
+        }
+    }
+
+}
+
+private extension QuestionsViewController {
+    @IBAction func buttonClick(_ sender: NavigationButton) {
+        setupNextQuestion(accordingTo: sender.navigationState)
+    }
+}
+
+private extension QuestionsViewController {
+    
+    func setupQuestionsData() {
+        imageView.image = QuestionsManager.shared.getImage(for: questionsTopic)
         questions = QuestionsManager.shared.getQuestions(for: questionsTopic)
         topicDescription = QuestionsManager.shared.getTopicDescription(for: questionsTopic)
         adviseData = QuestionsManager.shared.getAdvise(for: questionsTopic)
     }
     
-    @IBAction private func buttonClick(_ sender: NavigationButton) {
-        setupNextQuestion(accordingTo: sender.navigationState)
-    }
-    
-    private func setupNextQuestion(accordingTo navigationState: NavigationButtonState) {
+    func setupNextQuestion(accordingTo navigationState: NavigationButtonState) {
         switch navigationState {
         case .next,
              .weAreReady where questionLabel.text != topicDescription:
@@ -71,7 +87,7 @@ class QuestionsViewController: ViewController {
         setupTextForNextQuestion()
     }
     
-    private func setupButtonsAppearanceForNextQuestion() {
+    func setupButtonsAppearanceForNextQuestion() {
         guard let nextQuestionFlag = questions[safe: questionIndex]?.flag else { return }
         
         switch nextQuestionFlag {
@@ -101,7 +117,7 @@ class QuestionsViewController: ViewController {
     }
     
     
-    private func setupTextForNextQuestion() {
+    func setupTextForNextQuestion() {
         let animationDuration = 0.2
         
         if let nextQuestion = questions[safe: questionIndex]?.question {
@@ -122,14 +138,4 @@ class QuestionsViewController: ViewController {
         }
     }
     
-    func changeText(to text: String, withAnimationDuration: TimeInterval) {
-        questionLabel.text = text
-        UIView.animate(withDuration: withAnimationDuration) {
-            self.questionLabel.alpha = 0
-            self.questionLabel.alpha = 1
-            self.questionStackView.layoutIfNeeded()
-        }
-    }
-
 }
-

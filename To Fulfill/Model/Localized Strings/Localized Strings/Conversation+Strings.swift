@@ -10,6 +10,7 @@ import Foundation
 
 extension LocalizedStrings.Conversation {
     struct Question: Decodable {
+        var imageName: String
         var topicHeader: String
         var description: String
         var advise: String

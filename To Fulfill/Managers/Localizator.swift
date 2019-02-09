@@ -8,12 +8,17 @@
 
 import Foundation
 
+enum Localization: String {
+    case english = "en"
+    case ukrainian = "uk"
+}
+
 class Localizator {
     
     static let shared = Localizator()
     private init() { setup() }
     
-    var localizedStrings: LocalizedStrings?
+    private(set) var localizedStrings: LocalizedStrings?
     private(set) var currentLocalization: Localization = .english
     
     private func setup() {
@@ -42,15 +47,6 @@ class Localizator {
         }
         
         return current
-    }
-    
-}
-
-extension Localizator {
-    
-    enum Localization: String {
-        case english = "en"
-        case ukrainian = "uk"
     }
     
 }

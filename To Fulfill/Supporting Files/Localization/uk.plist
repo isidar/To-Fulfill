@@ -16,6 +16,8 @@
 		<key>questions</key>
 		<array>
 			<dict>
+				<key>imageName</key>
+				<string>solvingConflict</string>
 				<key>topicHeader</key>
 				<string>Вирішення конфлікту</string>
 				<key>description</key>
@@ -34,6 +36,8 @@
 				</array>
 			</dict>
 			<dict>
+				<key>imageName</key>
+				<string>throughToughTimes</string>
 				<key>topicHeader</key>
 				<string>Складний період</string>
 				<key>description</key>
@@ -51,6 +55,8 @@
 				</array>
 			</dict>
 			<dict>
+				<key>imageName</key>
+				<string>alienation</string>
 				<key>topicHeader</key>
 				<string>Відчуження</string>
 				<key>description</key>
@@ -68,6 +74,8 @@
 				</array>
 			</dict>
 			<dict>
+				<key>imageName</key>
+				<string>relationshipTransformation</string>
 				<key>topicHeader</key>
 				<string>Трансформація стосунків</string>
 				<key>description</key>
@@ -85,6 +93,8 @@
 				</array>
 			</dict>
 			<dict>
+				<key>imageName</key>
+				<string>endingUpRelationship</string>
 				<key>topicHeader</key>
 				<string>Завершення</string>
 				<key>description</key>

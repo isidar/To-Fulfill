@@ -10,11 +10,11 @@ import UIKit
 
 class SpecialThanksViewController: ViewController {
 
+    @IBOutlet private weak var thanksLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        navigationItem.title = "Special Thanks" /*loc*/
+        thanksLabel.text = Localizator.shared.localizedStrings?.specialThanks.title
     }
-    
 
 }

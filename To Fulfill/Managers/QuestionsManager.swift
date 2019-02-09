@@ -6,7 +6,7 @@
 //  Copyright © 2018 Nazarii Melnyk. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class QuestionsManager {
 
@@ -31,6 +31,12 @@ class QuestionsManager {
         let questionObject = questions.first { $0.topicHeader == questionsTopic }
         let advise = questionObject?.advise ?? ""
         return advise.questionAndFlag
+    }
+    
+    func getImage(for questionsTopic: String) -> UIImage {
+        let questionObject = questions.first { $0.topicHeader == questionsTopic }
+        let imageName = questionObject?.imageName ?? ""
+        return .getImageFor(question: imageName)
     }
 
 }

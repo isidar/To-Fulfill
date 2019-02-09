@@ -15,7 +15,9 @@ extension String {
     }
 
     var camelcased: String {
-        return prefix(1).lowercased() + capitalized.replacingOccurrences(of: " ", with: "").dropFirst()
+        return split(separator: " ").count > 1 ?
+            prefix(1).lowercased() + capitalized.replacingOccurrences(of: " ", with: "").dropFirst() :
+            self
     }
     
 }

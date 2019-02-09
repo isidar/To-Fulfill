@@ -158,6 +158,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Wc5-0k-oih"/>
+                    <connections>
+                        <outlet property="conversationButton" destination="8Bs-IK-XCc" id="4uG-A2-doI"/>
+                        <outlet property="specialThanksButton" destination="pRD-6E-9z6" id="SFP-5o-DSk"/>
+                        <outlet property="storyButton" destination="quv-Fg-JKb" id="dZk-4e-Zrr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -187,6 +192,6 @@
     </scenes>
     <resources>
         <image name="plainLogo" width="262.75" height="497.25"/>
-        <image name="wavedLine" width="256" height="73"/>
+        <image name="wavedLine" width="1024" height="140"/>
     </resources>
 </document>
