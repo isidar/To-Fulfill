@@ -13,9 +13,9 @@ class ConversationViewController: ViewController {
     private let localizedStrings = Localizator.shared.localizedStrings?.conversation
 
     @IBOutlet private weak var contentStackView: UIStackView!
-    @IBOutlet private weak var topicsButtonsStackView: UIStackView!
     @IBOutlet private weak var descriptionLabel: UILabel!
     @IBOutlet private weak var separatorImageView: UIImageView!
+    @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var readyButton: NavigationButton!
     
     override func viewDidLoad() {
@@ -24,13 +24,9 @@ class ConversationViewController: ViewController {
     }
     
     private func setupSubviews() {
-        topicsButtonsStackView.alpha = 0
+        tableView.alpha = 0
         readyButton.navigationState = .weAreReady
         descriptionLabel.text = localizedStrings?.ui.descriptionLabel.intro
-        for (i, view) in topicsButtonsStackView.arrangedSubviews.enumerated() {
-            let buttonsTitle = localizedStrings?.questions[safe: i]?.topicHeader
-            (view as? UIButton)?.setTitle(buttonsTitle, for: .normal)
-        }
     }
     
     @IBAction private func readyClick(_ sender: UIButton) {
@@ -54,18 +50,46 @@ class ConversationViewController: ViewController {
         }
         
         UIView.animate(withDuration: 0.5, animations: {
-            self.topicsButtonsStackView.isHidden = false
-            self.topicsButtonsStackView.alpha = 1
+            self.tableView.isHidden = false
+            self.tableView.alpha = 1
             self.contentStackView.layoutIfNeeded()
         }, completion: descriptionAnimation)
     }
+    
+}
 
-    @IBAction private func questionClick(_ sender: UIButton) {
-        let questionsTopic = sender.currentTitle ?? ""
+extension ConversationViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return localizedStrings?.questions.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "questionsTopic", for: indexPath)
+        let questionObject = localizedStrings?.questions[safe: indexPath.row]
+        cell.textLabel?.text = questionObject?.topicHeader ?? ""
+        return cell
+    }
+    
+}
+
+extension ConversationViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let cell = tableView.cellForRow(at: indexPath)
+        guard let questionsTopic = cell?.textLabel?.text else { return }
+        
         show(.questions) {
-            let vc = $0 as? QuestionsViewController
-            vc?.questionsTopic = questionsTopic
+            ($0 as? QuestionsViewController)?.questionsTopic = questionsTopic
         }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        guard let numberOfTopics = localizedStrings?.questions.count,
+              numberOfTopics != 0 else { return 0 }
+        return tableView.frame.height / CGFloat(numberOfTopics)
     }
     
 }

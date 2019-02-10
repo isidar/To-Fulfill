@@ -44,101 +44,35 @@ Answer questions one by one, be sincere and courageous.</string>
                                     <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wavedLine" translatesAutoresizingMaskIntoConstraints="NO" id="MNo-8n-XD8" userLabel="Separator Image View">
                                         <rect key="frame" x="-336" y="342" width="1024" height="32.5"/>
                                     </imageView>
-                                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Jej-kx-5XW" userLabel="Topics Buttons Stack View">
-                                        <rect key="frame" x="37.5" y="342" width="277" height="368"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4Q-cq-2s9" userLabel="Solving Conflict Button" customClass="ExtendedButton" customModule="To_Fulfill" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="277" height="57.5"/>
-                                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="20"/>
-                                                <state key="normal" title="Solving Conflict">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="2"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="questionClick:" destination="0Gp-cW-pAn" eventType="touchUpInside" id="cL4-FF-kW1"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YEY-5j-xDb" userLabel="Through Tough Times Button" customClass="ExtendedButton" customModule="To_Fulfill" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="77.5" width="277" height="57.5"/>
-                                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="20"/>
-                                                <state key="normal" title="Through Tough Times">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="2"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="questionClick:" destination="0Gp-cW-pAn" eventType="touchUpInside" id="HJN-2l-AA6"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STJ-lV-rDV" userLabel="Alienation Button" customClass="ExtendedButton" customModule="To_Fulfill" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="155" width="277" height="58"/>
-                                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="20"/>
-                                                <state key="normal" title="Alienation">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="2"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="questionClick:" destination="0Gp-cW-pAn" eventType="touchUpInside" id="734-We-Lhg"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQ5-yo-mvr" userLabel="Relationship Transformation Button" customClass="ExtendedButton" customModule="To_Fulfill" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="233" width="277" height="57.5"/>
-                                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="20"/>
-                                                <state key="normal" title="Relationship Transformation">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="2"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="questionClick:" destination="0Gp-cW-pAn" eventType="touchUpInside" id="qug-Jf-8Cv"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emm-zy-inK" userLabel="Ending Up Relationship Button" customClass="ExtendedButton" customModule="To_Fulfill" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="310.5" width="277" height="57.5"/>
-                                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="20"/>
-                                                <state key="normal" title="Ending Up Relationship">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                        <real key="value" value="2"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <action selector="questionClick:" destination="0Gp-cW-pAn" eventType="touchUpInside" id="mng-Vq-iSH"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
+                                    <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="stq-Ig-hoy">
+                                        <rect key="frame" x="17.5" y="342" width="317" height="368"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationWidth="10" reuseIdentifier="questionsTopic" textLabel="pub-lM-0gl" style="IBUITableViewCellStyleDefault" id="vh7-tb-Iry" userLabel="Questions Topic Cell" customClass="QuestionsTopicTableViewCell" customModule="To_Fulfill" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="1" width="317" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vh7-tb-Iry" id="OS2-pk-PsM">
+                                                    <rect key="frame" x="0.0" y="0.0" width="317" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pub-lM-0gl">
+                                                            <rect key="frame" x="16" y="0.0" width="285" height="43.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="18"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="0Gp-cW-pAn" id="ZJ9-5o-l89"/>
+                                            <outlet property="delegate" destination="0Gp-cW-pAn" id="nT2-tx-PfM"/>
+                                        </connections>
+                                    </tableView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbJ-kv-EgI" userLabel="Ready Button" customClass="NavigationButton" customModule="To_Fulfill" customModuleProvider="target">
                                         <rect key="frame" x="10.5" y="352" width="331" height="57"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
@@ -159,6 +93,9 @@ Answer questions one by one, be sincere and courageous.</string>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="stq-Ig-hoy" firstAttribute="width" secondItem="EDZ-fI-8gv" secondAttribute="width" multiplier="0.9" id="Z60-gx-VQS"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -166,8 +103,8 @@ Answer questions one by one, be sincere and courageous.</string>
                             <constraint firstItem="EDZ-fI-8gv" firstAttribute="centerX" secondItem="vwU-uE-TAM" secondAttribute="centerX" id="631-6A-w5g"/>
                             <constraint firstItem="MNo-8n-XD8" firstAttribute="height" secondItem="vwU-uE-TAM" secondAttribute="height" multiplier="0.04" id="6Vs-7K-FxS"/>
                             <constraint firstItem="GbJ-kv-EgI" firstAttribute="height" secondItem="vwU-uE-TAM" secondAttribute="height" multiplier="0.07" id="7N6-dx-Grq"/>
-                            <constraint firstItem="Jej-kx-5XW" firstAttribute="height" secondItem="vwU-uE-TAM" secondAttribute="height" multiplier="0.45" id="8hb-nh-HRC"/>
                             <constraint firstItem="EDZ-fI-8gv" firstAttribute="centerY" secondItem="AdX-sf-vCp" secondAttribute="centerY" id="Bcn-7a-Mga"/>
+                            <constraint firstItem="stq-Ig-hoy" firstAttribute="height" secondItem="vwU-uE-TAM" secondAttribute="height" multiplier="0.45" id="OgZ-xO-hn0"/>
                             <constraint firstItem="EDZ-fI-8gv" firstAttribute="width" secondItem="vwU-uE-TAM" secondAttribute="width" multiplier="0.85" id="f1a-dM-3fi"/>
                             <constraint firstItem="GbJ-kv-EgI" firstAttribute="width" secondItem="vwU-uE-TAM" secondAttribute="width" multiplier="0.8" id="kG7-L4-3WP"/>
                             <constraint firstItem="EDZ-fI-8gv" firstAttribute="height" relation="lessThanOrEqual" secondItem="vwU-uE-TAM" secondAttribute="height" multiplier="0.95" id="sox-lh-qBR"/>
@@ -180,7 +117,7 @@ Answer questions one by one, be sincere and courageous.</string>
                         <outlet property="descriptionLabel" destination="9La-s4-hbj" id="wTP-tN-I5R"/>
                         <outlet property="readyButton" destination="GbJ-kv-EgI" id="1Er-11-lOH"/>
                         <outlet property="separatorImageView" destination="MNo-8n-XD8" id="bQa-av-OCa"/>
-                        <outlet property="topicsButtonsStackView" destination="Jej-kx-5XW" id="gVS-is-RDJ"/>
+                        <outlet property="tableView" destination="stq-Ig-hoy" id="pR2-AS-0of"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ne2-EG-Yky" userLabel="First Responder" sceneMemberID="firstResponder"/>
