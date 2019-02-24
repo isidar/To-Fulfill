@@ -260,8 +260,8 @@
 			isa = PBXGroup;
 			children = (
 				21BE4A35218CF72A005F8938 /* String.swift */,
-				219113CB21E4C4E8004D34BD /* UIFont.swift */,
 				2120E16A21A2FFD000787AA2 /* StringQuestionParser.swift */,
+				219113CB21E4C4E8004D34BD /* UIFont.swift */,
 				21F32DCB2198885D00E5C426 /* UIColor.swift */,
 				212B5B0721F36D9100BCCDDA /* UIImage.swift */,
 				2120E16C21A418A500787AA2 /* Array.swift */,
@@ -509,7 +509,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44VNSS7L2X;
 				INFOPLIST_FILE = "$(SRCROOT)/To Fulfill/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -528,7 +528,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44VNSS7L2X;
 				INFOPLIST_FILE = "$(SRCROOT)/To Fulfill/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
