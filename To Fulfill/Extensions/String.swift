@@ -15,9 +15,11 @@ extension String {
     }
 
     var camelcased: String {
-        return split(separator: " ").count > 1 ?
-            prefix(1).lowercased() + capitalized.replacingOccurrences(of: " ", with: "").dropFirst() :
-            self
+        let words = split(separator: " ")
+        let capitalizedWords = words.map { String($0).capitalizedFirstLetter }
+        let capitalizedString = capitalizedWords.joined()
+        
+        return capitalizedString.prefix(1).lowercased() + capitalizedString.dropFirst()
     }
     
 }
