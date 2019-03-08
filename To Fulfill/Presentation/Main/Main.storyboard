@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q3D-mc-6F2">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -26,42 +26,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lhj-oy-ANH" userLabel="Content Stack View">
-                                <rect key="frame" x="20.5" y="99.5" width="373" height="697"/>
+                                <rect key="frame" x="20.666666666666657" y="99.666666666666686" width="372.66666666666674" height="696.66666666666652"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ky1-74-gEK" userLabel="Logo Items Stack View">
-                                        <rect key="frame" x="86.5" y="0.0" width="200.5" height="329.5"/>
+                                        <rect key="frame" x="86.333333333333329" y="0.0" width="200.33333333333337" height="329.33333333333331"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="249" image="plainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="rcm-2y-lMg" userLabel="Logo Image View">
-                                                <rect key="frame" x="39" y="0.0" width="122" height="245"/>
+                                                <rect key="frame" x="38.666666666666664" y="0.0" width="122.66666666666669" height="245"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="rcm-2y-lMg" secondAttribute="height" multiplier="1:2" id="l0J-gM-2aH"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="751" text="To Fulfill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89j-JY-TnH" userLabel="Logo Label">
-                                                <rect key="frame" x="0.0" y="250" width="200.5" height="79.5"/>
+                                                <rect key="frame" x="0.0" y="250.00000000000003" width="200.33333333333334" height="79.333333333333343"/>
                                                 <fontDescription key="fontDescription" name="ClickerScript-Regular" family="Clicker Script" pointSize="60"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="ClickerScript-Regular" family="Clicker Script" pointSize="76"/>
+                                                </variation>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="wavedLine" translatesAutoresizingMaskIntoConstraints="NO" id="Vc8-Vk-EY0" userLabel="Separator Image View">
-                                        <rect key="frame" x="112" y="349.5" width="149" height="14"/>
+                                        <rect key="frame" x="111.66666666666667" y="349.33333333333331" width="149.33333333333331" height="13.666666666666686"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="57O-d0-YAD" userLabel="Buttons Stack View">
-                                        <rect key="frame" x="59.5" y="383.5" width="254" height="313.5"/>
+                                        <rect key="frame" x="59.333333333333329" y="383" width="254.33333333333337" height="313.66666666666674"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hS5-UO-QBh" userLabel="Conversation Stack View">
-                                                <rect key="frame" x="0.0" y="0.0" width="254" height="104.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="254.33333333333334" height="104.66666666666667"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="●" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avg-jh-Fde" userLabel="Left Dot Label">
-                                                        <rect key="frame" x="0.0" y="0.0" width="6.5" height="104.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="6.666666666666667" height="104.66666666666667"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bs-IK-XCc" userLabel="Conversation Button">
-                                                        <rect key="frame" x="26.5" y="0.0" width="201" height="104.5"/>
+                                                        <rect key="frame" x="26.666666666666671" y="0.0" width="201" height="104.66666666666667"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="24"/>
                                                         <state key="normal" title="The Conversation">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -71,12 +74,15 @@
                                                                 <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="40"/>
+                                                        </variation>
                                                         <connections>
                                                             <action selector="conversationButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PFK-jf-e9u"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="●" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JcA-S1-lzT" userLabel="Right Dot Label">
-                                                        <rect key="frame" x="247.5" y="0.0" width="6.5" height="104.5"/>
+                                                        <rect key="frame" x="247.66666666666669" y="0.0" width="6.6666666666666572" height="104.66666666666667"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -84,26 +90,29 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YU4-4p-rLa" userLabel="Story Stack View">
-                                                <rect key="frame" x="46" y="104.5" width="162" height="104.5"/>
+                                                <rect key="frame" x="46" y="104.66666666666669" width="162.33333333333334" height="104.33333333333331"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="●" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6v-S4-QAz" userLabel="Left Dot Label">
-                                                        <rect key="frame" x="0.0" y="0.0" width="6.5" height="104.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="6.666666666666667" height="104.33333333333333"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quv-Fg-JKb" userLabel="Story Button">
-                                                        <rect key="frame" x="26.5" y="0.0" width="109" height="104.5"/>
+                                                        <rect key="frame" x="26.666666666666657" y="0.0" width="109" height="104.33333333333333"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="24"/>
                                                         <state key="normal" title="The Story">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="40"/>
+                                                        </variation>
                                                         <connections>
                                                             <action selector="storyButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fwl-D5-MaY"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="●" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBh-R0-K4r" userLabel="Right Dot Label">
-                                                        <rect key="frame" x="155.5" y="0.0" width="6.5" height="104.5"/>
+                                                        <rect key="frame" x="155.66666666666669" y="0.0" width="6.6666666666666572" height="104.33333333333333"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -111,26 +120,29 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HIA-5v-Rn5" userLabel="Special Thanks Stack View">
-                                                <rect key="frame" x="13.5" y="209" width="227" height="104.5"/>
+                                                <rect key="frame" x="13.333333333333329" y="208.99999999999991" width="227.33333333333337" height="104.66666666666666"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="●" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXD-jS-heu" userLabel="Left Dot Label">
-                                                        <rect key="frame" x="0.0" y="0.0" width="6.5" height="104.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="6.666666666666667" height="104.66666666666667"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRD-6E-9z6" userLabel="Special Thanks Button">
-                                                        <rect key="frame" x="26.5" y="0.0" width="174" height="104.5"/>
+                                                        <rect key="frame" x="26.666666666666671" y="0.0" width="174" height="104.66666666666667"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="24"/>
                                                         <state key="normal" title="Special Thanks">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="40"/>
+                                                        </variation>
                                                         <connections>
                                                             <action selector="specialThanksButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PGv-6R-has"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="●" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Hp-EE-M2X" userLabel="Right Dot Label">
-                                                        <rect key="frame" x="220.5" y="0.0" width="6.5" height="104.5"/>
+                                                        <rect key="frame" x="220.66666666666669" y="0.0" width="6.6666666666666572" height="104.66666666666667"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="7"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -170,12 +182,14 @@
         <!--Navigation Controller-->
         <scene sceneID="DNp-yJ-CrF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jUN-Vg-ObJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q3D-mc-6F2" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Iz6-C5-xMt">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="ClickerScript-Regular" family="Clicker Script" pointSize="30"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="O0n-a9-Bue">
@@ -185,6 +199,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ie5-Eg-py7"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jUN-Vg-ObJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1950.7246376811595" y="132.88043478260872"/>
         </scene>

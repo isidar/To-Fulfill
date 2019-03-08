@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina3_5" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,12 +19,13 @@
             <objects>
                 <viewController storyboardIdentifier="story" id="TpF-ft-db6" customClass="StoryViewController" customModule="To_Fulfill" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kR8-bQ-baG" customClass="DiagonalView" customModule="To_Fulfill" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.90000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="VNB-ru-0CQ" userLabel="Story Label">
-                                <rect key="frame" x="24" y="66" width="272" height="368"/>
-                                <string key="text">The two of us were the closest people to each other for almost 2 years. Without dating, we built relationship full of support, joy and hope.
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3P-bx-gvO">
+                                <rect key="frame" x="24" y="33.5" width="272" height="521"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">The two of us were the closest people to each other for almost 2 years. Without dating, we built relationship full of support, joy and hope.
 
 On October 18 we`ve realized that something between us was broken: for some period of time we were experiencing offence, the lack of personal space and awkward moments in communication. In order to finish our relationships with dignity, we collected a list of questions for each other, met and listened carefully. 
 
@@ -33,23 +33,25 @@ With these questions, magic has happened: together we could pass the period full
 
 We are not psychologists. We are just people who don`t want to leave both of you with unanswered questions.
 
-Yours, Diana and Alla.</string>
+Yours, Diana and Alla.</mutableString>
                                 <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="36"/>
+                                </variation>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="VNB-ru-0CQ" firstAttribute="height" secondItem="dla-dx-hAU" secondAttribute="height" multiplier="0.8" id="5ya-gC-bY5"/>
-                            <constraint firstItem="VNB-ru-0CQ" firstAttribute="centerX" secondItem="dla-dx-hAU" secondAttribute="centerX" id="JTR-Hg-Sal"/>
-                            <constraint firstItem="VNB-ru-0CQ" firstAttribute="centerY" secondItem="dla-dx-hAU" secondAttribute="centerY" id="erA-oA-opv"/>
-                            <constraint firstItem="VNB-ru-0CQ" firstAttribute="width" secondItem="dla-dx-hAU" secondAttribute="width" multiplier="0.85" id="rte-KT-XtS"/>
+                            <constraint firstItem="u3P-bx-gvO" firstAttribute="centerX" secondItem="dla-dx-hAU" secondAttribute="centerX" id="CNB-o1-LBz"/>
+                            <constraint firstItem="u3P-bx-gvO" firstAttribute="height" secondItem="dla-dx-hAU" secondAttribute="height" multiplier="0.95" id="akp-dG-gdC"/>
+                            <constraint firstItem="u3P-bx-gvO" firstAttribute="centerY" secondItem="dla-dx-hAU" secondAttribute="centerY" id="jwZ-tS-7vC"/>
+                            <constraint firstItem="u3P-bx-gvO" firstAttribute="width" secondItem="dla-dx-hAU" secondAttribute="width" multiplier="0.85" id="u6Y-1V-nlZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dla-dx-hAU"/>
                     </view>
                     <connections>
-                        <outlet property="label" destination="VNB-ru-0CQ" id="lOk-yA-QjA"/>
+                        <outlet property="textField" destination="u3P-bx-gvO" id="OUJ-j9-6o0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Blf-2m-jW8" userLabel="First Responder" sceneMemberID="firstResponder"/>

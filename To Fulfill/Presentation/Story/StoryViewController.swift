@@ -10,11 +10,15 @@ import UIKit
 
 class StoryViewController: ViewController {
     
-    @IBOutlet private weak var label: UILabel!
+    @IBOutlet private weak var textField: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        label.text = Localizator.shared.localizedStrings?.story.title
-    }    
+        
+        textField.text = ""
+        DispatchQueue.main.async { [weak self] in
+            self?.textField.text = Localizator.shared.localizedStrings?.story.title
+        }
+    }
 
 }

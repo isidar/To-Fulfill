@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
+    <device id="ipad12_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,30 +19,33 @@
             <objects>
                 <viewController storyboardIdentifier="questions" id="lUI-7h-9MS" customClass="QuestionsViewController" customModule="To_Fulfill" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bEi-FW-ZA2" customClass="DiagonalView" customModule="To_Fulfill" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alienation" translatesAutoresizingMaskIntoConstraints="NO" id="gUG-6w-rVV" userLabel="Image View">
-                                <rect key="frame" x="137.5" y="87.5" width="139" height="139"/>
+                                <rect key="frame" x="397.5" y="124.5" width="229" height="229"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="gUG-6w-rVV" secondAttribute="height" id="22k-5F-hKX"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="d9X-lO-Are" userLabel="Question Stack View">
-                                <rect key="frame" x="31" y="329.5" width="352" height="351.5"/>
+                                <rect key="frame" x="77" y="569" width="870" height="403"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wavedLine" translatesAutoresizingMaskIntoConstraints="NO" id="oHo-2S-PHk">
-                                        <rect key="frame" x="114" y="0.0" width="124" height="20.5"/>
+                                        <rect key="frame" x="281.5" y="0.0" width="307" height="33.5"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9FF-bd-Tdj" userLabel="Question Label">
-                                        <rect key="frame" x="0.0" y="40.5" width="352" height="270.5"/>
+                                        <rect key="frame" x="7" y="53.5" width="856" height="295.5"/>
                                         <string key="text"> This block is dedicated to help you to go through the tough period of your relationship, when difficult circumstances such as illness / death of a loved one, loss / change of work, etc. occurred in your or your partner/friend/relative life.</string>
                                         <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="41"/>
+                                        </variation>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wavedLine" translatesAutoresizingMaskIntoConstraints="NO" id="Vgq-zM-oLV">
-                                        <rect key="frame" x="114" y="331" width="124" height="20.5"/>
+                                        <rect key="frame" x="281.5" y="369" width="307" height="34"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -52,10 +54,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="agH-B8-7Lc" userLabel="Buttons Stack View">
-                                <rect key="frame" x="41.5" y="784.5" width="331" height="57.5"/>
+                                <rect key="frame" x="102.5" y="1252" width="819" height="94"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQF-nC-iw3" customClass="NavigationButton" customModule="To_Fulfill" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="331" height="57.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="819" height="94"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="18"/>
                                         <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
                                         <state key="normal" title="WE'RE READY">
@@ -69,12 +71,15 @@
                                                 <real key="value" value="2"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="34"/>
+                                        </variation>
                                         <connections>
                                             <action selector="buttonClick:" destination="lUI-7h-9MS" eventType="touchUpInside" id="oKh-Ax-SLE"/>
                                         </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMY-zM-6nx" userLabel="Not Now Button" customClass="NavigationButton" customModule="To_Fulfill" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="57.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="94"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="18"/>
                                         <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
                                         <state key="normal" title="Not now">
@@ -88,6 +93,9 @@
                                                 <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="34"/>
+                                        </variation>
                                         <connections>
                                             <action selector="buttonClick:" destination="lUI-7h-9MS" eventType="touchUpInside" id="hHQ-6V-LBv"/>
                                         </connections>
@@ -129,6 +137,6 @@
     </scenes>
     <resources>
         <image name="alienation" width="394" height="512"/>
-        <image name="wavedLine" width="256" height="73"/>
+        <image name="wavedLine" width="1024" height="140"/>
     </resources>
 </document>

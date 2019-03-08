@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,36 +22,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="ITj-7v-Evh" userLabel="Thanks Label">
-                                <rect key="frame" x="24" y="54.5" width="272" height="449.5"/>
-                                <string key="text">We do want to say huge thank you to everyone who helped us to make our Fulfill dream come true. Special thanks go to: Mary Zaremba and Mykhailo Komarov for our logo, Vladyslava Tashkinova for our design, Annika Udovenko for helping with wording, Helen Shakhova for copywriting and support 24/7, Olga Semenova for professional psychotherapy advices, Nazarii Melnyk for developing, Denis Rumiyantsev for testing and Denys Boiechko for huge help.
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUU-dH-Gki" userLabel="Author Text View">
+                                <rect key="frame" x="24" y="40" width="272" height="464"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">We do want to say huge thank you to everyone who helped us to make our Fulfill dream come true.
+Special thanks go to: Mary Zaremba and Mykhailo Komarov for our logo, 
+Vladyslava Tashkinova for our design, 
+Annika Udovenko for helping with wording, 
+Helen Shakhova for copywriting and support 24/7, 
+Olga Semenova for professional psychotherapy advices, 
+Nazarii Melnyk for developing, 
+Denis Rumiyantsev for testing and 
+Denys Boiechko for huge help.
 We wouldn`t be able to fulfill without you.</string>
                                 <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="36"/>
+                                </variation>
+                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Developed by Nazarii Melnyk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="GcM-Ln-ptL" userLabel="Developed By Label">
                                 <rect key="frame" x="32" y="524" width="256" height="24"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="36"/>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ITj-7v-Evh" firstAttribute="centerX" secondItem="Q7z-ST-5IA" secondAttribute="centerX" id="No0-1J-BMc"/>
+                            <constraint firstItem="dUU-dH-Gki" firstAttribute="centerY" secondItem="Q7z-ST-5IA" secondAttribute="centerY" multiplier="0.95" id="GkZ-WY-Svk"/>
                             <constraint firstItem="GcM-Ln-ptL" firstAttribute="centerX" secondItem="enq-m9-gP9" secondAttribute="centerX" id="VgV-TZ-fdA"/>
-                            <constraint firstItem="ITj-7v-Evh" firstAttribute="centerY" secondItem="Q7z-ST-5IA" secondAttribute="centerY" multiplier="0.95" id="bsD-45-GW2"/>
+                            <constraint firstItem="GcM-Ln-ptL" firstAttribute="top" secondItem="dUU-dH-Gki" secondAttribute="bottom" constant="20" id="bhv-98-gMc"/>
+                            <constraint firstItem="dUU-dH-Gki" firstAttribute="width" secondItem="Q7z-ST-5IA" secondAttribute="width" multiplier="0.85" id="fqr-NO-phl"/>
+                            <constraint firstItem="dUU-dH-Gki" firstAttribute="centerY" secondItem="Q7z-ST-5IA" secondAttribute="centerY" priority="751" id="jIk-Cm-7Lm"/>
+                            <constraint firstItem="dUU-dH-Gki" firstAttribute="centerX" secondItem="Q7z-ST-5IA" secondAttribute="centerX" id="lDJ-6Q-WMY"/>
+                            <constraint firstItem="dUU-dH-Gki" firstAttribute="top" secondItem="Q7z-ST-5IA" secondAttribute="top" constant="20" id="nXS-Wb-VXQ"/>
                             <constraint firstItem="Q7z-ST-5IA" firstAttribute="bottom" secondItem="GcM-Ln-ptL" secondAttribute="bottom" constant="20" id="om3-Qs-t3g"/>
-                            <constraint firstItem="ITj-7v-Evh" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Q7z-ST-5IA" secondAttribute="top" constant="20" id="qDd-c2-Kc6"/>
                             <constraint firstItem="GcM-Ln-ptL" firstAttribute="width" secondItem="Q7z-ST-5IA" secondAttribute="width" multiplier="0.8" id="qaE-aK-ODF"/>
-                            <constraint firstItem="ITj-7v-Evh" firstAttribute="width" secondItem="Q7z-ST-5IA" secondAttribute="width" multiplier="0.85" id="vcY-VP-ndU"/>
-                            <constraint firstItem="GcM-Ln-ptL" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ITj-7v-Evh" secondAttribute="bottom" constant="20" id="zMo-vC-WRb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Q7z-ST-5IA"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="GkZ-WY-Svk"/>
+                                <exclude reference="jIk-Cm-7Lm"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
-                        <outlet property="thanksLabel" destination="ITj-7v-Evh" id="xdp-a1-d82"/>
+                        <outlet property="authorTextView" destination="dUU-dH-Gki" id="ZXl-If-Ymp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfm-OC-WhI" userLabel="First Responder" sceneMemberID="firstResponder"/>

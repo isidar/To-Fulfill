@@ -13,10 +13,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let newFont: UIFont = .clickerScriptRegular(30)
+        let fontPointSize: CGFloat = Localizator.shared.currentLocalization == .ukrainian ? 20 : 30
+        let newFont: UIFont = .clickerScriptRegular(fontPointSize)
         let attributes = [NSAttributedString.Key.font: newFont]
         UINavigationBar.appearance().titleTextAttributes = attributes
         
