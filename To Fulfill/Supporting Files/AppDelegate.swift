@@ -8,6 +8,11 @@
 
 import UIKit
 
+#if !DEBUG
+    import Fabric
+    import Crashlytics
+#endif
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -19,6 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let newFont: UIFont = .clickerScriptRegular(fontPointSize)
         let attributes = [NSAttributedString.Key.font: newFont]
         UINavigationBar.appearance().titleTextAttributes = attributes
+        
+        #if !DEBUG
+            Fabric.with([Crashlytics.self])
+        #endif
         
         return true
     }
