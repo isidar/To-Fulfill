@@ -35,7 +35,7 @@ extension UIColor {
     }
     
     static var background: UIColor {
-        return UIColor(hexString: "#bfffc0")
+        return UIColor(hexString: "#ebfafb")
     }
     
 }

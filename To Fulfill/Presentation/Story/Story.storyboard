@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,14 +18,14 @@
         <scene sceneID="51E-2u-mRp">
             <objects>
                 <viewController storyboardIdentifier="story" id="TpF-ft-db6" customClass="StoryViewController" customModule="To_Fulfill" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kR8-bQ-baG" customClass="DiagonalView" customModule="To_Fulfill" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="kR8-bQ-baG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3P-bx-gvO">
                                 <rect key="frame" x="24" y="33.5" width="272" height="521"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">The two of us were the closest people to each other for almost 2 years. Without dating, we built relationship full of support, joy and hope.
+                                <string key="text">The two of us were the closest people to each other for almost 2 years. Without dating, we built relationship full of support, joy and hope.
 
 On October 18 we`ve realized that something between us was broken: for some period of time we were experiencing offence, the lack of personal space and awkward moments in communication. In order to finish our relationships with dignity, we collected a list of questions for each other, met and listened carefully. 
 
@@ -33,7 +33,7 @@ With these questions, magic has happened: together we could pass the period full
 
 We are not psychologists. We are just people who don`t want to leave both of you with unanswered questions.
 
-Yours, Diana and Alla.</mutableString>
+Yours, Diana and Alla.</string>
                                 <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="heightClass=regular-widthClass=regular">

@@ -18,7 +18,7 @@
         <scene sceneID="2s8-vh-c9l">
             <objects>
                 <viewController storyboardIdentifier="conversation" id="0Gp-cW-pAn" customClass="ConversationViewController" customModule="To_Fulfill" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="AdX-sf-vCp" customClass="DiagonalView" customModule="To_Fulfill" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="AdX-sf-vCp">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
