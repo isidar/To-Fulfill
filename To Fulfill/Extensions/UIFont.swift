@@ -10,13 +10,8 @@ import UIKit
 
 extension UIFont {
     
-    static func clickerScriptRegular(_ pointSize: CGFloat) -> UIFont {
-        return UIFont(name: "ClickerScript-Regular", size: pointSize) ??
-            .systemFont(ofSize: pointSize)
-    }
-    
-    static func montserratLight(_ pointSize: CGFloat) -> UIFont {
-        return UIFont(name: "Montserrat-Light", size: pointSize) ??
+    static func verdanaRegular(_ pointSize: CGFloat) -> UIFont {
+        return UIFont(name: "Verdana-Regular", size: pointSize) ??
             .systemFont(ofSize: pointSize)
     }
     

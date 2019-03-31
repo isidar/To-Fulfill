@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="ipad12_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="montserrat-light.ttf">
-            <string>Montserrat-Light</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Questions View Controller-->
         <scene sceneID="htX-Gb-iGJ">
@@ -29,23 +24,23 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="d9X-lO-Are" userLabel="Question Stack View">
-                                <rect key="frame" x="77" y="569" width="870" height="403"/>
+                                <rect key="frame" x="77" y="544.5" width="870" height="452"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wavedLine" translatesAutoresizingMaskIntoConstraints="NO" id="oHo-2S-PHk">
                                         <rect key="frame" x="281.5" y="0.0" width="307" height="33.5"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9FF-bd-Tdj" userLabel="Question Label">
-                                        <rect key="frame" x="7" y="53.5" width="856" height="295.5"/>
+                                        <rect key="frame" x="8" y="53.5" width="854" height="344.5"/>
                                         <string key="text"> This block is dedicated to help you to go through the tough period of your relationship, when difficult circumstances such as illness / death of a loved one, loss / change of work, etc. occurred in your or your partner/friend/relative life.</string>
-                                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="PingFangHK-Thin" family="PingFang HK" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="41"/>
+                                            <fontDescription key="fontDescription" name="PingFangHK-Thin" family="PingFang HK" pointSize="41"/>
                                         </variation>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wavedLine" translatesAutoresizingMaskIntoConstraints="NO" id="Vgq-zM-oLV">
-                                        <rect key="frame" x="281.5" y="369" width="307" height="34"/>
+                                        <rect key="frame" x="281.5" y="418" width="307" height="34"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -58,7 +53,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQF-nC-iw3" customClass="NavigationButton" customModule="To_Fulfill" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="819" height="94"/>
-                                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="PingFangHK-Thin" family="PingFang HK" pointSize="18"/>
                                         <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
                                         <state key="normal" title="WE'RE READY">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -72,7 +67,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="34"/>
+                                            <fontDescription key="fontDescription" name="PingFangHK-Thin" family="PingFang HK" pointSize="34"/>
                                         </variation>
                                         <connections>
                                             <action selector="buttonClick:" destination="lUI-7h-9MS" eventType="touchUpInside" id="oKh-Ax-SLE"/>
@@ -80,7 +75,7 @@
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMY-zM-6nx" userLabel="Not Now Button" customClass="NavigationButton" customModule="To_Fulfill" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="94"/>
-                                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="PingFangHK-Thin" family="PingFang HK" pointSize="18"/>
                                         <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
                                         <state key="normal" title="Not now">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -94,7 +89,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="34"/>
+                                            <fontDescription key="fontDescription" name="PingFangHK-Thin" family="PingFang HK" pointSize="34"/>
                                         </variation>
                                         <connections>
                                             <action selector="buttonClick:" destination="lUI-7h-9MS" eventType="touchUpInside" id="hHQ-6V-LBv"/>
@@ -136,7 +131,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="alienation" width="394" height="512"/>
+        <image name="alienation" width="618.719970703125" height="615.3599853515625"/>
         <image name="wavedLine" width="1024" height="140"/>
     </resources>
 </document>

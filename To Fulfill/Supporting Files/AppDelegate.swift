@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         let fontPointSize: CGFloat = Localizator.shared.currentLocalization == .ukrainian ? 20 : 30
-        let newFont: UIFont = .clickerScriptRegular(fontPointSize)
+        let newFont: UIFont = .verdanaRegular(fontPointSize)
         let attributes = [NSAttributedString.Key.font: newFont]
         UINavigationBar.appearance().titleTextAttributes = attributes
         

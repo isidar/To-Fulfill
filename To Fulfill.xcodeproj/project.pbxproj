@@ -15,8 +15,6 @@
 		2151C8E4218CB66700C7F416 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2151C8E3218CB66700C7F416 /* AppDelegate.swift */; };
 		2151C8E6218CB66700C7F416 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2151C8E5218CB66700C7F416 /* MainViewController.swift */; };
 		2151C8EB218CB66800C7F416 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2151C8EA218CB66800C7F416 /* Assets.xcassets */; };
-		2161B42521E393E700678AE0 /* clicker-script.regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2161B42421E392A000678AE0 /* clicker-script.regular.ttf */; };
-		2161B42621E393EA00678AE0 /* montserrat-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2161B42321E392A000678AE0 /* montserrat-light.ttf */; };
 		2161B42E21E3949500678AE0 /* Conversation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2161B42C21E3949400678AE0 /* Conversation.storyboard */; };
 		2161B42F21E3949500678AE0 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2161B42D21E3949400678AE0 /* ConversationViewController.swift */; };
 		2161B43121E3990000678AE0 /* ExtendedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2161B43021E3990000678AE0 /* ExtendedButton.swift */; };
@@ -54,8 +52,6 @@
 		2151C8E5218CB66700C7F416 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2151C8EA218CB66800C7F416 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2151C8EF218CB66800C7F416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2161B42321E392A000678AE0 /* montserrat-light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "montserrat-light.ttf"; sourceTree = "<group>"; };
-		2161B42421E392A000678AE0 /* clicker-script.regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "clicker-script.regular.ttf"; sourceTree = "<group>"; };
 		2161B42C21E3949400678AE0 /* Conversation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Conversation.storyboard; sourceTree = "<group>"; };
 		2161B42D21E3949400678AE0 /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		2161B43021E3990000678AE0 /* ExtendedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedButton.swift; sourceTree = "<group>"; };
@@ -129,15 +125,6 @@
 				21BE4A09218CD662005F8938 /* Supporting Files */,
 			);
 			path = "To Fulfill";
-			sourceTree = "<group>";
-		};
-		2161B42221E392A000678AE0 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				2161B42421E392A000678AE0 /* clicker-script.regular.ttf */,
-				2161B42321E392A000678AE0 /* montserrat-light.ttf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		2161B42B21E3949400678AE0 /* Conversation */ = {
@@ -336,7 +323,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2161B42621E393EA00678AE0 /* montserrat-light.ttf in Resources */,
 				21BE4A2D218CEF3C005F8938 /* uk.plist in Resources */,
 				21BE4A1E218CDD69005F8938 /* Story.storyboard in Resources */,
 				21BE4A12218CD849005F8938 /* LaunchScreen.storyboard in Resources */,
@@ -346,7 +332,6 @@
 				2151C8EB218CB66800C7F416 /* Assets.xcassets in Resources */,
 				21BE4A20218CDD7B005F8938 /* SpecialThanks.storyboard in Resources */,
 				21BE4A2C218CEF3C005F8938 /* en.plist in Resources */,
-				2161B42521E393E700678AE0 /* clicker-script.regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
