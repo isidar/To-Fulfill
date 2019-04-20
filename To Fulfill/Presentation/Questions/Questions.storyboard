@@ -26,9 +26,10 @@
                             <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="d9X-lO-Are" userLabel="Question Stack View">
                                 <rect key="frame" x="77" y="544.5" width="870" height="452"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wavedLine" translatesAutoresizingMaskIntoConstraints="NO" id="oHo-2S-PHk">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vuD-Re-eHy" customClass="CurvedLineView" customModule="To_Fulfill" customModuleProvider="target">
                                         <rect key="frame" x="281.5" y="0.0" width="307" height="33.5"/>
-                                    </imageView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9FF-bd-Tdj" userLabel="Question Label">
                                         <rect key="frame" x="8" y="53.5" width="854" height="344.5"/>
                                         <string key="text"> This block is dedicated to help you to go through the tough period of your relationship, when difficult circumstances such as illness / death of a loved one, loss / change of work, etc. occurred in your or your partner/friend/relative life.</string>
@@ -39,13 +40,14 @@
                                             <fontDescription key="fontDescription" name="PingFangHK-Thin" family="PingFang HK" pointSize="41"/>
                                         </variation>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wavedLine" translatesAutoresizingMaskIntoConstraints="NO" id="Vgq-zM-oLV">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Stf-CB-AVd" customClass="CurvedLineView" customModule="To_Fulfill" customModuleProvider="target">
                                         <rect key="frame" x="281.5" y="418" width="307" height="34"/>
-                                    </imageView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Vgq-zM-oLV" firstAttribute="height" secondItem="oHo-2S-PHk" secondAttribute="height" id="5Ls-9W-4ji"/>
-                                    <constraint firstItem="Vgq-zM-oLV" firstAttribute="width" secondItem="oHo-2S-PHk" secondAttribute="width" id="wlP-A2-Xkn"/>
+                                    <constraint firstItem="Stf-CB-AVd" firstAttribute="height" secondItem="vuD-Re-eHy" secondAttribute="height" id="2kr-bm-xRR"/>
+                                    <constraint firstItem="Stf-CB-AVd" firstAttribute="width" secondItem="vuD-Re-eHy" secondAttribute="width" id="MOC-iY-eeE"/>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="agH-B8-7Lc" userLabel="Buttons Stack View">
@@ -100,12 +102,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="oHo-2S-PHk" firstAttribute="width" secondItem="K4h-Kt-vjk" secondAttribute="width" multiplier="0.3" id="0Lm-7F-dhD"/>
                             <constraint firstItem="gUG-6w-rVV" firstAttribute="height" secondItem="K4h-Kt-vjk" secondAttribute="height" multiplier="0.17" id="2pV-li-B5H"/>
                             <constraint firstItem="d9X-lO-Are" firstAttribute="width" secondItem="K4h-Kt-vjk" secondAttribute="width" multiplier="0.85" id="3Y4-Xa-c9H"/>
+                            <constraint firstItem="vuD-Re-eHy" firstAttribute="width" secondItem="K4h-Kt-vjk" secondAttribute="width" multiplier="0.3" id="3o2-9T-MPE"/>
                             <constraint firstItem="gUG-6w-rVV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="K4h-Kt-vjk" secondAttribute="top" constant="20" id="89X-fj-KOl"/>
                             <constraint firstItem="gUG-6w-rVV" firstAttribute="centerY" secondItem="bEi-FW-ZA2" secondAttribute="centerY" multiplier="0.35" priority="999" id="MoQ-ET-rXH"/>
                             <constraint firstItem="agH-B8-7Lc" firstAttribute="width" secondItem="K4h-Kt-vjk" secondAttribute="width" multiplier="0.8" id="NVM-zR-DqS"/>
+                            <constraint firstItem="vuD-Re-eHy" firstAttribute="height" secondItem="K4h-Kt-vjk" secondAttribute="height" multiplier="0.025" id="Tws-iD-HTN"/>
                             <constraint firstItem="d9X-lO-Are" firstAttribute="centerX" secondItem="bEi-FW-ZA2" secondAttribute="centerX" id="UdS-DD-w2m"/>
                             <constraint firstItem="d9X-lO-Are" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gUG-6w-rVV" secondAttribute="bottom" constant="20" id="ZIl-Di-Mcq"/>
                             <constraint firstItem="gUG-6w-rVV" firstAttribute="centerX" secondItem="bEi-FW-ZA2" secondAttribute="centerX" id="aFr-Iu-H5F"/>
@@ -113,7 +116,6 @@
                             <constraint firstItem="agH-B8-7Lc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="d9X-lO-Are" secondAttribute="bottom" constant="20" id="dmy-mt-97G"/>
                             <constraint firstItem="agH-B8-7Lc" firstAttribute="height" secondItem="K4h-Kt-vjk" secondAttribute="height" multiplier="0.07" id="gfQ-3G-d5K"/>
                             <constraint firstItem="d9X-lO-Are" firstAttribute="centerY" secondItem="bEi-FW-ZA2" secondAttribute="centerY" multiplier="1.128" priority="749" id="gqy-yZ-zMK"/>
-                            <constraint firstItem="oHo-2S-PHk" firstAttribute="height" secondItem="K4h-Kt-vjk" secondAttribute="height" multiplier="0.025" id="sc7-uN-ZdR"/>
                             <constraint firstItem="K4h-Kt-vjk" firstAttribute="bottom" secondItem="agH-B8-7Lc" secondAttribute="bottom" constant="20" id="tyL-Km-LXD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K4h-Kt-vjk"/>
@@ -132,6 +134,5 @@
     </scenes>
     <resources>
         <image name="alienation" width="618.719970703125" height="615.3599853515625"/>
-        <image name="wavedLine" width="1024" height="140"/>
     </resources>
 </document>

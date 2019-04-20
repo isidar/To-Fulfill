@@ -38,9 +38,10 @@ Answer questions one by one, be sincere and courageous.</string>
                                             <fontDescription key="fontDescription" name="PingFangHK-Thin" family="PingFang HK" pointSize="34"/>
                                         </variation>
                                     </label>
-                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wavedLine" translatesAutoresizingMaskIntoConstraints="NO" id="MNo-8n-XD8" userLabel="Separator Image View">
-                                        <rect key="frame" x="-51" y="545" width="1024" height="53.5"/>
-                                    </imageView>
+                                    <view hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QeB-qq-6mn" userLabel="Separator View" customClass="CurvedLineView" customModule="To_Fulfill" customModuleProvider="target">
+                                        <rect key="frame" x="92.5" y="545" width="737" height="53.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                     <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="stq-Ig-hoy">
                                         <rect key="frame" x="0.0" y="545" width="922" height="605.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -98,18 +99,19 @@ Answer questions one by one, be sincere and courageous.</string>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="stq-Ig-hoy" firstAttribute="width" secondItem="EDZ-fI-8gv" secondAttribute="width" id="Z60-gx-VQS"/>
+                                    <constraint firstItem="QeB-qq-6mn" firstAttribute="width" secondItem="EDZ-fI-8gv" secondAttribute="width" multiplier="0.8" id="fvo-ZT-hgf"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="EDZ-fI-8gv" firstAttribute="centerX" secondItem="vwU-uE-TAM" secondAttribute="centerX" id="631-6A-w5g"/>
-                            <constraint firstItem="MNo-8n-XD8" firstAttribute="height" secondItem="vwU-uE-TAM" secondAttribute="height" multiplier="0.04" id="6Vs-7K-FxS"/>
                             <constraint firstItem="GbJ-kv-EgI" firstAttribute="height" secondItem="vwU-uE-TAM" secondAttribute="height" multiplier="0.07" id="7N6-dx-Grq"/>
                             <constraint firstItem="EDZ-fI-8gv" firstAttribute="centerY" secondItem="AdX-sf-vCp" secondAttribute="centerY" id="Bcn-7a-Mga"/>
                             <constraint firstItem="stq-Ig-hoy" firstAttribute="height" secondItem="vwU-uE-TAM" secondAttribute="height" multiplier="0.45" id="OgZ-xO-hn0"/>
                             <constraint firstItem="EDZ-fI-8gv" firstAttribute="width" secondItem="vwU-uE-TAM" secondAttribute="width" multiplier="0.9" id="f1a-dM-3fi"/>
                             <constraint firstItem="GbJ-kv-EgI" firstAttribute="width" secondItem="vwU-uE-TAM" secondAttribute="width" multiplier="0.8" id="kG7-L4-3WP"/>
+                            <constraint firstItem="QeB-qq-6mn" firstAttribute="height" secondItem="vwU-uE-TAM" secondAttribute="height" multiplier="0.04" id="qlI-91-25c"/>
                             <constraint firstItem="EDZ-fI-8gv" firstAttribute="height" relation="lessThanOrEqual" secondItem="vwU-uE-TAM" secondAttribute="height" multiplier="0.95" id="sox-lh-qBR"/>
                             <constraint firstItem="56h-ir-ii6" firstAttribute="height" secondItem="vwU-uE-TAM" secondAttribute="height" multiplier="0.17" id="vVr-Pf-8Fm"/>
                         </constraints>
@@ -119,7 +121,7 @@ Answer questions one by one, be sincere and courageous.</string>
                         <outlet property="contentStackView" destination="EDZ-fI-8gv" id="Uz1-Zi-uXJ"/>
                         <outlet property="descriptionLabel" destination="9La-s4-hbj" id="wTP-tN-I5R"/>
                         <outlet property="readyButton" destination="GbJ-kv-EgI" id="1Er-11-lOH"/>
-                        <outlet property="separatorImageView" destination="MNo-8n-XD8" id="bQa-av-OCa"/>
+                        <outlet property="separatorView" destination="QeB-qq-6mn" id="M7H-nJ-Krq"/>
                         <outlet property="tableView" destination="stq-Ig-hoy" id="pR2-AS-0of"/>
                     </connections>
                 </viewController>
@@ -130,6 +132,5 @@ Answer questions one by one, be sincere and courageous.</string>
     </scenes>
     <resources>
         <image name="conversation" width="618.719970703125" height="615.3599853515625"/>
-        <image name="wavedLine" width="1024" height="140"/>
     </resources>
 </document>

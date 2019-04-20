@@ -14,7 +14,7 @@ class ConversationViewController: ViewController {
 
     @IBOutlet private weak var contentStackView: UIStackView!
     @IBOutlet private weak var descriptionLabel: UILabel!
-    @IBOutlet private weak var separatorImageView: UIImageView!
+    @IBOutlet private weak var separatorView: CurvedLineView!
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var readyButton: NavigationButton!
     
@@ -32,15 +32,15 @@ class ConversationViewController: ViewController {
     @IBAction private func readyClick(_ sender: UIButton) {
         descriptionLabel.alpha = 0
         descriptionLabel.text = localizedStrings?.ui.descriptionLabel.topicsTip
-        separatorImageView.alpha = 0
-        separatorImageView.isHidden = false
+        separatorView.alpha = 0
+        separatorView.isHidden = false
         readyButton.isHidden = true
         
         // TODO: – Try batch update instead of consistent calls
         
         let separatorAnimation: (Bool) -> Void = { [weak self] _ in
             UIView.animate(withDuration: 0.3) {
-                self?.separatorImageView.alpha = 1
+                self?.separatorView.alpha = 1
             }
         }
         let descriptionAnimation: (Bool) -> Void = { [weak self] _ in

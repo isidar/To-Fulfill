@@ -40,9 +40,15 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="wavedLine" translatesAutoresizingMaskIntoConstraints="NO" id="Vc8-Vk-EY0" userLabel="Separator Image View">
+                                    <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="ztm-TU-Bbn" customClass="CurvedLineView" customModule="To_Fulfill" customModuleProvider="target">
                                         <rect key="frame" x="111.66666666666667" y="349.33333333333331" width="149.33333333333331" height="13.666666666666686"/>
-                                    </imageView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="57O-d0-YAD" userLabel="Buttons Stack View">
                                         <rect key="frame" x="54.333333333333343" y="383" width="264.33333333333326" height="313.66666666666674"/>
                                         <subviews>
@@ -145,9 +151,9 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Vc8-Vk-EY0" firstAttribute="height" secondItem="lhj-oy-ANH" secondAttribute="height" multiplier="0.02" id="AjP-LA-aJU"/>
+                                    <constraint firstItem="ztm-TU-Bbn" firstAttribute="height" secondItem="lhj-oy-ANH" secondAttribute="height" multiplier="0.02" id="6p2-dP-u76"/>
+                                    <constraint firstItem="ztm-TU-Bbn" firstAttribute="width" secondItem="lhj-oy-ANH" secondAttribute="width" multiplier="0.4" id="ONz-9g-sFD"/>
                                     <constraint firstItem="57O-d0-YAD" firstAttribute="height" secondItem="lhj-oy-ANH" secondAttribute="height" multiplier="0.45" id="VV9-ES-SeY"/>
-                                    <constraint firstItem="Vc8-Vk-EY0" firstAttribute="width" secondItem="lhj-oy-ANH" secondAttribute="width" multiplier="0.4" id="XpJ-0F-KIj"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -198,6 +204,5 @@
     </scenes>
     <resources>
         <image name="plainLogo" width="262.75" height="497.25"/>
-        <image name="wavedLine" width="1024" height="140"/>
     </resources>
 </document>

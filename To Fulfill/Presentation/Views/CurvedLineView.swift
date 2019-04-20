@@ -12,13 +12,13 @@ import UIKit
 class CurvedLineView: UIView {
 
     @IBInspectable
-    var horizontalOffset: CGFloat = 10
+    var horizontalOffset: CGFloat = 0
     @IBInspectable
     var verticalOffset: CGFloat = 0
     @IBInspectable
-    var curve: CGFloat = 10
+    var curve: CGFloat = 40
     @IBInspectable
-    var lineWidth: CGFloat = 1
+    var lineWidth: CGFloat = 2
     @IBInspectable
     var lineColor: UIColor = .gray
     
