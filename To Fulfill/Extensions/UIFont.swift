@@ -9,10 +9,8 @@
 import UIKit
 
 extension UIFont {
-    
-    static func verdanaRegular(_ pointSize: CGFloat) -> UIFont {
-        return UIFont(name: "Verdana-Regular", size: pointSize) ??
+    static func papyrusRegular(_ pointSize: CGFloat) -> UIFont {
+        return UIFont(name: "Papyrus", size: pointSize) ??
             .systemFont(ofSize: pointSize)
     }
-    
 }
