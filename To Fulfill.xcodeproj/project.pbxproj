@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		210F4725227867BF0074045D /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210F4724227867BF0074045D /* NSAttributedString.swift */; };
 		2120E16921A2EEF000787AA2 /* NavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120E16821A2EEF000787AA2 /* NavigationButton.swift */; };
 		2120E16B21A2FFD000787AA2 /* StringQuestionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120E16A21A2FFD000787AA2 /* StringQuestionParser.swift */; };
 		2120E16D21A418A500787AA2 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120E16C21A418A500787AA2 /* Array.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		210F4724227867BF0074045D /* NSAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedString.swift; sourceTree = "<group>"; };
 		2120E16821A2EEF000787AA2 /* NavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButton.swift; sourceTree = "<group>"; };
 		2120E16A21A2FFD000787AA2 /* StringQuestionParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringQuestionParser.swift; sourceTree = "<group>"; };
 		2120E16C21A418A500787AA2 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 				219113CB21E4C4E8004D34BD /* UIFont.swift */,
 				21F32DCB2198885D00E5C426 /* UIColor.swift */,
 				212B5B0721F36D9100BCCDDA /* UIImage.swift */,
+				210F4724227867BF0074045D /* NSAttributedString.swift */,
 				2120E16C21A418A500787AA2 /* Array.swift */,
 			);
 			path = Extensions;
@@ -366,6 +369,7 @@
 				219113CC21E4C4E8004D34BD /* UIFont.swift in Sources */,
 				2120E16921A2EEF000787AA2 /* NavigationButton.swift in Sources */,
 				21BE4A1A218CDD44005F8938 /* SpecialThanksViewController.swift in Sources */,
+				210F4725227867BF0074045D /* NSAttributedString.swift in Sources */,
 				21E10D042198531800FB6BF2 /* TransitionManager.swift in Sources */,
 				2161B42F21E3949500678AE0 /* ConversationViewController.swift in Sources */,
 			);

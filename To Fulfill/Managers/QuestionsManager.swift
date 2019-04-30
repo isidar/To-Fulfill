@@ -33,10 +33,10 @@ class QuestionsManager {
         return advise.questionAndFlag
     }
     
-    func getImage(for questionsTopic: String) -> UIImage {
+    func image(for questionsTopic: String) -> UIImage? {
         let questionObject = questions.first { $0.topicHeader == questionsTopic }
         let imageName = questionObject?.imageName ?? ""
-        return .getImageFor(question: imageName)
+        return .imageFor(question: imageName)
     }
 
 }

@@ -24,13 +24,13 @@
                                         <rect key="frame" x="78.333333333333329" y="0.0" width="216.33333333333337" height="329.33333333333331"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="249" image="plainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="rcm-2y-lMg" userLabel="Logo Image View">
-                                                <rect key="frame" x="50" y="0.0" width="116" height="231.66666666666711"/>
+                                                <rect key="frame" x="100" y="0.0" width="16" height="32"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="rcm-2y-lMg" secondAttribute="height" multiplier="1:2" id="l0J-gM-2aH"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="751" text="To Fulfill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89j-JY-TnH" userLabel="Logo Label">
-                                                <rect key="frame" x="0.0" y="236.6666666666666" width="216.33333333333334" height="92.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="36.999999999999972" width="216.33333333333334" height="292.33333333333326"/>
                                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="60"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>

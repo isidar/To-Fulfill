@@ -55,7 +55,7 @@ private extension QuestionsViewController {
 private extension QuestionsViewController {
     
     func setupQuestionsData() {
-        imageView.image = QuestionsManager.shared.getImage(for: questionsTopic)
+        imageView.image = QuestionsManager.shared.image(for: questionsTopic)
         questions = QuestionsManager.shared.getQuestions(for: questionsTopic)
         topicDescription = QuestionsManager.shared.getTopicDescription(for: questionsTopic)
         adviseData = QuestionsManager.shared.getAdvise(for: questionsTopic)
