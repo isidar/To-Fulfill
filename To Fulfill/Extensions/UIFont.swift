@@ -9,8 +9,15 @@
 import UIKit
 
 extension UIFont {
+    
     static func papyrusRegular(_ pointSize: CGFloat) -> UIFont {
         return UIFont(name: "Papyrus", size: pointSize) ??
             .systemFont(ofSize: pointSize)
     }
+    
+    static func pingFangHKSemibold(_ pointSize: CGFloat) -> UIFont {
+        return UIFont(name: "PingFangHK-Semibold", size: pointSize) ??
+            .systemFont(ofSize: pointSize)
+    }
+    
 }

@@ -14,9 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        let fontPointSize: CGFloat = Localizator.shared.currentLocalization == .ukrainian ? 20 : 30
-        let newFont: UIFont = .papyrusRegular(fontPointSize)
+        let fontPointSize: CGFloat = 20
+        let newFont: UIFont = .pingFangHKSemibold(fontPointSize)
         let attributes = [NSAttributedString.Key.font: newFont]
         UINavigationBar.appearance().titleTextAttributes = attributes
         

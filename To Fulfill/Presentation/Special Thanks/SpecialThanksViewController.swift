@@ -18,9 +18,6 @@ class SpecialThanksViewController: ViewController {
         authorTextView.text = ""
         DispatchQueue.main.async { [weak self] in // need to investigate why it works
             self?.authorTextView.text = Localizator.shared.localizedStrings?.specialThanks.title
-            if let instagramIcon = UIImage.instagramIcon {
-                self?.authorTextView.attributedText = self?.authorTextView.attributedText.replaced("@", with: instagramIcon)
-            }
         }
     }
 

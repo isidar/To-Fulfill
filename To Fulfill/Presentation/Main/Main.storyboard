@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q3D-mc-6F2">
-    <device id="retina6_5" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,30 +18,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lhj-oy-ANH" userLabel="Content Stack View">
-                                <rect key="frame" x="20.666666666666657" y="99.666666666666686" width="372.66666666666674" height="696.66666666666652"/>
+                                <rect key="frame" x="20.5" y="177" width="373" height="542"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ky1-74-gEK" userLabel="Logo Items Stack View">
-                                        <rect key="frame" x="78.333333333333329" y="0.0" width="216.33333333333337" height="329.33333333333331"/>
+                                        <rect key="frame" x="96.5" y="0.0" width="180.5" height="247.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="249" image="plainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="rcm-2y-lMg" userLabel="Logo Image View">
-                                                <rect key="frame" x="100" y="0.0" width="16" height="32"/>
+                                                <rect key="frame" x="82" y="0.0" width="16" height="32"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="rcm-2y-lMg" secondAttribute="height" multiplier="1:2" id="l0J-gM-2aH"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="751" text="To Fulfill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89j-JY-TnH" userLabel="Logo Label">
-                                                <rect key="frame" x="0.0" y="36.999999999999972" width="216.33333333333334" height="292.33333333333326"/>
-                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="60"/>
+                                                <rect key="frame" x="0.0" y="37" width="180.5" height="210.5"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="50"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=regular-widthClass=regular">
-                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="76"/>
+                                                    <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="66"/>
                                                 </variation>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="ztm-TU-Bbn" customClass="CurvedLineView" customModule="To_Fulfill" customModuleProvider="target">
-                                        <rect key="frame" x="111.66666666666667" y="349.33333333333331" width="149.33333333333331" height="13.666666666666686"/>
+                                        <rect key="frame" x="93.5" y="267.5" width="186" height="10.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
@@ -49,120 +49,92 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="57O-d0-YAD" userLabel="Buttons Stack View">
-                                        <rect key="frame" x="54.333333333333343" y="383" width="264.33333333333326" height="313.66666666666674"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="57O-d0-YAD" userLabel="Buttons Stack View">
+                                        <rect key="frame" x="37.5" y="298" width="298" height="244"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hS5-UO-QBh" userLabel="Conversation Stack View">
-                                                <rect key="frame" x="0.0" y="0.0" width="264.33333333333331" height="104.66666666666667"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="●" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avg-jh-Fde" userLabel="Left Dot Label">
-                                                        <rect key="frame" x="0.0" y="0.0" width="6.666666666666667" height="104.66666666666667"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bs-IK-XCc" userLabel="Conversation Button">
-                                                        <rect key="frame" x="26.666666666666686" y="0.0" width="211" height="104.66666666666667"/>
-                                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="24"/>
-                                                        <state key="normal" title="The Conversation">
-                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
-                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <variation key="heightClass=regular-widthClass=regular">
-                                                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="40"/>
-                                                        </variation>
-                                                        <connections>
-                                                            <action selector="conversationButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PFK-jf-e9u"/>
-                                                        </connections>
-                                                    </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="●" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JcA-S1-lzT" userLabel="Right Dot Label">
-                                                        <rect key="frame" x="257.66666666666669" y="0.0" width="6.6666666666666856" height="104.66666666666667"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YU4-4p-rLa" userLabel="Story Stack View">
-                                                <rect key="frame" x="46.333333333333329" y="104.66666666666669" width="171.33333333333337" height="104.33333333333331"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="●" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6v-S4-QAz" userLabel="Left Dot Label">
-                                                        <rect key="frame" x="0.0" y="0.0" width="6.666666666666667" height="104.33333333333333"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quv-Fg-JKb" userLabel="Story Button">
-                                                        <rect key="frame" x="26.666666666666671" y="0.0" width="118.00000000000001" height="104.33333333333333"/>
-                                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="24"/>
-                                                        <state key="normal" title="The Story">
-                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        </state>
-                                                        <variation key="heightClass=regular-widthClass=regular">
-                                                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="40"/>
-                                                        </variation>
-                                                        <connections>
-                                                            <action selector="storyButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fwl-D5-MaY"/>
-                                                        </connections>
-                                                    </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="●" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBh-R0-K4r" userLabel="Right Dot Label">
-                                                        <rect key="frame" x="164.66666666666669" y="0.0" width="6.6666666666666572" height="104.33333333333333"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HIA-5v-Rn5" userLabel="Special Thanks Stack View">
-                                                <rect key="frame" x="15.000000000000014" y="208.99999999999991" width="234.33333333333337" height="104.66666666666666"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="●" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXD-jS-heu" userLabel="Left Dot Label">
-                                                        <rect key="frame" x="0.0" y="0.0" width="6.666666666666667" height="104.66666666666667"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRD-6E-9z6" userLabel="Special Thanks Button">
-                                                        <rect key="frame" x="26.666666666666671" y="0.0" width="181" height="104.66666666666667"/>
-                                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="24"/>
-                                                        <state key="normal" title="Special Thanks">
-                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        </state>
-                                                        <variation key="heightClass=regular-widthClass=regular">
-                                                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="40"/>
-                                                        </variation>
-                                                        <connections>
-                                                            <action selector="specialThanksButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PGv-6R-has"/>
-                                                        </connections>
-                                                    </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="●" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Hp-EE-M2X" userLabel="Right Dot Label">
-                                                        <rect key="frame" x="227.66666666666669" y="0.0" width="6.6666666666666572" height="104.66666666666667"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="7"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bs-IK-XCc" userLabel="Conversation Button" customClass="ExtendedButton" customModule="To_Fulfill" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="298" height="81.5"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
+                                                <state key="normal" title="The Conversation">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="topBorderColor">
+                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="verticalBordersWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="34"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="conversationButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PFK-jf-e9u"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quv-Fg-JKb" userLabel="Story Button" customClass="ExtendedButton" customModule="To_Fulfill" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="81.5" width="298" height="81"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
+                                                <state key="normal" title="The Story">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="topBorderColor">
+                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="verticalBordersWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="34"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="storyButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fwl-D5-MaY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRD-6E-9z6" userLabel="Special Thanks Button" customClass="ExtendedButton" customModule="To_Fulfill" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="162.5" width="298" height="81.5"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
+                                                <state key="normal" title="Special Thanks">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="topBorderColor">
+                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="verticalBordersWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="34"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="specialThanksButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PGv-6R-has"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="ztm-TU-Bbn" firstAttribute="height" secondItem="lhj-oy-ANH" secondAttribute="height" multiplier="0.02" id="6p2-dP-u76"/>
-                                    <constraint firstItem="ztm-TU-Bbn" firstAttribute="width" secondItem="lhj-oy-ANH" secondAttribute="width" multiplier="0.4" id="ONz-9g-sFD"/>
+                                    <constraint firstItem="57O-d0-YAD" firstAttribute="width" secondItem="lhj-oy-ANH" secondAttribute="width" multiplier="0.8" id="B1A-Gt-oeO"/>
+                                    <constraint firstItem="ztm-TU-Bbn" firstAttribute="width" secondItem="lhj-oy-ANH" secondAttribute="width" multiplier="0.5" id="ONz-9g-sFD"/>
                                     <constraint firstItem="57O-d0-YAD" firstAttribute="height" secondItem="lhj-oy-ANH" secondAttribute="height" multiplier="0.45" id="VV9-ES-SeY"/>
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.44237831230000002" green="0.96670752760000001" blue="0.6863271594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.98039215686274506" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="lhj-oy-ANH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UcC-nA-gRW"/>
-                            <constraint firstItem="lhj-oy-ANH" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.9" id="Zcy-6q-ige"/>
+                            <constraint firstItem="lhj-oy-ANH" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.7" id="Zcy-6q-ige"/>
                             <constraint firstItem="lhj-oy-ANH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bos-5v-sVv"/>
-                            <constraint firstItem="lhj-oy-ANH" firstAttribute="width" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.9" id="w6z-uw-yRR"/>
+                            <constraint firstItem="lhj-oy-ANH" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.9" id="w6z-uw-yRR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
