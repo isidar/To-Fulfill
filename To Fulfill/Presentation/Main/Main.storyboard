@@ -141,6 +141,8 @@
                     <navigationItem key="navigationItem" id="Wc5-0k-oih"/>
                     <connections>
                         <outlet property="conversationButton" destination="8Bs-IK-XCc" id="4uG-A2-doI"/>
+                        <outlet property="curvedLineView" destination="ztm-TU-Bbn" id="Osg-OR-D8N"/>
+                        <outlet property="logoItemsStackView" destination="ky1-74-gEK" id="daN-oA-6Ni"/>
                         <outlet property="specialThanksButton" destination="pRD-6E-9z6" id="SFP-5o-DSk"/>
                         <outlet property="storyButton" destination="quv-Fg-JKb" id="dZk-4e-Zrr"/>
                     </connections>
