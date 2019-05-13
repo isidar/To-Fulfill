@@ -20,6 +20,7 @@
 		2161B42E21E3949500678AE0 /* Conversation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2161B42C21E3949400678AE0 /* Conversation.storyboard */; };
 		2161B42F21E3949500678AE0 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2161B42D21E3949400678AE0 /* ConversationViewController.swift */; };
 		2161B43121E3990000678AE0 /* ExtendedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2161B43021E3990000678AE0 /* ExtendedButton.swift */; };
+		2180F75422898968009A4D2B /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2180F75322898968009A4D2B /* MenuTableViewCell.swift */; };
 		219113CC21E4C4E8004D34BD /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219113CB21E4C4E8004D34BD /* UIFont.swift */; };
 		21AB1FEA220A4FD900243082 /* Root+LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AB1FE9220A4FD900243082 /* Root+LocalizedStrings.swift */; };
 		21AB1FEC220A50B400243082 /* Conversation+UI+LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AB1FEB220A50B400243082 /* Conversation+UI+LocalizedStrings.swift */; };
@@ -59,6 +60,7 @@
 		2161B42C21E3949400678AE0 /* Conversation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Conversation.storyboard; sourceTree = "<group>"; };
 		2161B42D21E3949400678AE0 /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		2161B43021E3990000678AE0 /* ExtendedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedButton.swift; sourceTree = "<group>"; };
+		2180F75322898968009A4D2B /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		219113CB21E4C4E8004D34BD /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		21AB1FE9220A4FD900243082 /* Root+LocalizedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Root+LocalizedStrings.swift"; sourceTree = "<group>"; };
 		21AB1FEB220A50B400243082 /* Conversation+UI+LocalizedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Conversation+UI+LocalizedStrings.swift"; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 		21BE4A0B218CD6D0005F8938 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				2180F75322898968009A4D2B /* MenuTableViewCell.swift */,
 				2151C8E5218CB66700C7F416 /* MainViewController.swift */,
 				21BE4A0F218CD83B005F8938 /* Main.storyboard */,
 			);
@@ -369,6 +372,7 @@
 				219113CC21E4C4E8004D34BD /* UIFont.swift in Sources */,
 				2120E16921A2EEF000787AA2 /* NavigationButton.swift in Sources */,
 				21BE4A1A218CDD44005F8938 /* SpecialThanksViewController.swift in Sources */,
+				2180F75422898968009A4D2B /* MenuTableViewCell.swift in Sources */,
 				210F4725227867BF0074045D /* NSAttributedString.swift in Sources */,
 				21E10D042198531800FB6BF2 /* TransitionManager.swift in Sources */,
 				2161B42F21E3949500678AE0 /* ConversationViewController.swift in Sources */,

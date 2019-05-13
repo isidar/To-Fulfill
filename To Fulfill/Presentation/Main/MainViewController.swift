@@ -14,61 +14,76 @@ class MainViewController: ViewController {
     
     @IBOutlet private weak var logoItemsStackView: UIStackView!
     @IBOutlet private weak var curvedLineView: CurvedLineView!
-    @IBOutlet private weak var conversationButton: UIButton!
-    @IBOutlet private weak var storyButton: UIButton!
-    @IBOutlet private weak var specialThanksButton: UIButton!
+    @IBOutlet private weak var menuTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        conversationButton.setTitle(localizedStrings?.conversationButtonsLabel, for: .normal)
-        storyButton.setTitle(localizedStrings?.storyButtonsLabel, for: .normal)
-        specialThanksButton.setTitle(localizedStrings?.specialThanksButtonsLabel, for: .normal)
-        showViews()
+        showViewsWithAnimation()
     }
     
-    private func showViews() {
+    private func showViewsWithAnimation() {
         logoItemsStackView.alpha = 0
         curvedLineView.alpha = 0
-        conversationButton.alpha = 0
-        storyButton.alpha = 0
-        specialThanksButton.alpha = 0
+        menuTableView.alpha = 0
         
-        let buttonsAnimation: (Bool) -> Void = { [weak self] _ in
-            UIView.animate(withDuration: 0.35, animations: {
-                self?.conversationButton.alpha = 1
-            }) { _ in
-                UIView.animate(withDuration: 0.35, animations: {
-                    self?.storyButton.alpha = 1
-                }) { _ in
-                    UIView.animate(withDuration: 0.35, animations: {
-                        self?.specialThanksButton.alpha = 1
-                    })
-                }
-            }
-        }
-        let curvedLineAnimation: (Bool) -> Void = { [weak self] _ in
-            UIView.animate(withDuration: 0.5, animations: {
-                self?.curvedLineView.alpha = 1
-            }, completion: buttonsAnimation)
-        }
-        
-        UIView.animate(withDuration: 0.9, animations: {
+        UIView.animate(withDuration: 1) {
             self.logoItemsStackView.alpha = 1
-        }, completion: curvedLineAnimation)
-    }
-    
-    @IBAction private func conversationButtonClick(_ sender: UIButton) {
-        show(.conversation) { $0.navigationItem.title = sender.currentTitle }
-    }
-    
-    @IBAction private func storyButtonClick(_ sender: UIButton) {
-        show(.story) { $0.navigationItem.title = sender.currentTitle }
-    }
-    
-    @IBAction private func specialThanksButtonClick(_ sender: UIButton) {
-        show(.specialThanks) { $0.navigationItem.title = sender.currentTitle }
+            self.curvedLineView.alpha = 1
+            self.menuTableView.alpha = 1
+        }
     }
     
 }
 
+// MARK: - TableView DataSource methods
+extension MainViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "navigationCell", for: indexPath) as? MenuTableViewCell else {
+            return UITableViewCell()
+        }
+        
+        switch indexPath.row {
+        case 0:
+            cell.type = .conversation
+        case 1:
+            cell.type = .story
+        case 2:
+            cell.type = .specialThanks
+        default: break
+        }
+        
+        return cell
+    }
+    
+}
+
+// MARK: - TableView Delegate methods
+extension MainViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        guard let selectedCell = tableView.cellForRow(at: indexPath) as? MenuTableViewCell,
+              let vcToShow = ViewControllerToShow(rawValue: "\(selectedCell.type)") else { return }
+        show(vcToShow) { $0.navigationItem.title = selectedCell.title.text }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return tableView.frame.height / CGFloat(tableView.numberOfRows(inSection: 0))
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.alpha = 0
+        UIView.animate(
+            withDuration: 0.9,
+            delay: 0.35 * Double(indexPath.row),
+            animations: {
+                cell.alpha = 1
+        })
+    }
+
+}
