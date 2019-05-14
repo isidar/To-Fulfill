@@ -29,10 +29,11 @@ With these questions, magic has happened: together we could pass the period full
 We are not psychologists. We are just people who don`t want to leave both of you with unanswered questions.
 
 Yours, Diana and Alla.</string>
-                                <fontDescription key="fontDescription" name="PingFangHK-Thin" family="PingFang HK" pointSize="20"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" name="PingFangHK-Thin" family="PingFang HK" pointSize="36"/>
+                                    <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="36"/>
                                 </variation>
                             </textView>
                         </subviews>

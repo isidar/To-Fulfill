@@ -68,6 +68,12 @@ extension ConversationViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "questionsTopic", for: indexPath)
         let questionObject = localizedStrings?.questions[safe: indexPath.row]
         cell.textLabel?.text = questionObject?.topicHeader ?? ""
+        
+        let numberOfRows = tableView.numberOfRows(inSection: indexPath.section)        
+        if indexPath.row == numberOfRows - 1 {
+            cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
+        }
+        
         return cell
     }
     
