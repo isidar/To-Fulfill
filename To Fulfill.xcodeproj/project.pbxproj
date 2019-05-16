@@ -14,8 +14,6 @@
 		2120E16D21A418A500787AA2 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120E16C21A418A500787AA2 /* Array.swift */; };
 		2120E17121A4318A00787AA2 /* Conversation+Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2120E17021A4318A00787AA2 /* Conversation+Strings.swift */; };
 		212B5B0821F36D9100BCCDDA /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212B5B0721F36D9100BCCDDA /* UIImage.swift */; };
-		2148282A2236927F00CD4764 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214828282236927E00CD4764 /* Fabric.framework */; };
-		2148282B2236927F00CD4764 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214828292236927F00CD4764 /* Crashlytics.framework */; };
 		2151C8E4218CB66700C7F416 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2151C8E3218CB66700C7F416 /* AppDelegate.swift */; };
 		2151C8E6218CB66700C7F416 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2151C8E5218CB66700C7F416 /* MainViewController.swift */; };
 		2151C8EB218CB66800C7F416 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2151C8EA218CB66800C7F416 /* Assets.xcassets */; };
@@ -24,6 +22,8 @@
 		2161B43121E3990000678AE0 /* ExtendedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2161B43021E3990000678AE0 /* ExtendedButton.swift */; };
 		2180F75422898968009A4D2B /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2180F75322898968009A4D2B /* MenuTableViewCell.swift */; };
 		219113CC21E4C4E8004D34BD /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219113CB21E4C4E8004D34BD /* UIFont.swift */; };
+		219B569D228D824500985670 /* Crashlytics in Frameworks */ = {isa = PBXBuildFile; fileRef = 219B569C228D824400985670 /* Crashlytics */; };
+		219B569F228D824E00985670 /* Fabric in Frameworks */ = {isa = PBXBuildFile; fileRef = 219B569E228D824D00985670 /* Fabric */; };
 		21AB1FEA220A4FD900243082 /* Root+LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AB1FE9220A4FD900243082 /* Root+LocalizedStrings.swift */; };
 		21AB1FEC220A50B400243082 /* Conversation+UI+LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AB1FEB220A50B400243082 /* Conversation+UI+LocalizedStrings.swift */; };
 		21ADB8F8226BC0E2001828D5 /* CurvedLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ADB8F7226BC0E1001828D5 /* CurvedLineView.swift */; };
@@ -54,8 +54,6 @@
 		2120E16C21A418A500787AA2 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		2120E17021A4318A00787AA2 /* Conversation+Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Conversation+Strings.swift"; sourceTree = "<group>"; };
 		212B5B0721F36D9100BCCDDA /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
-		214828282236927E00CD4764 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = Frameworks/Fabric.framework; sourceTree = SOURCE_ROOT; };
-		214828292236927F00CD4764 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = Frameworks/Crashlytics.framework; sourceTree = SOURCE_ROOT; };
 		2151C8E0218CB66700C7F416 /* To Fulfill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To Fulfill.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2151C8E3218CB66700C7F416 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2151C8E5218CB66700C7F416 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +64,8 @@
 		2161B43021E3990000678AE0 /* ExtendedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedButton.swift; sourceTree = "<group>"; };
 		2180F75322898968009A4D2B /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		219113CB21E4C4E8004D34BD /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		219B569C228D824400985670 /* Crashlytics */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Crashlytics; path = Frameworks/Crashlytics.framework/Crashlytics; sourceTree = SOURCE_ROOT; };
+		219B569E228D824D00985670 /* Fabric */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Fabric; path = Frameworks/Fabric.framework/Fabric; sourceTree = SOURCE_ROOT; };
 		21AB1FE9220A4FD900243082 /* Root+LocalizedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Root+LocalizedStrings.swift"; sourceTree = "<group>"; };
 		21AB1FEB220A50B400243082 /* Conversation+UI+LocalizedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Conversation+UI+LocalizedStrings.swift"; sourceTree = "<group>"; };
 		21ADB8F7226BC0E1001828D5 /* CurvedLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurvedLineView.swift; sourceTree = "<group>"; };
@@ -93,8 +93,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2148282B2236927F00CD4764 /* Crashlytics.framework in Frameworks */,
-				2148282A2236927F00CD4764 /* Fabric.framework in Frameworks */,
+				219B569F228D824E00985670 /* Fabric in Frameworks */,
+				219B569D228D824500985670 /* Crashlytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,8 +122,8 @@
 		214828272236925F00CD4764 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				214828292236927F00CD4764 /* Crashlytics.framework */,
-				214828282236927E00CD4764 /* Fabric.framework */,
+				219B569E228D824D00985670 /* Fabric */,
+				219B569C228D824400985670 /* Crashlytics */,
 			);
 			name = Frameworks;
 			path = "New Group";
@@ -554,6 +554,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/Crashlytics.framework",
+					"$(PROJECT_DIR)/Frameworks/Fabric.framework",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = toFulfill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = iOSDevelopment;
@@ -579,6 +584,11 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/Crashlytics.framework",
+					"$(PROJECT_DIR)/Frameworks/Fabric.framework",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = toFulfill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
