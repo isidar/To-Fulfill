@@ -41,9 +41,9 @@
 				<key>topicHeader</key>
 				<string>Through Tough Times</string>
 				<key>description</key>
-				<string>This block is dedicated to help you to go through the tough period of your relationship, when difficult circumstances such as illness / death of a loved one, loss / change of work, etc. occurred in your or your partner/friend/relative life.</string>
+				<string>This block is dedicated to help you to go through the tough period of your relationship, when difficult circumstances such as illness/death of a loved one, loss/change of work, etc. occurred in your or your partner/friend/relative life.</string>
 				<key>advise</key>
-				<string>Express support for each other as you have discussed during this block. Remember: tough period will will end, but relationships could last if you`re commited to them.</string>
+				<string>Express support for each other as you have discussed during this block. Remember: tough period will end, but relationships could last if you`re commited to them.</string>
 				<key>array</key>
 				<array>
 					<string>What situation has affected our relationship?</string>
@@ -51,7 +51,7 @@
 					<string>What resources can help us to overcome this period of our lives?</string>
 					<string>What can we do to go through hard times together?</string>
 					<string>How can we express support for each other right now?</string>
-					<string>What plan can we set so our relationship will overcome this time? (if possible- write it on a sheet of paper)</string>
+					<string>What plan can we set so our relationship will overcome this time? (if possible write it on a sheet of paper)</string>
 				</array>
 			</dict>
 			<dict>
