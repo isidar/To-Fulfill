@@ -23,7 +23,7 @@
 				<key>description</key>
 				<string>This block is dedicated to solving conflicts in your relationship. By answering these questions, you can deal with specific conflict situations in your relationship.</string>
 				<key>advise</key>
-				<string>[again]To maintain and support trust in your relationship after a conflict, follow the rules that both of you agreed on during the discussion.</string>
+				<string>[menu]To maintain and support trust in your relationship after a conflict, follow the rules that both of you agreed on during the discussion.</string>
 				<key>array</key>
 				<array>
 					<string>What situation do we want to solve now?</string>
@@ -43,7 +43,7 @@
 				<key>description</key>
 				<string>This block is dedicated to help you to go through the tough period of your relationship, when difficult circumstances such as illness/death of a loved one, loss/change of work, etc. occurred in your or your partner/friend/relative life.</string>
 				<key>advise</key>
-				<string>Express support for each other as you have discussed during this block. Remember: tough period will end, but relationships could last if you`re commited to them.</string>
+				<string>[menu]Express support for each other as you have discussed during this block. Remember: tough period will end, but relationships could last if you`re commited to them.</string>
 				<key>array</key>
 				<array>
 					<string>What situation has affected our relationship?</string>
@@ -62,7 +62,7 @@
 				<key>description</key>
 				<string>This block is devoted to the period of alienation when the distance between partners/friends/relatives in a relationship gradually increases.</string>
 				<key>advise</key>
-				<string>In order to reduce the distance between you - follow the plan. Remember that your conversation is the first step for returning the relationship you used to have.</string>
+				<string>[menu]In order to reduce the distance between you - follow the plan. Remember that your conversation is the first step for returning the relationship you used to have.</string>
 				<key>array</key>
 				<array>
 					<string>Do we know what specifically influenced our relationship?</string>
@@ -81,7 +81,7 @@
 				<key>description</key>
 				<string>This block is devoted to the stage when both of you understand that the format of your relationship has changed recently and you should find a new form for it.</string>
 				<key>advise</key>
-				<string>In order for new status of your relationship not to destroy your communication, think about your overall comfort using what was said during your conversation.</string>
+				<string>[menu]In order for new status of your relationship not to destroy your communication, think about your overall comfort using what was said during your conversation.</string>
 				<key>array</key>
 				<array>
 					<string>On a scale from 1 to 10, rate how happy are you in this relationship (where 10 - a feeling of complete happiness, and 1 - complete dissatisfaction)</string>
