@@ -11,6 +11,7 @@ import UIKit
 class MainViewController: ViewController {
     
     private let localizedStrings = Localizator.shared.localizedStrings?.main
+    private let menu: [MenuTableViewCell.NavigationType] = [.conversation, .story, .specialThanks]
     
     @IBOutlet private weak var logoItemsStackView: UIStackView!
     @IBOutlet private weak var curvedLineView: CurvedLineView!
@@ -47,19 +48,14 @@ extension MainViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         
-        switch indexPath.row {
-        case 0:
-            cell.type = .conversation
-        case 1:
-            cell.type = .story
-        case 2:
-            cell.type = .specialThanks
-        default: break
-        }
+        menu[safe: indexPath.row].flatMap { cell.type = $0 }
         
         let numberOfRows = tableView.numberOfRows(inSection: indexPath.section)
         if indexPath.row == numberOfRows - 1 {
-            cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
+            cell.separatorInset = UIEdgeInsets(top: 0,
+                                               left: 0,
+                                               bottom: 0,
+                                               right: .greatestFiniteMagnitude)
         }
         
         return cell

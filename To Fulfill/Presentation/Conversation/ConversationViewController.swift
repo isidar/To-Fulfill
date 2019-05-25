@@ -69,7 +69,10 @@ extension ConversationViewController: UITableViewDataSource {
         
         let numberOfRows = tableView.numberOfRows(inSection: indexPath.section)        
         if indexPath.row == numberOfRows - 1 {
-            cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
+            cell.separatorInset = UIEdgeInsets(top: 0,
+                                               left: 0,
+                                               bottom: 0,
+                                               right: .greatestFiniteMagnitude)
         }
         
         return cell

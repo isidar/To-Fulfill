@@ -38,7 +38,7 @@ class Localizator {
     }
     
     /// Returns current Apple device language
-    var currentAppleLanguage: String { // TODO: – Return tuple with language and region
+    var currentAppleLanguage: String {
         let langArray = UserDefaults.standard.object(forKey: "AppleLanguages") as? NSArray
         var current = (langArray?.firstObject as? String) ?? ""
         

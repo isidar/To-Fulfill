@@ -18,7 +18,7 @@ extension String {
     
     var questionAndFlag: (String, QuestionFlag) {
         guard let flagStartIndex = firstIndex(of: "["),
-            let flagEndIndex = firstIndex(of: "]") else {
+              let flagEndIndex = firstIndex(of: "]") else {
                 return (self, .next)
         }
         
