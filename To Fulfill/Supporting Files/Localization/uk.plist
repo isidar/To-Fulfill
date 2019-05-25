@@ -125,8 +125,6 @@
 			<dict>
 				<key>weAreReady</key>
 				<string>МИ ГОТОВІ</string>
-				<key>notNow</key>
-				<string>Не зараз</string>
 				<key>next</key>
 				<string>Далі</string>
 				<key>solveOtherConflicts</key>

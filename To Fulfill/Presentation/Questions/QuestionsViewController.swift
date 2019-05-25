@@ -14,7 +14,6 @@ class QuestionsViewController: ViewController {
     @IBOutlet private weak var questionStackView: UIStackView!
     @IBOutlet private weak var questionLabel: UILabel!
     @IBOutlet private weak var nextButton: NavigationButton!
-    @IBOutlet private weak var notNowButton: NavigationButton!
     
     var questionsTopic = ""
     
@@ -30,8 +29,6 @@ class QuestionsViewController: ViewController {
         
         navigationItem.title = questionsTopic
         nextButton.navigationState = .weAreReady
-//        notNowButton?.navigationState = .notNow
-        
         questionLabel.text = topicDescription
     }
     
@@ -74,48 +71,16 @@ private extension QuestionsViewController {
             navigationController?.popToRootViewController(animated: true)
             return
             
-        case .notNow:
-            let currentQuestionFlag = questions[safe: questionIndex]?.flag
-            if case let QuestionFlag.redirect(nextQuestionIndex)? = currentQuestionFlag {
-                questionIndex = nextQuestionIndex
-            }
-            
         default: break
         }
         
-        setupButtonsAppearanceForNextQuestion()
+        if let questionFlag = questions[safe: questionIndex]?.flag,
+           questionFlag == .next {
+            nextButton.navigationState = .next
+        }
+        
         setupTextForNextQuestion()
     }
-    
-    func setupButtonsAppearanceForNextQuestion() {
-        guard let nextQuestionFlag = questions[safe: questionIndex]?.flag else { return }
-        
-        switch nextQuestionFlag {
-        case .next:
-            nextButton.navigationState = .next
-            notNowButton.isHidden = true
-            
-        case .menu where !notNowButton.isHidden:
-            nextButton.navigationState = .backToMenu
-            notNowButton.isHidden = true
-            
-        case .again where !notNowButton.isHidden:
-            nextButton.navigationState = .solveOtherConflicts
-            notNowButton.isHidden = true
-            
-        case .menu where notNowButton.isHidden,
-             .again where notNowButton.isHidden:
-            questionIndex += 1
-            setupButtonsAppearanceForNextQuestion()
-            
-        case .redirect:
-            nextButton.navigationState = .weAreReady
-            notNowButton.isHidden = false
-            
-        default: break
-        }
-    }
-    
     
     func setupTextForNextQuestion() {
         let animationDuration = 0.2
@@ -133,8 +98,6 @@ private extension QuestionsViewController {
             default:
                 nextButton.isHidden = true
             }
-            
-            notNowButton.isHidden = true
         }
     }
     

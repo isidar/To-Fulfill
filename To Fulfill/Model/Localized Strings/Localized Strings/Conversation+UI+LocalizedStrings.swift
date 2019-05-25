@@ -16,7 +16,6 @@ extension LocalizedStrings.Conversation.UI {
     
     struct NavigationButtonsLabels: Decodable {
         var weAreReady: String
-        var notNow: String
         var next: String
         var solveOtherConflicts: String
         var backToMenu: String

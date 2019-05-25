@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="ipad12_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -50,80 +50,52 @@
                                     <constraint firstItem="Stf-CB-AVd" firstAttribute="width" secondItem="vuD-Re-eHy" secondAttribute="width" id="MOC-iY-eeE"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="agH-B8-7Lc" userLabel="Buttons Stack View">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQF-nC-iw3" customClass="NavigationButton" customModule="To_Fulfill" customModuleProvider="target">
                                 <rect key="frame" x="102.5" y="1252" width="819" height="94"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQF-nC-iw3" customClass="NavigationButton" customModule="To_Fulfill" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="819" height="94"/>
-                                        <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="18"/>
-                                        <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
-                                        <state key="normal" title="WE'RE READY">
-                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="34"/>
-                                        </variation>
-                                        <connections>
-                                            <action selector="buttonClick:" destination="lUI-7h-9MS" eventType="touchUpInside" id="oKh-Ax-SLE"/>
-                                        </connections>
-                                    </button>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMY-zM-6nx" userLabel="Not Now Button" customClass="NavigationButton" customModule="To_Fulfill" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="94"/>
-                                        <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="18"/>
-                                        <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
-                                        <state key="normal" title="Not now">
-                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="34"/>
-                                        </variation>
-                                        <connections>
-                                            <action selector="buttonClick:" destination="lUI-7h-9MS" eventType="touchUpInside" id="hHQ-6V-LBv"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                <state key="normal" title="WE'RE READY">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="34"/>
+                                </variation>
+                                <connections>
+                                    <action selector="buttonClick:" destination="lUI-7h-9MS" eventType="touchUpInside" id="oKh-Ax-SLE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="gUG-6w-rVV" firstAttribute="height" secondItem="K4h-Kt-vjk" secondAttribute="height" multiplier="0.17" id="2pV-li-B5H"/>
                             <constraint firstItem="d9X-lO-Are" firstAttribute="width" secondItem="K4h-Kt-vjk" secondAttribute="width" multiplier="0.85" id="3Y4-Xa-c9H"/>
                             <constraint firstItem="vuD-Re-eHy" firstAttribute="width" secondItem="K4h-Kt-vjk" secondAttribute="width" multiplier="0.3" id="3o2-9T-MPE"/>
+                            <constraint firstItem="YQF-nC-iw3" firstAttribute="height" secondItem="K4h-Kt-vjk" secondAttribute="height" multiplier="0.07" id="5LD-MV-ytl"/>
                             <constraint firstItem="gUG-6w-rVV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="K4h-Kt-vjk" secondAttribute="top" constant="20" id="89X-fj-KOl"/>
                             <constraint firstItem="gUG-6w-rVV" firstAttribute="centerY" secondItem="bEi-FW-ZA2" secondAttribute="centerY" multiplier="0.35" priority="999" id="MoQ-ET-rXH"/>
-                            <constraint firstItem="agH-B8-7Lc" firstAttribute="width" secondItem="K4h-Kt-vjk" secondAttribute="width" multiplier="0.8" id="NVM-zR-DqS"/>
                             <constraint firstItem="vuD-Re-eHy" firstAttribute="height" secondItem="K4h-Kt-vjk" secondAttribute="height" multiplier="0.025" id="Tws-iD-HTN"/>
                             <constraint firstItem="d9X-lO-Are" firstAttribute="centerX" secondItem="bEi-FW-ZA2" secondAttribute="centerX" id="UdS-DD-w2m"/>
                             <constraint firstItem="d9X-lO-Are" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gUG-6w-rVV" secondAttribute="bottom" constant="20" id="ZIl-Di-Mcq"/>
                             <constraint firstItem="gUG-6w-rVV" firstAttribute="centerX" secondItem="bEi-FW-ZA2" secondAttribute="centerX" id="aFr-Iu-H5F"/>
-                            <constraint firstItem="agH-B8-7Lc" firstAttribute="centerX" secondItem="bEi-FW-ZA2" secondAttribute="centerX" id="brY-Mb-ML9"/>
-                            <constraint firstItem="agH-B8-7Lc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="d9X-lO-Are" secondAttribute="bottom" constant="20" id="dmy-mt-97G"/>
-                            <constraint firstItem="agH-B8-7Lc" firstAttribute="height" secondItem="K4h-Kt-vjk" secondAttribute="height" multiplier="0.07" id="gfQ-3G-d5K"/>
+                            <constraint firstItem="YQF-nC-iw3" firstAttribute="centerX" secondItem="bEi-FW-ZA2" secondAttribute="centerX" id="asC-c0-2VX"/>
+                            <constraint firstItem="YQF-nC-iw3" firstAttribute="width" secondItem="K4h-Kt-vjk" secondAttribute="width" multiplier="0.8" id="cC6-P0-rDv"/>
                             <constraint firstItem="d9X-lO-Are" firstAttribute="centerY" secondItem="bEi-FW-ZA2" secondAttribute="centerY" multiplier="1.128" priority="749" id="gqy-yZ-zMK"/>
-                            <constraint firstItem="K4h-Kt-vjk" firstAttribute="bottom" secondItem="agH-B8-7Lc" secondAttribute="bottom" constant="20" id="tyL-Km-LXD"/>
+                            <constraint firstItem="K4h-Kt-vjk" firstAttribute="bottom" secondItem="YQF-nC-iw3" secondAttribute="bottom" constant="20" id="trV-yO-npq"/>
+                            <constraint firstItem="YQF-nC-iw3" firstAttribute="top" relation="greaterThanOrEqual" secondItem="d9X-lO-Are" secondAttribute="bottom" constant="20" id="uUj-iN-0IU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K4h-Kt-vjk"/>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="gUG-6w-rVV" id="zIi-SF-IzY"/>
                         <outlet property="nextButton" destination="YQF-nC-iw3" id="cAe-Nl-SZQ"/>
-                        <outlet property="notNowButton" destination="QMY-zM-6nx" id="tbR-GX-nnb"/>
                         <outlet property="questionLabel" destination="9FF-bd-Tdj" id="EEa-XJ-jBy"/>
                         <outlet property="questionStackView" destination="d9X-lO-Are" id="deM-Xn-FSp"/>
                     </connections>
@@ -133,6 +105,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="alienation" width="1289" height="1282"/>
+        <image name="alienation" width="618.719970703125" height="615.3599853515625"/>
     </resources>
 </document>

@@ -10,7 +10,6 @@ import UIKit
 
 enum NavigationButtonState {
     case weAreReady
-    case notNow // currently disabled according to new requirements
     case next
     case solveOtherConflicts
     case backToMenu
@@ -22,8 +21,6 @@ enum NavigationButtonState {
         switch self {
         case .weAreReady:
             result = localizedStrings?.weAreReady
-        case .notNow:
-            result = localizedStrings?.notNow
         case .next:
             result = localizedStrings?.next
         case .solveOtherConflicts:

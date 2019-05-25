@@ -124,8 +124,6 @@
 			<dict>
 				<key>weAreReady</key>
 				<string>WE’RE READY</string>
-				<key>notNow</key>
-				<string>Not now</string>
 				<key>next</key>
 				<string>Next</string>
 				<key>solveOtherConflicts</key>
