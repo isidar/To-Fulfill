@@ -14,6 +14,7 @@ class QuestionsViewController: ViewController {
     @IBOutlet private weak var questionStackView: UIStackView!
     @IBOutlet private weak var questionLabel: UILabel!
     @IBOutlet private weak var nextButton: NavigationButton!
+    @IBOutlet private weak var previousButton: NavigationButton!
     
     var questionsTopic = ""
     
@@ -28,6 +29,7 @@ class QuestionsViewController: ViewController {
         setupQuestionsData()
         
         navigationItem.title = questionsTopic
+        previousButton.navigationState = .previous
         nextButton.navigationState = .weAreReady
         questionLabel.text = topicDescription
     }
@@ -40,16 +42,13 @@ class QuestionsViewController: ViewController {
             self.questionStackView.layoutIfNeeded()
         }
     }
-
 }
 
 private extension QuestionsViewController {
+    
     @IBAction func buttonClick(_ sender: NavigationButton) {
         setupNextQuestion(accordingTo: sender.navigationState)
     }
-}
-
-private extension QuestionsViewController {
     
     func setupQuestionsData() {
         imageView.image = QuestionsManager.shared.image(for: questionsTopic)
@@ -63,9 +62,17 @@ private extension QuestionsViewController {
         case .next,
              .weAreReady where questionLabel.text != topicDescription:
             questionIndex += 1
+            previousButton.isHidden = false
+            
+        case .previous:
+            if questionIndex <= 1 {
+                previousButton.isHidden = true
+            }
+            questionIndex = max(0, questionIndex - 1)
             
         case .solveOtherConflicts:
             questionIndex = 0
+            previousButton.isHidden = true
             
         case .backToMenu:
             navigationController?.popToRootViewController(animated: true)

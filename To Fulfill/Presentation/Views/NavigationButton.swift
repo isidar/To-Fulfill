@@ -11,25 +11,25 @@ import UIKit
 enum NavigationButtonState {
     case weAreReady
     case next
+    case previous
     case solveOtherConflicts
     case backToMenu
     
     var localizedRawValue: String {
-        let localizedStrings = Localizator.shared.localizedStrings?.conversation.ui.navigationButtonsLabels
-        var result: String?
+        guard let localizedStrings = Localizator.shared.localizedStrings?.conversation.ui.navigationButtonsLabels else { return "" }
         
         switch self {
         case .weAreReady:
-            result = localizedStrings?.weAreReady
+            return localizedStrings.weAreReady
         case .next:
-            result = localizedStrings?.next
+            return localizedStrings.next
+        case .previous:
+            return "<—"
         case .solveOtherConflicts:
-            result = localizedStrings?.solveOtherConflicts
+            return localizedStrings.solveOtherConflicts
         case .backToMenu:
-            result = localizedStrings?.backToMenu
+            return localizedStrings.backToMenu
         }
-        
-        return result ?? ""
     }
 }
 

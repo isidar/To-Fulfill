@@ -36,8 +36,6 @@ class ConversationViewController: ViewController {
         separatorView.isHidden = false
         readyButton.isHidden = true
         
-        // TODO: – Try batch update instead of consistent calls
-        
         let separatorAnimation: (Bool) -> Void = { [weak self] _ in
             UIView.animate(withDuration: 0.3) {
                 self?.separatorView.alpha = 1
