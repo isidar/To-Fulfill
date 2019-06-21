@@ -98,6 +98,14 @@
                                     <constraint firstItem="iZB-OU-NBb" firstAttribute="height" secondItem="lhj-oy-ANH" secondAttribute="height" multiplier="0.45" id="g5i-Dh-HLG"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjX-JC-lbO">
+                                <rect key="frame" x="38" y="109" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="en"/>
+                                <connections>
+                                    <action selector="languageSwitcherTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aMF-Lm-Udb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92156862745098034" green="0.98039215686274506" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>

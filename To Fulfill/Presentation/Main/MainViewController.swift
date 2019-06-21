@@ -22,6 +22,22 @@ class MainViewController: ViewController {
         showViewsWithAnimation()
     }
     
+    @IBAction private func languageSwitcherTap(_ button: UIButton) {
+        let languageSwitcherVC = LanguageSwitcherViewController(nibName: nil, bundle: nil)
+        languageSwitcherVC.modalPresentationStyle = .popover
+        
+        languageSwitcherVC.popoverPresentationController?.delegate = self
+        languageSwitcherVC.popoverPresentationController?.sourceView = button
+        languageSwitcherVC.popoverPresentationController?.sourceRect =
+            CGRect(x: button.bounds.midX,
+                   y: button.bounds.midY,
+                   width: 0,
+                   height: 0)
+        languageSwitcherVC.popoverPresentationController?.permittedArrowDirections = [.up]
+        
+        present(languageSwitcherVC, animated: true, completion: nil)
+    }
+    
     private func showViewsWithAnimation() {
         logoItemsStackView.alpha = 0
         curvedLineView.alpha = 0
@@ -85,6 +101,14 @@ extension MainViewController: UITableViewDelegate {
             animations: {
                 cell.alpha = 1
         })
+    }
+
+}
+
+extension MainViewController: UIPopoverPresentationControllerDelegate {
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
     }
 
 }
