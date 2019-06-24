@@ -22,9 +22,9 @@
 		2161B43121E3990000678AE0 /* ExtendedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2161B43021E3990000678AE0 /* ExtendedButton.swift */; };
 		217118AE22BCEA6D001AEF4F /* Crashlytics in Frameworks */ = {isa = PBXBuildFile; fileRef = 217118AD22BCEA6D001AEF4F /* Crashlytics */; };
 		217118B022BCEA74001AEF4F /* Fabric in Frameworks */ = {isa = PBXBuildFile; fileRef = 217118AF22BCEA74001AEF4F /* Fabric */; };
+		217118B222BCFB22001AEF4F /* LanguageSwitcherViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 217118B122BCFB22001AEF4F /* LanguageSwitcherViewController.storyboard */; };
 		2180F75422898968009A4D2B /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2180F75322898968009A4D2B /* MenuTableViewCell.swift */; };
 		2186FDC922B508BD005AA7A0 /* LanguageSwitcherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2186FDC722B508BD005AA7A0 /* LanguageSwitcherViewController.swift */; };
-		2186FDCA22B508BD005AA7A0 /* LanguageSwitcherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2186FDC822B508BD005AA7A0 /* LanguageSwitcherViewController.xib */; };
 		218E367722B50A94002B3EAF /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E367622B50A94002B3EAF /* UIViewController.swift */; };
 		219113CC21E4C4E8004D34BD /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219113CB21E4C4E8004D34BD /* UIFont.swift */; };
 		21AB1FEA220A4FD900243082 /* Root+LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AB1FE9220A4FD900243082 /* Root+LocalizedStrings.swift */; };
@@ -67,9 +67,9 @@
 		2161B43021E3990000678AE0 /* ExtendedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedButton.swift; sourceTree = "<group>"; };
 		217118AD22BCEA6D001AEF4F /* Crashlytics */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Crashlytics; path = Crashlytics.framework/Crashlytics; sourceTree = "<group>"; };
 		217118AF22BCEA74001AEF4F /* Fabric */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Fabric; path = Fabric.framework/Fabric; sourceTree = "<group>"; };
+		217118B122BCFB22001AEF4F /* LanguageSwitcherViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LanguageSwitcherViewController.storyboard; sourceTree = "<group>"; };
 		2180F75322898968009A4D2B /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		2186FDC722B508BD005AA7A0 /* LanguageSwitcherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSwitcherViewController.swift; sourceTree = "<group>"; };
-		2186FDC822B508BD005AA7A0 /* LanguageSwitcherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageSwitcherViewController.xib; sourceTree = "<group>"; };
 		218E367622B50A94002B3EAF /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		219113CB21E4C4E8004D34BD /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		21AB1FE9220A4FD900243082 /* Root+LocalizedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Root+LocalizedStrings.swift"; sourceTree = "<group>"; };
@@ -167,7 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				2186FDC722B508BD005AA7A0 /* LanguageSwitcherViewController.swift */,
-				2186FDC822B508BD005AA7A0 /* LanguageSwitcherViewController.xib */,
+				217118B122BCFB22001AEF4F /* LanguageSwitcherViewController.storyboard */,
 			);
 			path = "Language Switcher";
 			sourceTree = "<group>";
@@ -366,6 +366,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				217118B222BCFB22001AEF4F /* LanguageSwitcherViewController.storyboard in Resources */,
 				210F47282279EECC0074045D /* LaunchScreen.storyboard in Resources */,
 				21BE4A2D218CEF3C005F8938 /* uk.plist in Resources */,
 				21BE4A1E218CDD69005F8938 /* Story.storyboard in Resources */,
@@ -373,7 +374,6 @@
 				21BE4A10218CD83B005F8938 /* Main.storyboard in Resources */,
 				21BE4A14218CDCAC005F8938 /* Questions.storyboard in Resources */,
 				2151C8EB218CB66800C7F416 /* Assets.xcassets in Resources */,
-				2186FDCA22B508BD005AA7A0 /* LanguageSwitcherViewController.xib in Resources */,
 				21BE4A20218CDD7B005F8938 /* SpecialThanks.storyboard in Resources */,
 				21BE4A2C218CEF3C005F8938 /* en.plist in Resources */,
 			);

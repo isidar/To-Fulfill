@@ -23,7 +23,7 @@ class MainViewController: ViewController {
     }
     
     @IBAction private func languageSwitcherTap(_ button: UIButton) {
-        let languageSwitcherVC = LanguageSwitcherViewController(nibName: nil, bundle: nil)
+        let languageSwitcherVC: LanguageSwitcherViewController = .instantiateViewController()
         languageSwitcherVC.modalPresentationStyle = .popover
         
         languageSwitcherVC.popoverPresentationController?.delegate = self

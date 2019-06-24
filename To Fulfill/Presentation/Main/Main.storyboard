@@ -103,7 +103,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="en"/>
                                 <connections>
-                                    <action selector="languageSwitcherTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aMF-Lm-Udb"/>
+                                    <action selector="languageSwitcherTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jLf-Ui-hOS"/>
                                 </connections>
                             </button>
                         </subviews>
