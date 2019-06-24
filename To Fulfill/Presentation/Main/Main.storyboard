@@ -98,10 +98,26 @@
                                     <constraint firstItem="iZB-OU-NBb" firstAttribute="height" secondItem="lhj-oy-ANH" secondAttribute="height" multiplier="0.45" id="g5i-Dh-HLG"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjX-JC-lbO">
-                                <rect key="frame" x="38" y="109" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="en"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjX-JC-lbO" customClass="ExtendedButton" customModule="To_Fulfill" customModuleProvider="target">
+                                <rect key="frame" x="15" y="103" width="34" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kjX-JC-lbO" secondAttribute="height" id="SaA-ek-IQZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
+                                <state key="normal" title="en">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="34"/>
+                                </variation>
                                 <connections>
                                     <action selector="languageSwitcherTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jLf-Ui-hOS"/>
                                 </connections>
@@ -110,8 +126,10 @@
                         <color key="backgroundColor" red="0.92156862745098034" green="0.98039215686274506" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="lhj-oy-ANH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UcC-nA-gRW"/>
+                            <constraint firstItem="kjX-JC-lbO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="YcE-PP-RPS"/>
                             <constraint firstItem="lhj-oy-ANH" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.7" id="Zcy-6q-ige"/>
                             <constraint firstItem="lhj-oy-ANH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bos-5v-sVv"/>
+                            <constraint firstItem="kjX-JC-lbO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="nNb-as-aTs"/>
                             <constraint firstItem="lhj-oy-ANH" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.9" id="w6z-uw-yRR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -119,6 +137,7 @@
                     <navigationItem key="navigationItem" id="Wc5-0k-oih"/>
                     <connections>
                         <outlet property="curvedLineView" destination="ztm-TU-Bbn" id="Osg-OR-D8N"/>
+                        <outlet property="languageSwitcherButton" destination="kjX-JC-lbO" id="MDI-Z3-ug2"/>
                         <outlet property="logoItemsStackView" destination="ky1-74-gEK" id="daN-oA-6Ni"/>
                         <outlet property="menuTableView" destination="iZB-OU-NBb" id="QvM-ej-2Na"/>
                     </connections>

@@ -16,9 +16,12 @@ class MainViewController: ViewController {
     @IBOutlet private weak var logoItemsStackView: UIStackView!
     @IBOutlet private weak var curvedLineView: CurvedLineView!
     @IBOutlet private weak var menuTableView: UITableView!
+    @IBOutlet private weak var languageSwitcherButton: UIButton!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        languageSwitcherButton.setTitle(Localizator.shared.currentLocalization.rawValue, for: .normal)
         showViewsWithAnimation()
     }
     
@@ -29,11 +32,16 @@ class MainViewController: ViewController {
         languageSwitcherVC.popoverPresentationController?.delegate = self
         languageSwitcherVC.popoverPresentationController?.sourceView = button
         languageSwitcherVC.popoverPresentationController?.sourceRect =
-            CGRect(x: button.bounds.midX,
-                   y: button.bounds.midY,
+            CGRect(x: button.bounds.maxX * 0.66,
+                   y: button.bounds.maxY,
                    width: 0,
                    height: 0)
         languageSwitcherVC.popoverPresentationController?.permittedArrowDirections = [.up]
+        
+        languageSwitcherVC.dismissCompletion = { [weak self] in
+            self?.languageSwitcherButton.setTitle(Localizator.shared.currentLocalization.rawValue, for: .normal)
+            self?.menuTableView.reloadData()
+        }
         
         present(languageSwitcherVC, animated: true, completion: nil)
     }
@@ -66,8 +74,8 @@ extension MainViewController: UITableViewDataSource {
         
         menu[safe: indexPath.row].flatMap { cell.type = $0 }
         
-        let numberOfRows = tableView.numberOfRows(inSection: indexPath.section)
-        if indexPath.row == numberOfRows - 1 {
+        let isLastCell = indexPath.row == tableView.numberOfRows(inSection: indexPath.section) - 1
+        if isLastCell {
             cell.separatorInset = UIEdgeInsets(top: 0,
                                                left: 0,
                                                bottom: 0,
