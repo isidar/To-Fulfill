@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Localization: String {
+enum Localization: String, CaseIterable {
     case english = "en"
     case ukrainian = "uk"
 }
@@ -18,16 +18,24 @@ class Localizator {
     static let shared = Localizator()
     private init() { setup() }
     
+    private let userDefaultsKey = "localization"
+    
     private(set) var localizedStrings: LocalizedStrings?
     private(set) var currentLocalization: Localization = .english
     
     private func setup() {
-        if let availableLanguage = Localization(rawValue: currentAppleLanguage) {
+        if let savedLocalizationString = UserDefaults.standard.string(forKey: userDefaultsKey),
+           let userSelectedLocalization = Localization(rawValue: savedLocalizationString) {
+            currentLocalization = userSelectedLocalization
+        } else if let availableLanguage = Localization(rawValue: currentAppleLanguage) {
             currentLocalization = availableLanguage
         } else {
             currentLocalization = currentAppleLanguage == "ru" ? .ukrainian : .english
         }
-        
+        reloadLocalizedStrings()
+    }
+    
+    private func reloadLocalizedStrings() {
         guard
             let path = Bundle.main.path(forResource: currentLocalization.rawValue, ofType: "plist"),
             let data = try? Data(contentsOf: URL(fileURLWithPath: path)) else {
@@ -36,6 +44,8 @@ class Localizator {
         
         localizedStrings = try? PropertyListDecoder().decode(LocalizedStrings.self, from: data)
     }
+    
+    // MARK: - Public API
     
     /// Returns current Apple device language
     var currentAppleLanguage: String {
@@ -47,6 +57,13 @@ class Localizator {
         }
         
         return current
+    }
+    
+    func setCurrentLocalization(to localization: Localization) {
+        currentLocalization = localization
+        UserDefaults.standard.set(localization.rawValue, forKey: userDefaultsKey)
+        UserDefaults.standard.synchronize()
+        reloadLocalizedStrings()
     }
     
 }

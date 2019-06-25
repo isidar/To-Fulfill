@@ -20,10 +20,13 @@
 		2161B42E21E3949500678AE0 /* Conversation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2161B42C21E3949400678AE0 /* Conversation.storyboard */; };
 		2161B42F21E3949500678AE0 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2161B42D21E3949400678AE0 /* ConversationViewController.swift */; };
 		2161B43121E3990000678AE0 /* ExtendedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2161B43021E3990000678AE0 /* ExtendedButton.swift */; };
+		217118AE22BCEA6D001AEF4F /* Crashlytics in Frameworks */ = {isa = PBXBuildFile; fileRef = 217118AD22BCEA6D001AEF4F /* Crashlytics */; };
+		217118B022BCEA74001AEF4F /* Fabric in Frameworks */ = {isa = PBXBuildFile; fileRef = 217118AF22BCEA74001AEF4F /* Fabric */; };
+		217118B222BCFB22001AEF4F /* LanguageSwitcherViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 217118B122BCFB22001AEF4F /* LanguageSwitcherViewController.storyboard */; };
 		2180F75422898968009A4D2B /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2180F75322898968009A4D2B /* MenuTableViewCell.swift */; };
+		2186FDC922B508BD005AA7A0 /* LanguageSwitcherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2186FDC722B508BD005AA7A0 /* LanguageSwitcherViewController.swift */; };
+		218E367722B50A94002B3EAF /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E367622B50A94002B3EAF /* UIViewController.swift */; };
 		219113CC21E4C4E8004D34BD /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219113CB21E4C4E8004D34BD /* UIFont.swift */; };
-		219B569D228D824500985670 /* Crashlytics in Frameworks */ = {isa = PBXBuildFile; fileRef = 219B569C228D824400985670 /* Crashlytics */; };
-		219B569F228D824E00985670 /* Fabric in Frameworks */ = {isa = PBXBuildFile; fileRef = 219B569E228D824D00985670 /* Fabric */; };
 		21AB1FEA220A4FD900243082 /* Root+LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AB1FE9220A4FD900243082 /* Root+LocalizedStrings.swift */; };
 		21AB1FEC220A50B400243082 /* Conversation+UI+LocalizedStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AB1FEB220A50B400243082 /* Conversation+UI+LocalizedStrings.swift */; };
 		21ADB8F8226BC0E2001828D5 /* CurvedLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21ADB8F7226BC0E1001828D5 /* CurvedLineView.swift */; };
@@ -62,10 +65,13 @@
 		2161B42C21E3949400678AE0 /* Conversation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Conversation.storyboard; sourceTree = "<group>"; };
 		2161B42D21E3949400678AE0 /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		2161B43021E3990000678AE0 /* ExtendedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedButton.swift; sourceTree = "<group>"; };
+		217118AD22BCEA6D001AEF4F /* Crashlytics */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Crashlytics; path = Crashlytics.framework/Crashlytics; sourceTree = "<group>"; };
+		217118AF22BCEA74001AEF4F /* Fabric */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Fabric; path = Fabric.framework/Fabric; sourceTree = "<group>"; };
+		217118B122BCFB22001AEF4F /* LanguageSwitcherViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LanguageSwitcherViewController.storyboard; sourceTree = "<group>"; };
 		2180F75322898968009A4D2B /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		2186FDC722B508BD005AA7A0 /* LanguageSwitcherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSwitcherViewController.swift; sourceTree = "<group>"; };
+		218E367622B50A94002B3EAF /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		219113CB21E4C4E8004D34BD /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
-		219B569C228D824400985670 /* Crashlytics */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Crashlytics; path = Frameworks/Crashlytics.framework/Crashlytics; sourceTree = SOURCE_ROOT; };
-		219B569E228D824D00985670 /* Fabric */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Fabric; path = Frameworks/Fabric.framework/Fabric; sourceTree = SOURCE_ROOT; };
 		21AB1FE9220A4FD900243082 /* Root+LocalizedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Root+LocalizedStrings.swift"; sourceTree = "<group>"; };
 		21AB1FEB220A50B400243082 /* Conversation+UI+LocalizedStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Conversation+UI+LocalizedStrings.swift"; sourceTree = "<group>"; };
 		21ADB8F7226BC0E1001828D5 /* CurvedLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurvedLineView.swift; sourceTree = "<group>"; };
@@ -93,8 +99,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				219B569F228D824E00985670 /* Fabric in Frameworks */,
-				219B569D228D824500985670 /* Crashlytics in Frameworks */,
+				217118AE22BCEA6D001AEF4F /* Crashlytics in Frameworks */,
+				217118B022BCEA74001AEF4F /* Fabric in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,20 +125,10 @@
 			path = "Localized Strings";
 			sourceTree = "<group>";
 		};
-		214828272236925F00CD4764 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				219B569E228D824D00985670 /* Fabric */,
-				219B569C228D824400985670 /* Crashlytics */,
-			);
-			name = Frameworks;
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		2151C8D7218CB66600C7F416 = {
 			isa = PBXGroup;
 			children = (
-				214828272236925F00CD4764 /* Frameworks */,
+				21CAEEDF2295CDC100F362F7 /* Frameworks */,
 				2151C8E2218CB66700C7F416 /* To Fulfill */,
 				2151C8E1218CB66700C7F416 /* Products */,
 			);
@@ -167,6 +163,15 @@
 			path = Conversation;
 			sourceTree = "<group>";
 		};
+		2186FDCB22B508E5005AA7A0 /* Language Switcher */ = {
+			isa = PBXGroup;
+			children = (
+				2186FDC722B508BD005AA7A0 /* LanguageSwitcherViewController.swift */,
+				217118B122BCFB22001AEF4F /* LanguageSwitcherViewController.storyboard */,
+			);
+			path = "Language Switcher";
+			sourceTree = "<group>";
+		};
 		21BE4A09218CD662005F8938 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +201,7 @@
 		21BE4A0B218CD6D0005F8938 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				2186FDCB22B508E5005AA7A0 /* Language Switcher */,
 				2180F75322898968009A4D2B /* MenuTableViewCell.swift */,
 				2151C8E5218CB66700C7F416 /* MainViewController.swift */,
 				21BE4A0F218CD83B005F8938 /* Main.storyboard */,
@@ -271,6 +277,7 @@
 			children = (
 				21BE4A35218CF72A005F8938 /* String.swift */,
 				2120E16A21A2FFD000787AA2 /* StringQuestionParser.swift */,
+				218E367622B50A94002B3EAF /* UIViewController.swift */,
 				219113CB21E4C4E8004D34BD /* UIFont.swift */,
 				21F32DCB2198885D00E5C426 /* UIColor.swift */,
 				212B5B0721F36D9100BCCDDA /* UIImage.swift */,
@@ -278,6 +285,15 @@
 				2120E16C21A418A500787AA2 /* Array.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		21CAEEDF2295CDC100F362F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				217118AD22BCEA6D001AEF4F /* Crashlytics */,
+				217118AF22BCEA74001AEF4F /* Fabric */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 		21FA49D5218F1ED700C63496 /* Views */ = {
@@ -350,6 +366,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				217118B222BCFB22001AEF4F /* LanguageSwitcherViewController.storyboard in Resources */,
 				210F47282279EECC0074045D /* LaunchScreen.storyboard in Resources */,
 				21BE4A2D218CEF3C005F8938 /* uk.plist in Resources */,
 				21BE4A1E218CDD69005F8938 /* Story.storyboard in Resources */,
@@ -403,9 +420,11 @@
 				2120E16D21A418A500787AA2 /* Array.swift in Sources */,
 				21FA49D4218F1E7D00C63496 /* DiagonalView.swift in Sources */,
 				21AB1FEA220A4FD900243082 /* Root+LocalizedStrings.swift in Sources */,
+				218E367722B50A94002B3EAF /* UIViewController.swift in Sources */,
 				2120E17121A4318A00787AA2 /* Conversation+Strings.swift in Sources */,
 				21AB1FEC220A50B400243082 /* Conversation+UI+LocalizedStrings.swift in Sources */,
 				21BE4A16218CDCEA005F8938 /* QuestionsViewController.swift in Sources */,
+				2186FDC922B508BD005AA7A0 /* LanguageSwitcherViewController.swift in Sources */,
 				21F32DCE219896A700E5C426 /* QuestionsManager.swift in Sources */,
 				21F32DCC2198885D00E5C426 /* UIColor.swift in Sources */,
 				219113CC21E4C4E8004D34BD /* UIFont.swift in Sources */,
@@ -563,7 +582,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = toFulfill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = iOSDevelopment;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -594,7 +613,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = toFulfill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = iOSDevelopment;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
