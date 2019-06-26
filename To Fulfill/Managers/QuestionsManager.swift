@@ -13,7 +13,9 @@ class QuestionsManager {
     static let shared = QuestionsManager()
     private init() {}
 
-    private let questions = Localizator.shared.localizedStrings?.conversation.questions ?? []
+    private var questions: [LocalizedStrings.Conversation.Question] {
+        return Localizator.shared.localizedStrings?.conversation.questions ?? []
+    }
 
     func getQuestions(for questionsTopic: String) -> [(String, QuestionFlag)] {
         let questionObject = questions.first { $0.topicHeader == questionsTopic }
